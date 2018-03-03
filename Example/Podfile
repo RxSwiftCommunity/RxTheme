@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'RxTheme_Example' do
+	platform :ios, '9.0'
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxTheme', :path => '../'
+
+  target 'RxTheme_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
