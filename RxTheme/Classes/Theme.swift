@@ -40,7 +40,10 @@ public class ThemeService<T> {
 
     /// bind theme component to UI property
     public func apply<U>(_ from: @escaping ((T) -> U), to: Binder<U>) {
-        self.entry.map(from).bind(to: to).disposed(by: _disposeBag)
+        self.entry.map(from)
+            .observeOn(MainScheduler.instance)
+            .bind(to: to)
+            .disposed(by: _disposeBag)
     }
 
 }
