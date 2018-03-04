@@ -28,13 +28,25 @@ struct DarkTheme: Theme {
 
 let themeService = ThemeService<Theme>(themes: [LightTheme(), DarkTheme()])
 
-
 class ViewController: UIViewController {
 
     let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let label = UILabel()
+        label.text = "Tap to switch theme"
+        view.addSubview(label)
+
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        ])
+
+        themeService.apply({ $0.backgroundColor }, to: view.rx.backgroundColor)
+        themeService.apply({ $0.textColor }, to: label.rx.textColor)
 
         let tapGesture = UITapGestureRecognizer()
         view.addGestureRecognizer(tapGesture)
@@ -43,23 +55,6 @@ class ViewController: UIViewController {
                 let themeIndex = themeService.index
                 themeService.set(index: themeIndex == 0 ? 1 : 0)
             }
-            .disposed(by: disposeBag)
-
-        let label = UILabel()
-        label.text = "Tap to switch theme"
-        view.addSubview(label)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        ])
-
-        themeService.binder().map { $0.backgroundColor }
-            .bind(to: view.rx.backgroundColor)
-            .disposed(by: disposeBag)
-
-        themeService.binder().map { $0.textColor }
-            .bind(to: label.rx.textColor)
             .disposed(by: disposeBag)
     }
 }

@@ -10,4 +10,10 @@ public extension Reactive where Base: UIView {
             view.backgroundColor = color
         }
     }
+
+    public var borderColor: Binder<UIColor?> {
+        return Binder(self.base) { view, color in
+            view.layer.borderColor = color?.cgColor
+        }
+    }
 }

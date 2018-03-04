@@ -5,6 +5,7 @@ import RxCocoa
 public class ThemeService<T> {
     private let _themes: Array<T>
     private let _index: BehaviorRelay<Int>
+    private let _disposeBag = DisposeBag()
 
     /// return current theme index
     public var index: Int { return self._index.value }
@@ -30,9 +31,16 @@ public class ThemeService<T> {
         self._index.accept(index)
     }
 
-    public func binder() -> Observable<T> {
+    /// observable emits current theme
+    public var entry: Observable<T> {
         return _index.flatMap { [unowned self] (index) -> Observable<T> in
             return Observable<T>.just(self._themes[index])
         }
     }
+
+    /// bind theme component to UI property
+    public func apply<U>(_ from: @escaping ((T) -> U), to: Binder<U>) {
+        self.entry.map(from).bind(to: to).disposed(by: _disposeBag)
+    }
+
 }
