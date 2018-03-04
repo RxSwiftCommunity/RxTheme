@@ -8,7 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxTheme'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
+  s.swift_version    = '4.0'
   s.summary          = 'iOS Theme management based on Rx'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +19,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Setup iOS theme like a boss
+iOS Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.
                        DESC
 
   s.homepage         = 'https://github.com/wddwycc/RxTheme'

@@ -46,7 +46,7 @@ This also makes the lib super easy to extend. You just extend RxCocoa:
 
 ```swift
 extension Reactive where Base: UIView {
-   	var borderColor: Binder<UIColor?> {
+    var borderColor: Binder<UIColor?> {
         return Binder(self.base) { view, color in
             view.layer.borderColor = color?.cgColor
         }
