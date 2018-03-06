@@ -42,79 +42,79 @@ themeService.set(index: 0)
 
 ### Binder presets
 
-* UIApplication
- * statusBarStyle
+##### UIApplication
+- statusBarStyle
 
-* UIView
- * backgroundColor
- * tintColor
+##### UIView
+- backgroundColor
+- tintColor
 
-* UIButton
- * image
- * backgroundImage
- * tintColor
+##### UIButton
+- image
+- backgroundImage
+- tintColor
 
-* UILabel
- * font
- * textColor
- * highlightedTextColor
- * shadowColor
+##### UILabel
+- font
+- textColor
+- highlightedTextColor
+- shadowColor
 
-* UITextField
- * font
- * keyboardAppearance
- * textColor
+##### UITextField
+- font
+- keyboardAppearance
+- textColor
 
-* UIImageView
- * image
+##### UIImageView
+- image
 
-* UIProgressView
- * progressTintColor
- * trackTintColor 
+##### UIProgressView
+- progressTintColor
+- trackTintColor 
 
-* UIPageControl
- * pageIndicatorTintColor
- * currentPageIndicatorTintColor
+##### UIPageControl
+- pageIndicatorTintColor
+- currentPageIndicatorTintColor
 
-* UISlider
- * thumbTintColor
- * minimumTrackTintColor
- * maximumTrackTintColor
+##### UISlider
+- thumbTintColor
+- minimumTrackTintColor
+- maximumTrackTintColor
 
-* UIToolbar
- * barTintColor
+##### UIToolbar
+- barTintColor
 
-* UISwitch
- * onTintColor
- * thumbTintColor
+##### UISwitch
+- onTintColor
+- thumbTintColor
 
-* UITableView
- * separatorColor
+##### UITableView
+- separatorColor
 
-* UINavigationBar
- * barStyle
- * barTintColor
- * titleTextAttributes
+##### UINavigationBar
+- barStyle
+- barTintColor
+- titleTextAttributes
 
-* UITabBar
- * barStyle
- * barTintColor
+##### UITabBar
+- barStyle
+- barTintColor
 
-* UITextView
- * font
- * textColor 
+##### UITextView
+- font
+- textColor 
 
-* UIActivityIndicatorView
- * activityIndicatorViewStyle
+##### UIActivityIndicatorView
+- activityIndicatorViewStyle
 
-* UIBarButtonItem
- * tintColor
+##### UIBarButtonItem
+- tintColor
 
-* CALayer
- * backgroundColor
- * borderWidth
- * borderColor
- * shadowColor
+##### CALayer
+- backgroundColor
+- borderWidth
+- borderColor
+- shadowColor
 
 
 > If anything missed, PR is welcomed.
