@@ -46,4 +46,11 @@ public class ThemeService<T> {
             .disposed(by: _disposeBag)
     }
 
+    /// bind theme component to UI attribute
+    public func bind<U>(_ from: @escaping ((T) -> U), to: Binder<U>...) {
+        for binder in to {
+            self.bind(from, to: binder)
+        }
+    }
+
 }
