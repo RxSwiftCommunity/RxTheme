@@ -45,10 +45,10 @@ class ViewController: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
-        themeService.bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
-            .disposed(by: disposeBag)
-        themeService.bind({ $0.textColor }, to: label.rx.textColor)
-            .disposed(by: disposeBag)
+        themeService.bind([
+            ({ $0.textColor }, [label.rx.textColor]),
+            ({ $0.backgroundColor }, [view.rx.backgroundColor])
+        ]).disposed(by: disposeBag)
 
         let tapGesture = UITapGestureRecognizer()
         view.addGestureRecognizer(tapGesture)
@@ -60,4 +60,3 @@ class ViewController: UIViewController {
             .disposed(by: disposeBag)
     }
 }
-
