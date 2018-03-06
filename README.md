@@ -4,7 +4,10 @@
 [![License](https://img.shields.io/cocoapods/l/RxTheme.svg?style=flat)](http://cocoapods.org/pods/RxTheme)
 [![Platform](https://img.shields.io/cocoapods/p/RxTheme.svg?style=flat)](http://cocoapods.org/pods/RxTheme)
 
-## Define theme service
+
+## Manual
+
+### Define theme service
 
 ```swift
 protocol Theme {
@@ -25,20 +28,99 @@ struct DarkTheme: Theme {
 let themeService = ThemeService<Theme>(themes: [LightTheme(), DarkTheme()])
 ```
 
-## Apply theme to UI
+### Apply theme to UI
 
 ```swift
-themeService.apply({ $0.backgroundColor }, to: view.rx.backgroundColor)
+themeService.bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
 ```
 
-## Switch themes
+### Switch themes
 
 ```swift
 themeService.set(index: 0)
 ```
 
+### Binder presets
 
-## Extend property to apply
+* UIApplication
+ * statusBarStyle
+
+* UIView
+ * backgroundColor
+ * tintColor
+
+* UIButton
+ * image
+ * backgroundImage
+ * tintColor
+
+* UILabel
+ * font
+ * textColor
+ * highlightedTextColor
+ * shadowColor
+
+* UITextField
+ * font
+ * keyboardAppearance
+ * textColor
+
+* UIImageView
+ * image
+
+* UIProgressView
+ * progressTintColor
+ * trackTintColor 
+
+* UIPageControl
+ * pageIndicatorTintColor
+ * currentPageIndicatorTintColor
+
+* UISlider
+ * thumbTintColor
+ * minimumTrackTintColor
+ * maximumTrackTintColor
+
+* UIToolbar
+ * barTintColor
+
+* UISwitch
+ * onTintColor
+ * thumbTintColor
+
+* UITableView
+ * separatorColor
+
+* UINavigationBar
+ * barStyle
+ * barTintColor
+ * titleTextAttributes
+
+* UITabBar
+ * barStyle
+ * barTintColor
+
+* UITextView
+ * font
+ * textColor 
+
+* UIActivityIndicatorView
+ * activityIndicatorViewStyle
+
+* UIBarButtonItem
+ * tintColor
+
+* CALayer
+ * backgroundColor
+ * borderWidth
+ * borderColor
+ * shadowColor
+
+
+> If anything missed, PR is welcomed.
+
+
+### Extend binders
 
 Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa could be used here. 
 

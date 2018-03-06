@@ -45,8 +45,8 @@ class ViewController: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
-        themeService.apply({ $0.backgroundColor }, to: view.rx.backgroundColor)
-        themeService.apply({ $0.textColor }, to: label.rx.textColor)
+        themeService.bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
+        themeService.bind({ $0.textColor }, to: label.rx.textColor)
 
         let tapGesture = UITapGestureRecognizer()
         view.addGestureRecognizer(tapGesture)

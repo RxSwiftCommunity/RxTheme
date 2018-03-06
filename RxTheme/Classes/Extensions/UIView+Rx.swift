@@ -11,9 +11,10 @@ public extension Reactive where Base: UIView {
         }
     }
 
-    public var borderColor: Binder<UIColor?> {
+    /// Bindable sink for `tintColor` property
+    public var tintColor: Binder<UIColor?> {
         return Binder(self.base) { view, color in
-            view.layer.borderColor = color?.cgColor
+            view.tintColor = color
         }
     }
 }

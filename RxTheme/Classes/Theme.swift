@@ -38,8 +38,8 @@ public class ThemeService<T> {
         }
     }
 
-    /// bind theme component to UI property
-    public func apply<U>(_ from: @escaping ((T) -> U), to: Binder<U>) {
+    /// bind theme component to UI attribute
+    public func bind<U>(_ from: @escaping ((T) -> U), to: Binder<U>) {
         self.entry.map(from)
             .observeOn(MainScheduler.instance)
             .bind(to: to)
