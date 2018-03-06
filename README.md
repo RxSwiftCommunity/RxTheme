@@ -31,8 +31,10 @@ let themeService = ThemeService<Theme>(themes: [LightTheme(), DarkTheme()])
 ### Apply theme to UI
 
 ```swift
-themeService.bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
-	.disposed(by: disposeBag)
+themeService
+    .bind({ $0.backgroundColor }, 
+          to: view.rx.backgroundColor, label.rx.textColor)
+    .disposed(by: disposeBag)
 ```
 
 ### Switch themes
