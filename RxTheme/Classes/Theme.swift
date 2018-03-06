@@ -5,7 +5,6 @@ import RxCocoa
 public class ThemeService<T> {
     private let _themes: Array<T>
     private let _index: BehaviorRelay<Int>
-    private let _disposeBag = DisposeBag()
 
     /// return current theme index
     public var index: Int { return self._index.value }
