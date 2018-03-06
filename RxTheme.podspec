@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RxTheme'
-  s.version          = '0.1.1'
+  s.version          = '0.2.0'
   s.swift_version    = '4.0'
   s.summary          = 'iOS Theme management based on Rx'
 
