@@ -39,18 +39,15 @@ public class ThemeService<T> {
     }
 
     /// bind theme component to UI attribute
-    public func bind<U>(_ from: @escaping ((T) -> U), to: Binder<U>) {
-        self.entry.map(from)
+    public func bind<U>(_ from: @escaping ((T) -> U), to: Binder<U>) -> Disposable {
+        return self.entry.map(from)
             .observeOn(MainScheduler.instance)
             .bind(to: to)
-            .disposed(by: _disposeBag)
     }
 
-    /// bind theme component to UI attribute
-    public func bind<U>(_ from: @escaping ((T) -> U), to: Binder<U>...) {
-        for binder in to {
-            self.bind(from, to: binder)
-        }
+    /// bind theme component to UI attributes
+    public func bind<U>(_ from: @escaping ((T) -> U), to: Binder<U>...) -> CompositeDisposable {
+        return CompositeDisposable(disposables: to.map { self.bind(from, to: $0) })
     }
 
 }

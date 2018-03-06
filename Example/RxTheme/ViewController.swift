@@ -46,7 +46,9 @@ class ViewController: UIViewController {
         ])
 
         themeService.bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
+            .disposed(by: disposeBag)
         themeService.bind({ $0.textColor }, to: label.rx.textColor)
+            .disposed(by: disposeBag)
 
         let tapGesture = UITapGestureRecognizer()
         view.addGestureRecognizer(tapGesture)
