@@ -11,22 +11,6 @@ import RxSwift
 import RxCocoa
 import RxTheme
 
-protocol Theme {
-    var backgroundColor: UIColor { get }
-    var textColor: UIColor { get }
-}
-
-struct LightTheme: Theme {
-    let backgroundColor = UIColor.white
-    let textColor = UIColor.black
-}
-
-struct DarkTheme: Theme {
-    let backgroundColor = UIColor.black
-    let textColor = UIColor.white
-}
-
-let themeService = ThemeService<Theme>(themes: [LightTheme(), DarkTheme()])
 
 class ViewController: UIViewController {
 

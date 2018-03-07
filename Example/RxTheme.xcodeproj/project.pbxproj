@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076AD328204FFA8D00BB957C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AD327204FFA8D00BB957C /* AppDelegate.swift */; };
+		076AD32A204FFA8D00BB957C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AD329204FFA8D00BB957C /* ViewController.swift */; };
+		076AD32D204FFA8D00BB957C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076AD32B204FFA8D00BB957C /* Main.storyboard */; };
+		076AD32F204FFA8D00BB957C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076AD32E204FFA8D00BB957C /* Assets.xcassets */; };
+		076AD335204FFC4B00BB957C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AD334204FFC4B00BB957C /* Theme.swift */; };
+		076AD336204FFEA100BB957C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AD334204FFC4B00BB957C /* Theme.swift */; };
+		0785D15E205036EB002714C4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0785D15C205036EB002714C4 /* Interface.storyboard */; };
+		0785D160205036EB002714C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785D15F205036EB002714C4 /* Assets.xcassets */; };
+		0785D167205036EC002714C4 /* RxTheme_Example_watchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0785D166205036EC002714C4 /* RxTheme_Example_watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0785D16C205036EC002714C4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785D16B205036EC002714C4 /* InterfaceController.swift */; };
+		0785D16E205036EC002714C4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0785D16D205036EC002714C4 /* ExtensionDelegate.swift */; };
+		0785D170205036EC002714C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0785D16F205036EC002714C4 /* Assets.xcassets */; };
+		0785D174205036EC002714C4 /* RxTheme_Example_watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0785D15A205036EB002714C4 /* RxTheme_Example_watchOS.app */; };
+		0785D17C205039C5002714C4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AD334204FFC4B00BB957C /* Theme.swift */; };
+		07F0F40E2050276F001642FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0F40D2050276F001642FA /* AppDelegate.swift */; };
+		07F0F4102050276F001642FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F0F40F2050276F001642FA /* ViewController.swift */; };
+		07F0F4122050276F001642FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F0F4112050276F001642FA /* Assets.xcassets */; };
+		07F0F4152050276F001642FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F0F4132050276F001642FA /* Main.storyboard */; };
+		07F0F41B2050277E001642FA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AD334204FFC4B00BB957C /* Theme.swift */; };
+		2198C1D5945E918C706A11D6 /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F469B1D491E7D452A9E0820D /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework */; };
 		56412DEFB6355F898F8B579A /* Pods_RxTheme_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84902C2E2C5773CE9EEFDAD3 /* Pods_RxTheme_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -14,10 +34,30 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		645C92324BDB83BEBC980D42 /* Pods_RxTheme_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F8EAA25ACB32678125F53C /* Pods_RxTheme_Example_macOS.framework */; };
 		99F514296E1747C8B5944AFA /* Pods_RxTheme_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED70D5B79D7C06B239B967D /* Pods_RxTheme_Example.framework */; };
+		9C643B6407EE9F0BB71A8853 /* Pods_RxTheme_RxTheme_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F943B4A84F1D7EFC1C4C25A /* Pods_RxTheme_RxTheme_Example_tvOS.framework */; };
+		AA67663E34AB1B3EB527EEA4 /* Pods_RxTheme_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9AFE12B2A029EC8D553738 /* Pods_RxTheme_Example_tvOS.framework */; };
+		ABCFA25993F3A6CE22AB92A6 /* Pods_RxTheme_RxTheme_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78ACAB4D0441BE9DC52C8761 /* Pods_RxTheme_RxTheme_Example.framework */; };
+		EA073375FD69C1C688E47108 /* Pods_RxTheme_RxTheme_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6798DBCF351CCC8515A2CB0F /* Pods_RxTheme_RxTheme_Tests.framework */; };
+		EF3A76572616C8B3DDCEBB1F /* Pods_RxTheme_RxTheme_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185AEF2E66A823EB46F5C80B /* Pods_RxTheme_RxTheme_Example_macOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0785D168205036EC002714C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0785D165205036EB002714C4;
+			remoteInfo = "RxTheme_Example_watchOS Extension";
+		};
+		0785D172205036EC002714C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0785D159205036EB002714C4;
+			remoteInfo = RxTheme_Example_watchOS;
+		};
 		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
@@ -27,11 +67,67 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0785D17A205036EC002714C4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0785D167205036EC002714C4 /* RxTheme_Example_watchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F4432050364C001642FA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0785D174205036EC002714C4 /* RxTheme_Example_watchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		076AD325204FFA8D00BB957C /* RxTheme_Example_tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTheme_Example_tvOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		076AD327204FFA8D00BB957C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		076AD329204FFA8D00BB957C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		076AD32C204FFA8D00BB957C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		076AD32E204FFA8D00BB957C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		076AD330204FFA8D00BB957C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		076AD334204FFC4B00BB957C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = SOURCE_ROOT; };
+		0785D15A205036EB002714C4 /* RxTheme_Example_watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTheme_Example_watchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0785D15D205036EB002714C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0785D15F205036EB002714C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0785D161205036EB002714C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0785D166205036EC002714C4 /* RxTheme_Example_watchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RxTheme_Example_watchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0785D16B205036EC002714C4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0785D16D205036EC002714C4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		0785D16F205036EC002714C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0785D171205036EC002714C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F0F40B2050276F001642FA /* RxTheme_Example_macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTheme_Example_macOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F0F40D2050276F001642FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07F0F40F2050276F001642FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07F0F4112050276F001642FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07F0F4142050276F001642FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07F0F4162050276F001642FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F0F4172050276F001642FA /* RxTheme_Example_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RxTheme_Example_macOS.entitlements; sourceTree = "<group>"; };
 		0D5A765F0D61A8883191EF95 /* RxTheme.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxTheme.podspec; path = ../RxTheme.podspec; sourceTree = "<group>"; };
+		185AEF2E66A823EB46F5C80B /* Pods_RxTheme_RxTheme_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DB28C8C97E288A83851270 /* Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		2F943B4A84F1D7EFC1C4C25A /* Pods_RxTheme_RxTheme_Example_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAA02EE26267FC82CDDC7D5 /* Pods-RxTheme_Example_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		358FD5A984A06EA605899BFE /* Pods-RxTheme_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		38CB7A8685A66AADBAE3E991 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		40BEA6423B13A192A167728F /* Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4CA8798735AFF766C752DF7D /* Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig"; sourceTree = "<group>"; };
 		52586F57392240077CFAEB6E /* Pods-RxTheme_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		54C65F6D0860C0C7F4CE6BD3 /* Pods-RxTheme-RxTheme_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5E75E9D4912A312FDABE2032 /* Pods-RxTheme_Example_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxTheme_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTheme_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,19 +138,59 @@
 		607FACE51AFB9204008FA782 /* RxTheme_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTheme_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		61877F23D5E2CBAC76F04ED8 /* Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		643D0D92D2D8D7E18D7D259A /* Pods-RxTheme_Example_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6798DBCF351CCC8515A2CB0F /* Pods_RxTheme_RxTheme_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCD9445A682759C6B22378F /* Pods-RxTheme_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		74B2398E9CCC41E986982FA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		74DF10ADF3FA99DBEF587DED /* Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
+		78ACAB4D0441BE9DC52C8761 /* Pods_RxTheme_RxTheme_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84902C2E2C5773CE9EEFDAD3 /* Pods_RxTheme_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED70D5B79D7C06B239B967D /* Pods_RxTheme_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA12FD9B0057E0AFC1E96CAC /* Pods-RxTheme-RxTheme_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AE9AFE12B2A029EC8D553738 /* Pods_RxTheme_Example_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBE37BBCA780BD2D94FD18B /* Pods-RxTheme-RxTheme_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DCBDCB112E6B7210B3B6B0BC /* Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		E01A7657BC1072BD6FC9559E /* Pods-RxTheme_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E1365AAB4A5D4D7AC237EBBF /* Pods-RxTheme_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		F469B1D491E7D452A9E0820D /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F8EAA25ACB32678125F53C /* Pods_RxTheme_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA901272A01563BA06FC6174 /* Pods-RxTheme-RxTheme_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		076AD322204FFA8D00BB957C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA67663E34AB1B3EB527EEA4 /* Pods_RxTheme_Example_tvOS.framework in Frameworks */,
+				9C643B6407EE9F0BB71A8853 /* Pods_RxTheme_RxTheme_Example_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0785D163205036EB002714C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2198C1D5945E918C706A11D6 /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F4082050276F001642FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				645C92324BDB83BEBC980D42 /* Pods_RxTheme_Example_macOS.framework in Frameworks */,
+				EF3A76572616C8B3DDCEBB1F /* Pods_RxTheme_RxTheme_Example_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				99F514296E1747C8B5944AFA /* Pods_RxTheme_Example.framework in Frameworks */,
+				ABCFA25993F3A6CE22AB92A6 /* Pods_RxTheme_RxTheme_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,17 +199,84 @@
 			buildActionMask = 2147483647;
 			files = (
 				56412DEFB6355F898F8B579A /* Pods_RxTheme_Tests.framework in Frameworks */,
+				EA073375FD69C1C688E47108 /* Pods_RxTheme_RxTheme_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE3C63ECE82C77DD487257E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076AD326204FFA8D00BB957C /* RxTheme_Example_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				076AD327204FFA8D00BB957C /* AppDelegate.swift */,
+				076AD329204FFA8D00BB957C /* ViewController.swift */,
+				076AD32B204FFA8D00BB957C /* Main.storyboard */,
+				076AD32E204FFA8D00BB957C /* Assets.xcassets */,
+				076AD330204FFA8D00BB957C /* Info.plist */,
+			);
+			path = RxTheme_Example_tvOS;
+			sourceTree = "<group>";
+		};
+		076AD338205021C300BB957C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				076AD334204FFC4B00BB957C /* Theme.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		0785D15B205036EB002714C4 /* RxTheme_Example_watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				0785D15C205036EB002714C4 /* Interface.storyboard */,
+				0785D15F205036EB002714C4 /* Assets.xcassets */,
+				0785D161205036EB002714C4 /* Info.plist */,
+			);
+			path = RxTheme_Example_watchOS;
+			sourceTree = "<group>";
+		};
+		0785D16A205036EC002714C4 /* RxTheme_Example_watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0785D16B205036EC002714C4 /* InterfaceController.swift */,
+				0785D16D205036EC002714C4 /* ExtensionDelegate.swift */,
+				0785D16F205036EC002714C4 /* Assets.xcassets */,
+				0785D171205036EC002714C4 /* Info.plist */,
+			);
+			path = "RxTheme_Example_watchOS Extension";
+			sourceTree = "<group>";
+		};
+		07F0F40C2050276F001642FA /* RxTheme_Example_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				07F0F40D2050276F001642FA /* AppDelegate.swift */,
+				07F0F40F2050276F001642FA /* ViewController.swift */,
+				07F0F4112050276F001642FA /* Assets.xcassets */,
+				07F0F4132050276F001642FA /* Main.storyboard */,
+				07F0F4162050276F001642FA /* Info.plist */,
+				07F0F4172050276F001642FA /* RxTheme_Example_macOS.entitlements */,
+			);
+			path = RxTheme_Example_macOS;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for RxTheme */,
+				076AD338205021C300BB957C /* Shared */,
+				607FACD21AFB9204008FA782 /* RxTheme_Example_iOS */,
+				076AD326204FFA8D00BB957C /* RxTheme_Example_tvOS */,
+				07F0F40C2050276F001642FA /* RxTheme_Example_macOS */,
+				0785D15B205036EB002714C4 /* RxTheme_Example_watchOS */,
+				0785D16A205036EC002714C4 /* RxTheme_Example_watchOS Extension */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				B4EEA394DA606BDBED336BB2 /* Pods */,
@@ -86,11 +289,15 @@
 			children = (
 				607FACD01AFB9204008FA782 /* RxTheme_Example.app */,
 				607FACE51AFB9204008FA782 /* RxTheme_Tests.xctest */,
+				076AD325204FFA8D00BB957C /* RxTheme_Example_tvOS.app */,
+				07F0F40B2050276F001642FA /* RxTheme_Example_macOS.app */,
+				0785D15A205036EB002714C4 /* RxTheme_Example_watchOS.app */,
+				0785D166205036EC002714C4 /* RxTheme_Example_watchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for RxTheme */ = {
+		607FACD21AFB9204008FA782 /* RxTheme_Example_iOS */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -100,7 +307,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for RxTheme";
+			name = RxTheme_Example_iOS;
 			path = RxTheme;
 			sourceTree = "<group>";
 		};
@@ -146,6 +353,20 @@
 				E01A7657BC1072BD6FC9559E /* Pods-RxTheme_Example.release.xcconfig */,
 				6BCD9445A682759C6B22378F /* Pods-RxTheme_Tests.debug.xcconfig */,
 				358FD5A984A06EA605899BFE /* Pods-RxTheme_Tests.release.xcconfig */,
+				2FAA02EE26267FC82CDDC7D5 /* Pods-RxTheme_Example_macOS.debug.xcconfig */,
+				E1365AAB4A5D4D7AC237EBBF /* Pods-RxTheme_Example_macOS.release.xcconfig */,
+				643D0D92D2D8D7E18D7D259A /* Pods-RxTheme_Example_tvOS.debug.xcconfig */,
+				5E75E9D4912A312FDABE2032 /* Pods-RxTheme_Example_tvOS.release.xcconfig */,
+				BFBE37BBCA780BD2D94FD18B /* Pods-RxTheme-RxTheme_Example.debug.xcconfig */,
+				54C65F6D0860C0C7F4CE6BD3 /* Pods-RxTheme-RxTheme_Example.release.xcconfig */,
+				4CA8798735AFF766C752DF7D /* Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig */,
+				DCBDCB112E6B7210B3B6B0BC /* Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig */,
+				61877F23D5E2CBAC76F04ED8 /* Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig */,
+				40BEA6423B13A192A167728F /* Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig */,
+				FA901272A01563BA06FC6174 /* Pods-RxTheme-RxTheme_Tests.debug.xcconfig */,
+				AA12FD9B0057E0AFC1E96CAC /* Pods-RxTheme-RxTheme_Tests.release.xcconfig */,
+				28DB28C8C97E288A83851270 /* Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig */,
+				74DF10ADF3FA99DBEF587DED /* Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -155,6 +376,13 @@
 			children = (
 				9ED70D5B79D7C06B239B967D /* Pods_RxTheme_Example.framework */,
 				84902C2E2C5773CE9EEFDAD3 /* Pods_RxTheme_Tests.framework */,
+				F8F8EAA25ACB32678125F53C /* Pods_RxTheme_Example_macOS.framework */,
+				AE9AFE12B2A029EC8D553738 /* Pods_RxTheme_Example_tvOS.framework */,
+				78ACAB4D0441BE9DC52C8761 /* Pods_RxTheme_RxTheme_Example.framework */,
+				185AEF2E66A823EB46F5C80B /* Pods_RxTheme_RxTheme_Example_macOS.framework */,
+				2F943B4A84F1D7EFC1C4C25A /* Pods_RxTheme_RxTheme_Example_tvOS.framework */,
+				6798DBCF351CCC8515A2CB0F /* Pods_RxTheme_RxTheme_Tests.framework */,
+				F469B1D491E7D452A9E0820D /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +390,84 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		076AD324204FFA8D00BB957C /* RxTheme_Example_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 076AD331204FFA8D00BB957C /* Build configuration list for PBXNativeTarget "RxTheme_Example_tvOS" */;
+			buildPhases = (
+				B2B11F17FE3270581AB9583E /* [CP] Check Pods Manifest.lock */,
+				076AD321204FFA8D00BB957C /* Sources */,
+				076AD322204FFA8D00BB957C /* Frameworks */,
+				076AD323204FFA8D00BB957C /* Resources */,
+				BB0040E2D733709E7AC77093 /* [CP] Embed Pods Frameworks */,
+				8C091D436906411A7592E2C1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxTheme_Example_tvOS;
+			productName = RxTheme_Example_tvOS;
+			productReference = 076AD325204FFA8D00BB957C /* RxTheme_Example_tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0785D159205036EB002714C4 /* RxTheme_Example_watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0785D17B205036EC002714C4 /* Build configuration list for PBXNativeTarget "RxTheme_Example_watchOS" */;
+			buildPhases = (
+				0785D158205036EB002714C4 /* Resources */,
+				0785D17A205036EC002714C4 /* Embed App Extensions */,
+				DE3C63ECE82C77DD487257E1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0785D169205036EC002714C4 /* PBXTargetDependency */,
+			);
+			name = RxTheme_Example_watchOS;
+			productName = RxTheme_Example_watchOS;
+			productReference = 0785D15A205036EB002714C4 /* RxTheme_Example_watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0785D165205036EB002714C4 /* RxTheme_Example_watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0785D179205036EC002714C4 /* Build configuration list for PBXNativeTarget "RxTheme_Example_watchOS Extension" */;
+			buildPhases = (
+				3AE84BADD474ABF95BFC1FDD /* [CP] Check Pods Manifest.lock */,
+				0785D162205036EB002714C4 /* Sources */,
+				0785D163205036EB002714C4 /* Frameworks */,
+				0785D164205036EB002714C4 /* Resources */,
+				3EAE991830B21EE7C3FF0A5A /* [CP] Embed Pods Frameworks */,
+				6EFD1082A6FBD6748963B2E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxTheme_Example_watchOS Extension";
+			productName = "RxTheme_Example_watchOS Extension";
+			productReference = 0785D166205036EC002714C4 /* RxTheme_Example_watchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		07F0F40A2050276F001642FA /* RxTheme_Example_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F0F41A2050276F001642FA /* Build configuration list for PBXNativeTarget "RxTheme_Example_macOS" */;
+			buildPhases = (
+				3D2632E25FAB2D005DBA7296 /* [CP] Check Pods Manifest.lock */,
+				07F0F4072050276F001642FA /* Sources */,
+				07F0F4082050276F001642FA /* Frameworks */,
+				07F0F4092050276F001642FA /* Resources */,
+				1E5B01437E14F43F3419E742 /* [CP] Embed Pods Frameworks */,
+				FF9437E4808938ACC759AC20 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxTheme_Example_macOS;
+			productName = RxTheme_Example_macOS;
+			productReference = 07F0F40B2050276F001642FA /* RxTheme_Example_macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		607FACCF1AFB9204008FA782 /* RxTheme_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "RxTheme_Example" */;
@@ -172,10 +478,12 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				DFCC2B371DDB0261E2F9EB38 /* [CP] Embed Pods Frameworks */,
 				DE997CF12A0EBFA69BCFD92E /* [CP] Copy Pods Resources */,
+				07F0F4432050364C001642FA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0785D173205036EC002714C4 /* PBXTargetDependency */,
 			);
 			name = RxTheme_Example;
 			productName = RxTheme;
@@ -209,10 +517,30 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					076AD324204FFA8D00BB957C = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 668Y6UQ668;
+						ProvisioningStyle = Automatic;
+					};
+					0785D159205036EB002714C4 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 668Y6UQ668;
+						ProvisioningStyle = Automatic;
+					};
+					0785D165205036EB002714C4 = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 668Y6UQ668;
+						ProvisioningStyle = Automatic;
+					};
+					07F0F40A2050276F001642FA = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 668Y6UQ668;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = 668Y6UQ668;
@@ -240,12 +568,51 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* RxTheme_Example */,
+				076AD324204FFA8D00BB957C /* RxTheme_Example_tvOS */,
+				07F0F40A2050276F001642FA /* RxTheme_Example_macOS */,
+				0785D159205036EB002714C4 /* RxTheme_Example_watchOS */,
+				0785D165205036EB002714C4 /* RxTheme_Example_watchOS Extension */,
 				607FACE41AFB9204008FA782 /* RxTheme_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		076AD323204FFA8D00BB957C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076AD32F204FFA8D00BB957C /* Assets.xcassets in Resources */,
+				076AD32D204FFA8D00BB957C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0785D158205036EB002714C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0785D160205036EB002714C4 /* Assets.xcassets in Resources */,
+				0785D15E205036EB002714C4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0785D164205036EB002714C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0785D170205036EC002714C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F4092050276F001642FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0F4122050276F001642FA /* Assets.xcassets in Resources */,
+				07F0F4152050276F001642FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,19 +633,121 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E5B01437E14F43F3419E742 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-macOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme-macOS/RxTheme.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AE84BADD474ABF95BFC1FDD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Example_watchOS Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D2632E25FAB2D005DBA7296 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Example_macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EAE991830B21EE7C3FF0A5A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme-watchOS/RxTheme.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		628F53043AC9BB4C213A90B0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme-iOS/RxTheme.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EFD1082A6FBD6748963B2E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		771F05A38286B1A9C2E5BDA0 /* [CP] Check Pods Manifest.lock */ = {
@@ -292,11 +761,26 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C091D436906411A7592E2C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		96FD6E3B5309E457C2B56266 /* [CP] Copy Pods Resources */ = {
@@ -311,7 +795,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97DAF45812F7E7D193C19168 /* [CP] Check Pods Manifest.lock */ = {
@@ -325,11 +809,51 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B11F17FE3270581AB9583E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Example_tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0040E2D733709E7AC77093 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-tvOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-tvOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme-tvOS/RxTheme.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE997CF12A0EBFA69BCFD92E /* [CP] Copy Pods Resources */ = {
@@ -344,7 +868,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DFCC2B371DDB0261E2F9EB38 /* [CP] Embed Pods Frameworks */ = {
@@ -353,10 +877,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTheme/RxTheme.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme-iOS/RxTheme.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -366,16 +890,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF9437E4808938ACC759AC20 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		076AD321204FFA8D00BB957C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				076AD335204FFC4B00BB957C /* Theme.swift in Sources */,
+				076AD32A204FFA8D00BB957C /* ViewController.swift in Sources */,
+				076AD328204FFA8D00BB957C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0785D162205036EB002714C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0785D17C205039C5002714C4 /* Theme.swift in Sources */,
+				0785D16E205036EC002714C4 /* ExtensionDelegate.swift in Sources */,
+				0785D16C205036EC002714C4 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F0F4072050276F001642FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F0F41B2050277E001642FA /* Theme.swift in Sources */,
+				07F0F4102050276F001642FA /* ViewController.swift in Sources */,
+				07F0F40E2050276F001642FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076AD336204FFEA100BB957C /* Theme.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
@@ -392,6 +962,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0785D169205036EC002714C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0785D165205036EB002714C4 /* RxTheme_Example_watchOS Extension */;
+			targetProxy = 0785D168205036EC002714C4 /* PBXContainerItemProxy */;
+		};
+		0785D173205036EC002714C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0785D159205036EB002714C4 /* RxTheme_Example_watchOS */;
+			targetProxy = 0785D172205036EC002714C4 /* PBXContainerItemProxy */;
+		};
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* RxTheme_Example */;
@@ -400,6 +980,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		076AD32B204FFA8D00BB957C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				076AD32C204FFA8D00BB957C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0785D15C205036EB002714C4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0785D15D205036EB002714C4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		07F0F4132050276F001642FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F0F4142050276F001642FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -419,6 +1023,216 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		076AD332204FFA8D00BB957C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61877F23D5E2CBAC76F04ED8 /* Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 668Y6UQ668;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RxTheme_Example_tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		076AD333204FFA8D00BB957C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40BEA6423B13A192A167728F /* Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 668Y6UQ668;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RxTheme_Example_tvOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		0785D175205036EC002714C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 668Y6UQ668;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = RxTheme_Example_watchOS_Extension;
+				INFOPLIST_FILE = RxTheme_Example_watchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0785D176205036EC002714C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 668Y6UQ668;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = RxTheme_Example_watchOS_Extension;
+				INFOPLIST_FILE = RxTheme_Example_watchOS/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0785D177205036EC002714C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DB28C8C97E288A83851270 /* Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 668Y6UQ668;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RxTheme_Example_watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0785D178205036EC002714C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74DF10ADF3FA99DBEF587DED /* Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 668Y6UQ668;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "RxTheme_Example_watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		07F0F4182050276F001642FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA8798735AFF766C752DF7D /* Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = RxTheme_Example_macOS/RxTheme_Example_macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 668Y6UQ668;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RxTheme_Example_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		07F0F4192050276F001642FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCBDCB112E6B7210B3B6B0BC /* Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = RxTheme_Example_macOS/RxTheme_Example_macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 668Y6UQ668;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = RxTheme_Example_macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -520,14 +1334,14 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52586F57392240077CFAEB6E /* Pods-RxTheme_Example.debug.xcconfig */;
+			baseConfigurationReference = BFBE37BBCA780BD2D94FD18B /* Pods-RxTheme-RxTheme_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 668Y6UQ668;
 				INFOPLIST_FILE = RxTheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -536,14 +1350,14 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E01A7657BC1072BD6FC9559E /* Pods-RxTheme_Example.release.xcconfig */;
+			baseConfigurationReference = 54C65F6D0860C0C7F4CE6BD3 /* Pods-RxTheme-RxTheme_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 668Y6UQ668;
 				INFOPLIST_FILE = RxTheme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -552,7 +1366,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BCD9445A682759C6B22378F /* Pods-RxTheme_Tests.debug.xcconfig */;
+			baseConfigurationReference = FA901272A01563BA06FC6174 /* Pods-RxTheme-RxTheme_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 668Y6UQ668;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -574,7 +1388,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 358FD5A984A06EA605899BFE /* Pods-RxTheme_Tests.release.xcconfig */;
+			baseConfigurationReference = AA12FD9B0057E0AFC1E96CAC /* Pods-RxTheme-RxTheme_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 668Y6UQ668;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -593,6 +1407,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		076AD331204FFA8D00BB957C /* Build configuration list for PBXNativeTarget "RxTheme_Example_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				076AD332204FFA8D00BB957C /* Debug */,
+				076AD333204FFA8D00BB957C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0785D179205036EC002714C4 /* Build configuration list for PBXNativeTarget "RxTheme_Example_watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0785D177205036EC002714C4 /* Debug */,
+				0785D178205036EC002714C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0785D17B205036EC002714C4 /* Build configuration list for PBXNativeTarget "RxTheme_Example_watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0785D175205036EC002714C4 /* Debug */,
+				0785D176205036EC002714C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F0F41A2050276F001642FA /* Build configuration list for PBXNativeTarget "RxTheme_Example_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F0F4182050276F001642FA /* Debug */,
+				07F0F4192050276F001642FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "RxTheme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
