@@ -1,16 +1,8 @@
 #if os(iOS) || os(tvOS) || os(macOS)
     import RxSwift
     import RxCocoa
-    #if os(iOS) || os(tvOS)
-        import UIKit
-    #endif
 
-    #if os(macOS)
-        import Cocoa
-    #endif
-
-
-
+    
     public extension Reactive where Base: CALayer {
         /// Bindable sink for `backgroundColor` property
         public var backgroundColor: Binder<CGColor?> {
