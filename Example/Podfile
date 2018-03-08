@@ -1,25 +1,26 @@
 use_frameworks!
 
-abstract_target 'RxTheme' do
-  pod 'RxTheme', :path => '../'
+target 'RxTheme_Example' do
+	platform :ios, '9.0'
+	pod 'RxTheme', :path => '../'
+end
 
-	target 'RxTheme_Example' do
-		platform :ios, '9.0'
-	end
+target 'RxTheme_Example_tvOS' do
+	platform :tvos, '9.0'
+	pod 'RxTheme', :path => '../'
+end
 
-	target 'RxTheme_Example_tvOS' do
-		platform :tvos, '9.0'
-	end
+target 'RxTheme_Example_macOS' do
+	platform :osx, '10.10'
+	pod 'RxTheme', :path => '../'
+end
 
-	target 'RxTheme_Example_macOS' do
-		platform :osx, '10.10'
-	end
+target 'RxTheme_Example_watchOS Extension' do
+	platform :watchos, '2.0'
+	pod 'RxTheme', :path => '../'
+end
 
-	target 'RxTheme_Example_watchOS Extension' do
-		platform :watchos, '2.0'
-	end
-
-	target 'RxTheme_Tests' do
-		platform :ios, '9.0'
-	end
+target 'RxTheme_Tests' do
+	platform :ios, '9.0'
+	pod 'RxTheme', :path => '../'
 end

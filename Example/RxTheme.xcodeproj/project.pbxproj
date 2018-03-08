@@ -35,6 +35,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		645C92324BDB83BEBC980D42 /* Pods_RxTheme_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F8EAA25ACB32678125F53C /* Pods_RxTheme_Example_macOS.framework */; };
+		788BF3BCF3030AD5D210CC0A /* Pods_RxTheme_Example_watchOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A3263205F410C6ED4B3821 /* Pods_RxTheme_Example_watchOS_Extension.framework */; };
 		99F514296E1747C8B5944AFA /* Pods_RxTheme_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED70D5B79D7C06B239B967D /* Pods_RxTheme_Example.framework */; };
 		9C643B6407EE9F0BB71A8853 /* Pods_RxTheme_RxTheme_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F943B4A84F1D7EFC1C4C25A /* Pods_RxTheme_RxTheme_Example_tvOS.framework */; };
 		AA67663E34AB1B3EB527EEA4 /* Pods_RxTheme_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9AFE12B2A029EC8D553738 /* Pods_RxTheme_Example_tvOS.framework */; };
@@ -142,14 +143,17 @@
 		643D0D92D2D8D7E18D7D259A /* Pods-RxTheme_Example_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		6798DBCF351CCC8515A2CB0F /* Pods_RxTheme_RxTheme_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BCD9445A682759C6B22378F /* Pods-RxTheme_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		71EE62A72D6157204DE2572D /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
 		74B2398E9CCC41E986982FA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		74DF10ADF3FA99DBEF587DED /* Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
 		78ACAB4D0441BE9DC52C8761 /* Pods_RxTheme_RxTheme_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84902C2E2C5773CE9EEFDAD3 /* Pods_RxTheme_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A3263205F410C6ED4B3821 /* Pods_RxTheme_Example_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED70D5B79D7C06B239B967D /* Pods_RxTheme_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA12FD9B0057E0AFC1E96CAC /* Pods-RxTheme-RxTheme_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AE9AFE12B2A029EC8D553738 /* Pods_RxTheme_Example_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBE37BBCA780BD2D94FD18B /* Pods-RxTheme-RxTheme_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D9BD92732B4421F3A6B34BF8 /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		DCBDCB112E6B7210B3B6B0BC /* Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
 		E01A7657BC1072BD6FC9559E /* Pods-RxTheme_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E1365AAB4A5D4D7AC237EBBF /* Pods-RxTheme_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2198C1D5945E918C706A11D6 /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework in Frameworks */,
+				788BF3BCF3030AD5D210CC0A /* Pods_RxTheme_Example_watchOS_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +372,8 @@
 				AA12FD9B0057E0AFC1E96CAC /* Pods-RxTheme-RxTheme_Tests.release.xcconfig */,
 				28DB28C8C97E288A83851270 /* Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig */,
 				74DF10ADF3FA99DBEF587DED /* Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig */,
+				D9BD92732B4421F3A6B34BF8 /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */,
+				71EE62A72D6157204DE2572D /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -383,6 +390,7 @@
 				2F943B4A84F1D7EFC1C4C25A /* Pods_RxTheme_RxTheme_Example_tvOS.framework */,
 				6798DBCF351CCC8515A2CB0F /* Pods_RxTheme_RxTheme_Tests.framework */,
 				F469B1D491E7D452A9E0820D /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework */,
+				91A3263205F410C6ED4B3821 /* Pods_RxTheme_Example_watchOS_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -639,7 +647,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-macOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-macOS/RxTheme.framework",
@@ -652,7 +660,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3AE84BADD474ABF95BFC1FDD /* [CP] Check Pods Manifest.lock */ = {
@@ -666,7 +674,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Example_watchOS Extension-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_watchOS Extension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -684,7 +692,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Example_macOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_macOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -697,7 +705,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-watchOS/RxTheme.framework",
@@ -710,7 +718,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		628F53043AC9BB4C213A90B0 /* [CP] Embed Pods Frameworks */ = {
@@ -719,7 +727,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-iOS/RxTheme.framework",
@@ -732,7 +740,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6EFD1082A6FBD6748963B2E0 /* [CP] Copy Pods Resources */ = {
@@ -747,7 +755,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		771F05A38286B1A9C2E5BDA0 /* [CP] Check Pods Manifest.lock */ = {
@@ -761,7 +769,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -780,7 +788,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		96FD6E3B5309E457C2B56266 /* [CP] Copy Pods Resources */ = {
@@ -795,7 +803,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		97DAF45812F7E7D193C19168 /* [CP] Check Pods Manifest.lock */ = {
@@ -809,7 +817,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -827,7 +835,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme-RxTheme_Example_tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -840,7 +848,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-tvOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-tvOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-tvOS/RxTheme.framework",
@@ -853,7 +861,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DE997CF12A0EBFA69BCFD92E /* [CP] Copy Pods Resources */ = {
@@ -868,7 +876,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DFCC2B371DDB0261E2F9EB38 /* [CP] Embed Pods Frameworks */ = {
@@ -877,7 +885,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-iOS/RxTheme.framework",
@@ -890,7 +898,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF9437E4808938ACC759AC20 /* [CP] Copy Pods Resources */ = {
@@ -905,7 +913,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1025,7 +1033,7 @@
 /* Begin XCBuildConfiguration section */
 		076AD332204FFA8D00BB957C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61877F23D5E2CBAC76F04ED8 /* Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig */;
+			baseConfigurationReference = 643D0D92D2D8D7E18D7D259A /* Pods-RxTheme_Example_tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1052,7 +1060,7 @@
 		};
 		076AD333204FFA8D00BB957C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40BEA6423B13A192A167728F /* Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig */;
+			baseConfigurationReference = 5E75E9D4912A312FDABE2032 /* Pods-RxTheme_Example_tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1129,7 +1137,7 @@
 		};
 		0785D177205036EC002714C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28DB28C8C97E288A83851270 /* Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig */;
+			baseConfigurationReference = D9BD92732B4421F3A6B34BF8 /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1156,7 +1164,7 @@
 		};
 		0785D178205036EC002714C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74DF10ADF3FA99DBEF587DED /* Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig */;
+			baseConfigurationReference = 71EE62A72D6157204DE2572D /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1181,7 +1189,7 @@
 		};
 		07F0F4182050276F001642FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CA8798735AFF766C752DF7D /* Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig */;
+			baseConfigurationReference = 2FAA02EE26267FC82CDDC7D5 /* Pods-RxTheme_Example_macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1209,7 +1217,7 @@
 		};
 		07F0F4192050276F001642FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCBDCB112E6B7210B3B6B0BC /* Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig */;
+			baseConfigurationReference = E1365AAB4A5D4D7AC237EBBF /* Pods-RxTheme_Example_macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1334,11 +1342,12 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFBE37BBCA780BD2D94FD18B /* Pods-RxTheme-RxTheme_Example.debug.xcconfig */;
+			baseConfigurationReference = 52586F57392240077CFAEB6E /* Pods-RxTheme_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 668Y6UQ668;
 				INFOPLIST_FILE = RxTheme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example";
@@ -1350,11 +1359,12 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54C65F6D0860C0C7F4CE6BD3 /* Pods-RxTheme-RxTheme_Example.release.xcconfig */;
+			baseConfigurationReference = E01A7657BC1072BD6FC9559E /* Pods-RxTheme_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 668Y6UQ668;
 				INFOPLIST_FILE = RxTheme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "monk-studio.com.RxTheme-Example";
@@ -1366,7 +1376,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA901272A01563BA06FC6174 /* Pods-RxTheme-RxTheme_Tests.debug.xcconfig */;
+			baseConfigurationReference = 6BCD9445A682759C6B22378F /* Pods-RxTheme_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 668Y6UQ668;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1388,7 +1398,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA12FD9B0057E0AFC1E96CAC /* Pods-RxTheme-RxTheme_Tests.release.xcconfig */;
+			baseConfigurationReference = 358FD5A984A06EA605899BFE /* Pods-RxTheme_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 668Y6UQ668;
 				FRAMEWORK_SEARCH_PATHS = (
