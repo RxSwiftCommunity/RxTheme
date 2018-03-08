@@ -1,0 +1,6 @@
+framework module Pods_RxTheme_Example_macOS {
+  umbrella header "Pods-RxTheme_Example_macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

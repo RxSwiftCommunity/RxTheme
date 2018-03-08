@@ -1,0 +1,6 @@
+framework module RxTheme {
+  umbrella header "RxTheme-tvOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

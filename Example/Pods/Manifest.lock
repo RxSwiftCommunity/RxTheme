@@ -1,0 +1,23 @@
+PODS:
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - RxTheme (0.4.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+
+DEPENDENCIES:
+  - RxTheme (from `../`)
+
+EXTERNAL SOURCES:
+  RxTheme:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  RxTheme: d4796bafdd325d540231315798c1e02c3f109aee
+
+PODFILE CHECKSUM: 14f78d9306c7d218e50d7b8eadc0d4b74342bb16
+
+COCOAPODS: 1.4.0
