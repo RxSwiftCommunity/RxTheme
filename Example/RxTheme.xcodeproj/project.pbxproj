@@ -26,22 +26,17 @@
 		07F0F4122050276F001642FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F0F4112050276F001642FA /* Assets.xcassets */; };
 		07F0F4152050276F001642FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F0F4132050276F001642FA /* Main.storyboard */; };
 		07F0F41B2050277E001642FA /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076AD334204FFC4B00BB957C /* Theme.swift */; };
-		2198C1D5945E918C706A11D6 /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F469B1D491E7D452A9E0820D /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework */; };
-		56412DEFB6355F898F8B579A /* Pods_RxTheme_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84902C2E2C5773CE9EEFDAD3 /* Pods_RxTheme_Tests.framework */; };
+		382B4F615766B16563A0A0BE /* Pods_RxTheme_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79185580E7DD903BB8C7FAA1 /* Pods_RxTheme_Example_macOS.framework */; };
+		47BAF28A13048059772F8483 /* Pods_RxTheme_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568A2D1B15ABE7123C9FB4CA /* Pods_RxTheme_Example_tvOS.framework */; };
+		5E8B1D1B4A3C76D0B2DDD697 /* Pods_RxTheme_Example_watchOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDB21DFA1AAEDDBED90B6CF /* Pods_RxTheme_Example_watchOS_Extension.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		645C92324BDB83BEBC980D42 /* Pods_RxTheme_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F8EAA25ACB32678125F53C /* Pods_RxTheme_Example_macOS.framework */; };
-		788BF3BCF3030AD5D210CC0A /* Pods_RxTheme_Example_watchOS_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A3263205F410C6ED4B3821 /* Pods_RxTheme_Example_watchOS_Extension.framework */; };
-		99F514296E1747C8B5944AFA /* Pods_RxTheme_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ED70D5B79D7C06B239B967D /* Pods_RxTheme_Example.framework */; };
-		9C643B6407EE9F0BB71A8853 /* Pods_RxTheme_RxTheme_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F943B4A84F1D7EFC1C4C25A /* Pods_RxTheme_RxTheme_Example_tvOS.framework */; };
-		AA67663E34AB1B3EB527EEA4 /* Pods_RxTheme_Example_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE9AFE12B2A029EC8D553738 /* Pods_RxTheme_Example_tvOS.framework */; };
-		ABCFA25993F3A6CE22AB92A6 /* Pods_RxTheme_RxTheme_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78ACAB4D0441BE9DC52C8761 /* Pods_RxTheme_RxTheme_Example.framework */; };
-		EA073375FD69C1C688E47108 /* Pods_RxTheme_RxTheme_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6798DBCF351CCC8515A2CB0F /* Pods_RxTheme_RxTheme_Tests.framework */; };
-		EF3A76572616C8B3DDCEBB1F /* Pods_RxTheme_RxTheme_Example_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185AEF2E66A823EB46F5C80B /* Pods_RxTheme_RxTheme_Example_macOS.framework */; };
+		E3A9F6652EA84246101F8883 /* Pods_RxTheme_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D63A6CA5BFD2C57E8A01947 /* Pods_RxTheme_Example.framework */; };
+		ED35B0F37614C12C280363FC /* Pods_RxTheme_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEEB884962993098BA3EDEC /* Pods_RxTheme_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,17 +113,13 @@
 		07F0F4162050276F001642FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F0F4172050276F001642FA /* RxTheme_Example_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RxTheme_Example_macOS.entitlements; sourceTree = "<group>"; };
 		0D5A765F0D61A8883191EF95 /* RxTheme.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxTheme.podspec; path = ../RxTheme.podspec; sourceTree = "<group>"; };
-		185AEF2E66A823EB46F5C80B /* Pods_RxTheme_RxTheme_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28DB28C8C97E288A83851270 /* Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		2F943B4A84F1D7EFC1C4C25A /* Pods_RxTheme_RxTheme_Example_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FAA02EE26267FC82CDDC7D5 /* Pods-RxTheme_Example_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		358FD5A984A06EA605899BFE /* Pods-RxTheme_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0DDB21DFA1AAEDDBED90B6CF /* Pods_RxTheme_Example_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D63A6CA5BFD2C57E8A01947 /* Pods_RxTheme_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		354469276F3A783DC53E5C27 /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
 		38CB7A8685A66AADBAE3E991 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		40BEA6423B13A192A167728F /* Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		4CA8798735AFF766C752DF7D /* Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		52586F57392240077CFAEB6E /* Pods-RxTheme_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		54C65F6D0860C0C7F4CE6BD3 /* Pods-RxTheme-RxTheme_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5E75E9D4912A312FDABE2032 /* Pods-RxTheme_Example_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4AEEB884962993098BA3EDEC /* Pods_RxTheme_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		568A2D1B15ABE7123C9FB4CA /* Pods_RxTheme_Example_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C45C69D5527508EA4FA0C1F /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxTheme_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTheme_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,27 +130,16 @@
 		607FACE51AFB9204008FA782 /* RxTheme_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTheme_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		61877F23D5E2CBAC76F04ED8 /* Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_tvOS/Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		643D0D92D2D8D7E18D7D259A /* Pods-RxTheme_Example_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		6798DBCF351CCC8515A2CB0F /* Pods_RxTheme_RxTheme_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BCD9445A682759C6B22378F /* Pods-RxTheme_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		71EE62A72D6157204DE2572D /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
+		66831362D48512274A02ED4F /* Pods-RxTheme_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example.release.xcconfig"; sourceTree = "<group>"; };
 		74B2398E9CCC41E986982FA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		74DF10ADF3FA99DBEF587DED /* Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_watchOS Extension/Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
-		78ACAB4D0441BE9DC52C8761 /* Pods_RxTheme_RxTheme_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84902C2E2C5773CE9EEFDAD3 /* Pods_RxTheme_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		91A3263205F410C6ED4B3821 /* Pods_RxTheme_Example_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9ED70D5B79D7C06B239B967D /* Pods_RxTheme_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA12FD9B0057E0AFC1E96CAC /* Pods-RxTheme-RxTheme_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AE9AFE12B2A029EC8D553738 /* Pods_RxTheme_Example_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFBE37BBCA780BD2D94FD18B /* Pods-RxTheme-RxTheme_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example/Pods-RxTheme-RxTheme_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D9BD92732B4421F3A6B34BF8 /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_watchOS Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		DCBDCB112E6B7210B3B6B0BC /* Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Example_macOS/Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
-		E01A7657BC1072BD6FC9559E /* Pods-RxTheme_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E1365AAB4A5D4D7AC237EBBF /* Pods-RxTheme_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
-		F469B1D491E7D452A9E0820D /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8F8EAA25ACB32678125F53C /* Pods_RxTheme_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA901272A01563BA06FC6174 /* Pods-RxTheme-RxTheme_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme-RxTheme_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme-RxTheme_Tests/Pods-RxTheme-RxTheme_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		79185580E7DD903BB8C7FAA1 /* Pods_RxTheme_Example_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		865E4A598C92AA9ACFA83114 /* Pods-RxTheme_Example_macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS.release.xcconfig"; sourceTree = "<group>"; };
+		87FE85F76E39F1DF758DFC78 /* Pods-RxTheme_Example_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8A2FA87F84CCD82DAFAC4C07 /* Pods-RxTheme_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBBC5448480612A7B82D873C /* Pods-RxTheme_Example_macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		DE52E63643AE216B8101F83D /* Pods-RxTheme_Example_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		DFE3946098E1CF08A92C06D7 /* Pods-RxTheme_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F749377B100DF1036638D525 /* Pods-RxTheme_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA67663E34AB1B3EB527EEA4 /* Pods_RxTheme_Example_tvOS.framework in Frameworks */,
-				9C643B6407EE9F0BB71A8853 /* Pods_RxTheme_RxTheme_Example_tvOS.framework in Frameworks */,
+				47BAF28A13048059772F8483 /* Pods_RxTheme_Example_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,8 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2198C1D5945E918C706A11D6 /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework in Frameworks */,
-				788BF3BCF3030AD5D210CC0A /* Pods_RxTheme_Example_watchOS_Extension.framework in Frameworks */,
+				5E8B1D1B4A3C76D0B2DDD697 /* Pods_RxTheme_Example_watchOS_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				645C92324BDB83BEBC980D42 /* Pods_RxTheme_Example_macOS.framework in Frameworks */,
-				EF3A76572616C8B3DDCEBB1F /* Pods_RxTheme_RxTheme_Example_macOS.framework in Frameworks */,
+				382B4F615766B16563A0A0BE /* Pods_RxTheme_Example_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,8 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F514296E1747C8B5944AFA /* Pods_RxTheme_Example.framework in Frameworks */,
-				ABCFA25993F3A6CE22AB92A6 /* Pods_RxTheme_RxTheme_Example.framework in Frameworks */,
+				E3A9F6652EA84246101F8883 /* Pods_RxTheme_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,8 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56412DEFB6355F898F8B579A /* Pods_RxTheme_Tests.framework in Frameworks */,
-				EA073375FD69C1C688E47108 /* Pods_RxTheme_RxTheme_Tests.framework in Frameworks */,
+				ED35B0F37614C12C280363FC /* Pods_RxTheme_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +247,18 @@
 			path = RxTheme_Example_macOS;
 			sourceTree = "<group>";
 		};
+		4A675D3042C40973A37EF4E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D63A6CA5BFD2C57E8A01947 /* Pods_RxTheme_Example.framework */,
+				79185580E7DD903BB8C7FAA1 /* Pods_RxTheme_Example_macOS.framework */,
+				568A2D1B15ABE7123C9FB4CA /* Pods_RxTheme_Example_tvOS.framework */,
+				0DDB21DFA1AAEDDBED90B6CF /* Pods_RxTheme_Example_watchOS_Extension.framework */,
+				4AEEB884962993098BA3EDEC /* Pods_RxTheme_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -284,8 +271,8 @@
 				0785D16A205036EC002714C4 /* RxTheme_Example_watchOS Extension */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				B4EEA394DA606BDBED336BB2 /* Pods */,
-				DEA6BCA5693890DDDE05D091 /* Frameworks */,
+				9F4C211506C555BD6C73F8E7 /* Pods */,
+				4A675D3042C40973A37EF4E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -351,48 +338,21 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		B4EEA394DA606BDBED336BB2 /* Pods */ = {
+		9F4C211506C555BD6C73F8E7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				52586F57392240077CFAEB6E /* Pods-RxTheme_Example.debug.xcconfig */,
-				E01A7657BC1072BD6FC9559E /* Pods-RxTheme_Example.release.xcconfig */,
-				6BCD9445A682759C6B22378F /* Pods-RxTheme_Tests.debug.xcconfig */,
-				358FD5A984A06EA605899BFE /* Pods-RxTheme_Tests.release.xcconfig */,
-				2FAA02EE26267FC82CDDC7D5 /* Pods-RxTheme_Example_macOS.debug.xcconfig */,
-				E1365AAB4A5D4D7AC237EBBF /* Pods-RxTheme_Example_macOS.release.xcconfig */,
-				643D0D92D2D8D7E18D7D259A /* Pods-RxTheme_Example_tvOS.debug.xcconfig */,
-				5E75E9D4912A312FDABE2032 /* Pods-RxTheme_Example_tvOS.release.xcconfig */,
-				BFBE37BBCA780BD2D94FD18B /* Pods-RxTheme-RxTheme_Example.debug.xcconfig */,
-				54C65F6D0860C0C7F4CE6BD3 /* Pods-RxTheme-RxTheme_Example.release.xcconfig */,
-				4CA8798735AFF766C752DF7D /* Pods-RxTheme-RxTheme_Example_macOS.debug.xcconfig */,
-				DCBDCB112E6B7210B3B6B0BC /* Pods-RxTheme-RxTheme_Example_macOS.release.xcconfig */,
-				61877F23D5E2CBAC76F04ED8 /* Pods-RxTheme-RxTheme_Example_tvOS.debug.xcconfig */,
-				40BEA6423B13A192A167728F /* Pods-RxTheme-RxTheme_Example_tvOS.release.xcconfig */,
-				FA901272A01563BA06FC6174 /* Pods-RxTheme-RxTheme_Tests.debug.xcconfig */,
-				AA12FD9B0057E0AFC1E96CAC /* Pods-RxTheme-RxTheme_Tests.release.xcconfig */,
-				28DB28C8C97E288A83851270 /* Pods-RxTheme-RxTheme_Example_watchOS Extension.debug.xcconfig */,
-				74DF10ADF3FA99DBEF587DED /* Pods-RxTheme-RxTheme_Example_watchOS Extension.release.xcconfig */,
-				D9BD92732B4421F3A6B34BF8 /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */,
-				71EE62A72D6157204DE2572D /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */,
+				DFE3946098E1CF08A92C06D7 /* Pods-RxTheme_Example.debug.xcconfig */,
+				66831362D48512274A02ED4F /* Pods-RxTheme_Example.release.xcconfig */,
+				CBBC5448480612A7B82D873C /* Pods-RxTheme_Example_macOS.debug.xcconfig */,
+				865E4A598C92AA9ACFA83114 /* Pods-RxTheme_Example_macOS.release.xcconfig */,
+				87FE85F76E39F1DF758DFC78 /* Pods-RxTheme_Example_tvOS.debug.xcconfig */,
+				DE52E63643AE216B8101F83D /* Pods-RxTheme_Example_tvOS.release.xcconfig */,
+				5C45C69D5527508EA4FA0C1F /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */,
+				354469276F3A783DC53E5C27 /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */,
+				8A2FA87F84CCD82DAFAC4C07 /* Pods-RxTheme_Tests.debug.xcconfig */,
+				F749377B100DF1036638D525 /* Pods-RxTheme_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		DEA6BCA5693890DDDE05D091 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9ED70D5B79D7C06B239B967D /* Pods_RxTheme_Example.framework */,
-				84902C2E2C5773CE9EEFDAD3 /* Pods_RxTheme_Tests.framework */,
-				F8F8EAA25ACB32678125F53C /* Pods_RxTheme_Example_macOS.framework */,
-				AE9AFE12B2A029EC8D553738 /* Pods_RxTheme_Example_tvOS.framework */,
-				78ACAB4D0441BE9DC52C8761 /* Pods_RxTheme_RxTheme_Example.framework */,
-				185AEF2E66A823EB46F5C80B /* Pods_RxTheme_RxTheme_Example_macOS.framework */,
-				2F943B4A84F1D7EFC1C4C25A /* Pods_RxTheme_RxTheme_Example_tvOS.framework */,
-				6798DBCF351CCC8515A2CB0F /* Pods_RxTheme_RxTheme_Tests.framework */,
-				F469B1D491E7D452A9E0820D /* Pods_RxTheme_RxTheme_Example_watchOS_Extension.framework */,
-				91A3263205F410C6ED4B3821 /* Pods_RxTheme_Example_watchOS_Extension.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,12 +362,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 076AD331204FFA8D00BB957C /* Build configuration list for PBXNativeTarget "RxTheme_Example_tvOS" */;
 			buildPhases = (
-				B2B11F17FE3270581AB9583E /* [CP] Check Pods Manifest.lock */,
+				06AFC3DFEA87F7DEEC6BB473 /* [CP] Check Pods Manifest.lock */,
 				076AD321204FFA8D00BB957C /* Sources */,
 				076AD322204FFA8D00BB957C /* Frameworks */,
 				076AD323204FFA8D00BB957C /* Resources */,
-				BB0040E2D733709E7AC77093 /* [CP] Embed Pods Frameworks */,
-				8C091D436906411A7592E2C1 /* [CP] Copy Pods Resources */,
+				AF684B1E637FBEDF0CD54A15 /* [CP] Embed Pods Frameworks */,
+				227684B0C3B0B01B508B60B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -440,12 +400,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0785D179205036EC002714C4 /* Build configuration list for PBXNativeTarget "RxTheme_Example_watchOS Extension" */;
 			buildPhases = (
-				3AE84BADD474ABF95BFC1FDD /* [CP] Check Pods Manifest.lock */,
+				7A708D780BD691E69357B7FF /* [CP] Check Pods Manifest.lock */,
 				0785D162205036EB002714C4 /* Sources */,
 				0785D163205036EB002714C4 /* Frameworks */,
 				0785D164205036EB002714C4 /* Resources */,
-				3EAE991830B21EE7C3FF0A5A /* [CP] Embed Pods Frameworks */,
-				6EFD1082A6FBD6748963B2E0 /* [CP] Copy Pods Resources */,
+				5757726B277AF347546D96FC /* [CP] Embed Pods Frameworks */,
+				F00F034E6646FC11790B503F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -460,12 +420,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07F0F41A2050276F001642FA /* Build configuration list for PBXNativeTarget "RxTheme_Example_macOS" */;
 			buildPhases = (
-				3D2632E25FAB2D005DBA7296 /* [CP] Check Pods Manifest.lock */,
+				208165B5CF150174C74C115D /* [CP] Check Pods Manifest.lock */,
 				07F0F4072050276F001642FA /* Sources */,
 				07F0F4082050276F001642FA /* Frameworks */,
 				07F0F4092050276F001642FA /* Resources */,
-				1E5B01437E14F43F3419E742 /* [CP] Embed Pods Frameworks */,
-				FF9437E4808938ACC759AC20 /* [CP] Copy Pods Resources */,
+				50DA04A93DB5121BD4297079 /* [CP] Embed Pods Frameworks */,
+				E439685F8C38577D65B7051A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -480,13 +440,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "RxTheme_Example" */;
 			buildPhases = (
-				97DAF45812F7E7D193C19168 /* [CP] Check Pods Manifest.lock */,
+				BB3CAE0E214C2D06472F27F2 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				DFCC2B371DDB0261E2F9EB38 /* [CP] Embed Pods Frameworks */,
-				DE997CF12A0EBFA69BCFD92E /* [CP] Copy Pods Resources */,
 				07F0F4432050364C001642FA /* Embed Watch Content */,
+				913DA8C1123BFC8C6F48F940 /* [CP] Embed Pods Frameworks */,
+				B9344DB1F0A880E23CB5E1B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -502,12 +462,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "RxTheme_Tests" */;
 			buildPhases = (
-				771F05A38286B1A9C2E5BDA0 /* [CP] Check Pods Manifest.lock */,
+				BD5670BF2499E76971E30CF7 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				628F53043AC9BB4C213A90B0 /* [CP] Embed Pods Frameworks */,
-				96FD6E3B5309E457C2B56266 /* [CP] Copy Pods Resources */,
+				50F0845440D446E4B9CE8FCD /* [CP] Embed Pods Frameworks */,
+				8DAA28288AB1D87567FBECA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -641,7 +601,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E5B01437E14F43F3419E742 /* [CP] Embed Pods Frameworks */ = {
+		06AFC3DFEA87F7DEEC6BB473 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		208165B5CF150174C74C115D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		227684B0C3B0B01B508B60B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50DA04A93DB5121BD4297079 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -663,65 +674,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3AE84BADD474ABF95BFC1FDD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_watchOS Extension-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D2632E25FAB2D005DBA7296 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_macOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3EAE991830B21EE7C3FF0A5A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTheme-watchOS/RxTheme.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		628F53043AC9BB4C213A90B0 /* [CP] Embed Pods Frameworks */ = {
+		50F0845440D446E4B9CE8FCD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -743,22 +696,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6EFD1082A6FBD6748963B2E0 /* [CP] Copy Pods Resources */ = {
+		5757726B277AF347546D96FC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme-watchOS/RxTheme.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		771F05A38286B1A9C2E5BDA0 /* [CP] Check Pods Manifest.lock */ = {
+		7A708D780BD691E69357B7FF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -769,29 +729,14 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_watchOS Extension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8C091D436906411A7592E2C1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96FD6E3B5309E457C2B56266 /* [CP] Copy Pods Resources */ = {
+		8DAA28288AB1D87567FBECA4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -806,80 +751,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97DAF45812F7E7D193C19168 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2B11F17FE3270581AB9583E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example_tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB0040E2D733709E7AC77093 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa-tvOS/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift-tvOS/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/RxTheme-tvOS/RxTheme.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE997CF12A0EBFA69BCFD92E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DFCC2B371DDB0261E2F9EB38 /* [CP] Embed Pods Frameworks */ = {
+		913DA8C1123BFC8C6F48F940 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -901,7 +773,80 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF9437E4808938ACC759AC20 /* [CP] Copy Pods Resources */ = {
+		AF684B1E637FBEDF0CD54A15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa-tvOS/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift-tvOS/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTheme-tvOS/RxTheme.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTheme.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9344DB1F0A880E23CB5E1B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3CAE0E214C2D06472F27F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD5670BF2499E76971E30CF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTheme_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E439685F8C38577D65B7051A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -914,6 +859,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F00F034E6646FC11790B503F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1033,7 +993,7 @@
 /* Begin XCBuildConfiguration section */
 		076AD332204FFA8D00BB957C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 643D0D92D2D8D7E18D7D259A /* Pods-RxTheme_Example_tvOS.debug.xcconfig */;
+			baseConfigurationReference = 87FE85F76E39F1DF758DFC78 /* Pods-RxTheme_Example_tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1060,7 +1020,7 @@
 		};
 		076AD333204FFA8D00BB957C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E75E9D4912A312FDABE2032 /* Pods-RxTheme_Example_tvOS.release.xcconfig */;
+			baseConfigurationReference = DE52E63643AE216B8101F83D /* Pods-RxTheme_Example_tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1137,7 +1097,7 @@
 		};
 		0785D177205036EC002714C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9BD92732B4421F3A6B34BF8 /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */;
+			baseConfigurationReference = 5C45C69D5527508EA4FA0C1F /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1164,7 +1124,7 @@
 		};
 		0785D178205036EC002714C4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71EE62A72D6157204DE2572D /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */;
+			baseConfigurationReference = 354469276F3A783DC53E5C27 /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1189,7 +1149,7 @@
 		};
 		07F0F4182050276F001642FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FAA02EE26267FC82CDDC7D5 /* Pods-RxTheme_Example_macOS.debug.xcconfig */;
+			baseConfigurationReference = CBBC5448480612A7B82D873C /* Pods-RxTheme_Example_macOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1217,7 +1177,7 @@
 		};
 		07F0F4192050276F001642FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1365AAB4A5D4D7AC237EBBF /* Pods-RxTheme_Example_macOS.release.xcconfig */;
+			baseConfigurationReference = 865E4A598C92AA9ACFA83114 /* Pods-RxTheme_Example_macOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1342,7 +1302,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52586F57392240077CFAEB6E /* Pods-RxTheme_Example.debug.xcconfig */;
+			baseConfigurationReference = DFE3946098E1CF08A92C06D7 /* Pods-RxTheme_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 668Y6UQ668;
@@ -1359,7 +1319,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E01A7657BC1072BD6FC9559E /* Pods-RxTheme_Example.release.xcconfig */;
+			baseConfigurationReference = 66831362D48512274A02ED4F /* Pods-RxTheme_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 668Y6UQ668;
@@ -1376,13 +1336,10 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BCD9445A682759C6B22378F /* Pods-RxTheme_Tests.debug.xcconfig */;
+			baseConfigurationReference = 8A2FA87F84CCD82DAFAC4C07 /* Pods-RxTheme_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 668Y6UQ668;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1398,13 +1355,10 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 358FD5A984A06EA605899BFE /* Pods-RxTheme_Tests.release.xcconfig */;
+			baseConfigurationReference = F749377B100DF1036638D525 /* Pods-RxTheme_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 668Y6UQ668;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
