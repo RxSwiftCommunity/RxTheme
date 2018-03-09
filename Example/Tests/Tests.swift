@@ -1,3 +1,8 @@
+//
+//  Created by wddwycc on 2018/3/7.
+//  2018 Copyright (c) RxSwiftCommunity. All rights reserved.
+//
+
 import XCTest
 import UIKit
 import RxSwift

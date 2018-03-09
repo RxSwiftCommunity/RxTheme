@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  RxTheme
 //
-//  Created by duan on 03/04/2018.
-//  Copyright (c) 2018 wddwyss@gmail.com. All rights reserved.
+//  Created by wddwycc on 03/04/2018.
+//  2018 Copyright (c) RxSwiftCommunity. All rights reserved.
 //
 
 import UIKit

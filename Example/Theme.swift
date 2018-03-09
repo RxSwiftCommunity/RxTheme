@@ -2,8 +2,8 @@
 //  Theme.swift
 //  RxTheme_Example
 //
-//  Created by 闻端 on 2018/3/7.
-//  Copyright © 2018年 CocoaPods. All rights reserved.
+//  Created by wddwycc on 2018/3/7.
+//  2018 Copyright (c) RxSwiftCommunity. All rights reserved.
 //
 
 

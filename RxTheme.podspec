@@ -7,10 +7,10 @@ Pod::Spec.new do |s|
 Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.
                        DESC
 
-  s.homepage         = 'https://github.com/wddwycc/RxTheme'
+  s.homepage         = 'https://github.com/RxSwiftCommunity/RxTheme'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wddwycc' => 'wddwyss@gmail.com' }
-  s.source           = { :git => 'https://github.com/wddwycc/RxTheme.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/RxSwiftCommunity/RxTheme.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/wddwycc'
 
   s.ios.deployment_target = '9.0'
