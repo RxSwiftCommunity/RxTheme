@@ -15,14 +15,18 @@ public extension Reactive where Base: UIProgressView {
     /// Bindable sink for `progressTintColor` property
     public var progressTintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.progressTintColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.progressTintColor = attr
+            })
         }
     }
 
     /// Bindable sink for `trackTintColor` property
     public var trackTintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.trackTintColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.trackTintColor = attr
+            })
         }
     }
 

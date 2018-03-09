@@ -22,7 +22,9 @@ public extension Reactive where Base: UINavigationBar {
     /// Bindable sink for `barTintColor` property
     public var barTintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.barTintColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.barTintColor = attr
+            })
         }
     }
 

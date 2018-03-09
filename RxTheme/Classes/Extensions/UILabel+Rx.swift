@@ -22,21 +22,27 @@ public extension Reactive where Base: UILabel {
     /// Bindable sink for `textColor` property
     public var textColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.textColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.textColor = attr
+            })
         }
     }
 
     /// Bindable sink for `highlightedTextColor` property
     public var highlightedTextColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.highlightedTextColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.highlightedTextColor = attr
+            })
         }
     }
 
     /// Bindable sink for `shadowColor` property
     public var shadowColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.shadowColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.shadowColor = attr
+            })
         }
     }
 

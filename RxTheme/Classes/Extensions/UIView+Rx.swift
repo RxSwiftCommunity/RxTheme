@@ -15,14 +15,18 @@ public extension Reactive where Base: UIView {
     /// Bindable sink for `backgroundColor` property
     public var backgroundColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.backgroundColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.backgroundColor = attr
+            })
         }
     }
 
     /// Bindable sink for `tintColor` property
     public var tintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.tintColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.tintColor = attr
+            })
         }
     }
 

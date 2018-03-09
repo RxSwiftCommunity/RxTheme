@@ -4,6 +4,7 @@ from jinja2 import Environment, FileSystemLoader
 
 _here = os.path.dirname(os.path.abspath(__file__))
 j2_env = Environment(loader=FileSystemLoader(_here),trim_blocks=False)
+animatable_cls = ['UIColor', 'UIColor?']
 
 
 def run():
@@ -19,8 +20,11 @@ def gen_ext_file(cls, data):
     need_uikit = cls.startswith('UI')
     if_os = '#if ' + ' || '.join(['os({})'.format(x) for x in data['os']])
     content = j2_env.get_template('ext.j2').render(
-        cls=cls, if_os=if_os, need_uikit=need_uikit, **data
+        cls=cls, if_os=if_os, need_uikit=need_uikit,
+        animatable_cls=animatable_cls,
+        **data
     )
+    content += '\n'
     file = '{}+Rx.swift'.format(cls)
     file_path = './RxTheme/Classes/Extensions/{}'.format(file)
     with open(file_path, 'w') as f:

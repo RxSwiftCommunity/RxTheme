@@ -160,7 +160,7 @@ pod 'RxTheme'
 
 ### Add extensions
 
-Please open `codegen/exts.yml`, add needed class or attribute,  
+Please open `codegen/exts.yml`, add class or attribute you think is necessary,  
 then run codegen script
 
 ```shell

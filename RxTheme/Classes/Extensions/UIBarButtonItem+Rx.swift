@@ -15,7 +15,9 @@ public extension Reactive where Base: UIBarButtonItem {
     /// Bindable sink for `tintColor` property
     public var tintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            view.tintColor = attr
+            UIView.animate(withDuration: 0.3, animations: {
+                view.tintColor = attr
+            })
         }
     }
 
