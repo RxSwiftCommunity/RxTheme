@@ -4,7 +4,7 @@
   "swift_version": "4.0",
   "summary": "Theme management based on RxCocoa",
   "description": "Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.",
-  "homepage": "https://github.com/wddwycc/RxTheme",
+  "homepage": "https://github.com/RxSwiftCommunity/RxTheme",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -13,7 +13,7 @@
     "wddwycc": "wddwyss@gmail.com"
   },
   "source": {
-    "git": "https://github.com/wddwycc/RxTheme.git",
+    "git": "https://github.com/RxSwiftCommunity/RxTheme.git",
     "tag": "0.4.0"
   },
   "social_media_url": "https://twitter.com/wddwycc",
