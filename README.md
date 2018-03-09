@@ -121,9 +121,6 @@ themeService.set(index: 0)
 - shadowColor
 
 
-> If anything missed, PR is welcomed.
-
-
 ### Extend binders
 
 Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa could be used here. 
@@ -158,6 +155,24 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'RxTheme'
 ```
+
+## Contribution
+
+### Add extensions
+
+Please open `codegen/exts.yml`, add needed class or attribute,  
+then run codegen script
+
+```shell
+// make sure you have python3 and pipenv installed
+$ pipenv install
+$ pipenv run python -m codegen
+```
+
+### Others
+
+PR or issue is welcomed, I would try my best to respond.
+
 
 ## Author
 
