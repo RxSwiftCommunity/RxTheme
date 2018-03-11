@@ -121,11 +121,11 @@ themeService.set(index: 0)
 - shadowColor
 
 
-### Extend binders
+### Extend binders in your codebase
 
 Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa could be used here. 
 
-This also makes the lib super easy to extend. You just extend RxCocoa:
+This also makes the lib super easy to extend in your codebase, here is an example
 
 ```swift
 extension Reactive where Base: UIView {
@@ -137,15 +137,31 @@ extension Reactive where Base: UIView {
 }
 ```
 
+### Extend binders in the lib
+
+Open `codegen/exts.yml`, add class, attributes and supported os.
+
+```
+UIApplication:
+  attrs:
+    statusBarStyle: UIStatusBarStyle
+  os: [iOS]
+```
+
+then run codegen script
+
+```shell
+// make sure you have python3 and pipenv installed
+$ pipenv install
+$ pipenv run python -m codegen
+```
+
+If you think it's commonly used, please send us a PR.
+
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-* iOS >= 9.0
-* Swift 4
 
 ## Installation
 
@@ -155,24 +171,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'RxTheme'
 ```
-
-## Contribution
-
-### Add extensions
-
-Please open `codegen/exts.yml`, add class or attribute you think is necessary,  
-then run codegen script
-
-```shell
-// make sure you have python3 and pipenv installed
-$ pipenv install
-$ pipenv run python -m codegen
-```
-
-### Others
-
-PR or issue is welcomed, I would try my best to respond.
-
 
 ## Author
 
