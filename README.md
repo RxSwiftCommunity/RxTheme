@@ -54,8 +54,6 @@ themeService.set(index: 0)
 - tintColor
 
 ##### UIButton
-- image
-- backgroundImage
 - tintColor
 
 ##### UILabel
