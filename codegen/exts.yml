@@ -17,7 +17,10 @@ UIBarButtonItem:
   attrs:
     tintColor: UIColor?
   os: [iOS, tvOS]
-# UIButton would be automated later
+UIButton:
+  attrs:
+    tintColor: UIColor?
+  os: [iOS, tvOS]
 UILabel:
   attrs:
     font: UIFont
