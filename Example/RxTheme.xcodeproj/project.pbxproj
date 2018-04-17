@@ -113,7 +113,7 @@
 		07F0F4142050276F001642FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		07F0F4162050276F001642FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F0F4172050276F001642FA /* RxTheme_Example_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RxTheme_Example_macOS.entitlements; sourceTree = "<group>"; };
-		0D5A765F0D61A8883191EF95 /* RxTheme.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxTheme.podspec; path = ../RxTheme.podspec; sourceTree = "<group>"; };
+		0D5A765F0D61A8883191EF95 /* RxTheme.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxTheme.podspec; path = ../RxTheme.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0DDB21DFA1AAEDDBED90B6CF /* Pods_RxTheme_Example_watchOS_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example_watchOS_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D63A6CA5BFD2C57E8A01947 /* Pods_RxTheme_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTheme_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		354469276F3A783DC53E5C27 /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTheme_Example_watchOS Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
@@ -368,7 +368,6 @@
 				076AD322204FFA8D00BB957C /* Frameworks */,
 				076AD323204FFA8D00BB957C /* Resources */,
 				AF684B1E637FBEDF0CD54A15 /* [CP] Embed Pods Frameworks */,
-				227684B0C3B0B01B508B60B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -406,7 +405,6 @@
 				0785D163205036EB002714C4 /* Frameworks */,
 				0785D164205036EB002714C4 /* Resources */,
 				5757726B277AF347546D96FC /* [CP] Embed Pods Frameworks */,
-				F00F034E6646FC11790B503F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -426,7 +424,6 @@
 				07F0F4082050276F001642FA /* Frameworks */,
 				07F0F4092050276F001642FA /* Resources */,
 				50DA04A93DB5121BD4297079 /* [CP] Embed Pods Frameworks */,
-				E439685F8C38577D65B7051A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -447,7 +444,6 @@
 				607FACCE1AFB9204008FA782 /* Resources */,
 				07F0F4432050364C001642FA /* Embed Watch Content */,
 				913DA8C1123BFC8C6F48F940 /* [CP] Embed Pods Frameworks */,
-				B9344DB1F0A880E23CB5E1B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -468,7 +464,6 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				50F0845440D446E4B9CE8FCD /* [CP] Embed Pods Frameworks */,
-				8DAA28288AB1D87567FBECA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -487,37 +482,37 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					076AD324204FFA8D00BB957C = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 668Y6UQ668;
+						DevelopmentTeam = 5FP33J8924;
 						ProvisioningStyle = Automatic;
 					};
 					0785D159205036EB002714C4 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 668Y6UQ668;
+						DevelopmentTeam = 5FP33J8924;
 						ProvisioningStyle = Automatic;
 					};
 					0785D165205036EB002714C4 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 668Y6UQ668;
+						DevelopmentTeam = 5FP33J8924;
 						ProvisioningStyle = Automatic;
 					};
 					07F0F40A2050276F001642FA = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = 668Y6UQ668;
+						DevelopmentTeam = 5FP33J8924;
 						ProvisioningStyle = Automatic;
 					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 668Y6UQ668;
+						DevelopmentTeam = 5FP33J8924;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 668Y6UQ668;
+						DevelopmentTeam = 5FP33J8924;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -638,21 +633,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		227684B0C3B0B01B508B60B1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		50DA04A93DB5121BD4297079 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -737,21 +717,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8DAA28288AB1D87567FBECA4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		913DA8C1123BFC8C6F48F940 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -796,21 +761,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9344DB1F0A880E23CB5E1B7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BB3CAE0E214C2D06472F27F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -845,36 +795,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E439685F8C38577D65B7051A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F00F034E6646FC11790B503F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1006,7 +926,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RxTheme_Example_tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1032,7 +952,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RxTheme_Example_tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1057,7 +977,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = RxTheme_Example_watchOS_Extension;
 				INFOPLIST_FILE = RxTheme_Example_watchOS/Info.plist;
@@ -1083,7 +1003,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = RxTheme_Example_watchOS_Extension;
 				INFOPLIST_FILE = RxTheme_Example_watchOS/Info.plist;
@@ -1109,7 +1029,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "RxTheme_Example_watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1135,7 +1055,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "RxTheme_Example_watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1164,7 +1084,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RxTheme_Example_macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1191,7 +1111,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = RxTheme_Example_macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -1215,12 +1135,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1268,12 +1190,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1307,7 +1231,7 @@
 			baseConfigurationReference = DFE3946098E1CF08A92C06D7 /* Pods-RxTheme_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				INFOPLIST_FILE = RxTheme/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1324,7 +1248,7 @@
 			baseConfigurationReference = 66831362D48512274A02ED4F /* Pods-RxTheme_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				INFOPLIST_FILE = RxTheme/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1340,7 +1264,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A2FA87F84CCD82DAFAC4C07 /* Pods-RxTheme_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1359,7 +1283,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F749377B100DF1036638D525 /* Pods-RxTheme_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 668Y6UQ668;
+				DEVELOPMENT_TEAM = 5FP33J8924;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
