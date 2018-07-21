@@ -46,9 +46,6 @@ themeService.set(index: 0)
 
 ### Binder presets
 
-##### UIApplication
-- statusBarStyle
-
 ##### UIView
 - backgroundColor
 - tintColor
@@ -140,10 +137,13 @@ extension Reactive where Base: UIView {
 Open `codegen/exts.yml`, add class, attributes and supported os.
 
 ```
-UIApplication:
+UILabel:
   attrs:
-    statusBarStyle: UIStatusBarStyle
-  os: [iOS]
+    font: UIFont
+    textColor: UIColor?
+    highlightedTextColor: UIColor?
+    shadowColor: UIColor?
+  os: [iOS, tvOS]
 ```
 
 then run codegen script

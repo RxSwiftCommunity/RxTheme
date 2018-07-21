@@ -9,10 +9,6 @@ UIActivityIndicatorView:
   attrs:
     activityIndicatorViewStyle: UIActivityIndicatorViewStyle
   os: [iOS, tvOS]
-UIApplication:
-  attrs:
-    statusBarStyle: UIStatusBarStyle
-  os: [iOS]
 UIBarButtonItem:
   attrs:
     tintColor: UIColor?
