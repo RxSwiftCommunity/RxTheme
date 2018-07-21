@@ -8,25 +8,43 @@
 
 ## Manual
 
-### Define theme service
+### Define theme as enum and add computed properties
 
 ```swift
-protocol Theme {
-    var backgroundColor: UIColor { get }
-    var textColor: UIColor { get }
+enum MDTheme:Int,CaseIterable,CustomStringConvertible {
+    case light
+    case dark
+
+var description: String {
+    switch self {
+    case .light:
+        return "Light Theme"
+    case .dark:
+        return "Dark Theme"
+    }
 }
 
-struct LightTheme: Theme {
-    let backgroundColor = UIColor.white
-    let textColor = UIColor.black
+var backgroundColor: Color {
+    switch self {
+    case .light:
+        return .white
+    case .dark:
+        return .black
+    }
 }
 
-struct DarkTheme: Theme {
-    let backgroundColor = UIColor.black
-    let textColor = UIColor.white
+var textColor: Color {
+    switch self {
+    case .light:
+        return .black
+    case .dark:
+        return .white
+    }
 }
 
-let themeService = ThemeService<Theme>(themes: [LightTheme(), DarkTheme()])
+
+// Initialize the service with either enum case or its raw value
+let themeService = ThemeService<Theme>(theme: MDTheme.light)
 ```
 
 ### Apply theme to UI
@@ -41,8 +59,29 @@ themeService.bind([
 ### Switch themes
 
 ```swift
-themeService.set(index: 0)
+themeService.set(theme: .dark)
+themeService.set(index: 1)
 ```
+
+### Random theme
+
+```swift
+themeService.setRandomTheme()
+```
+
+### Get all themes
+
+```swift
+themeService.allThemes
+```
+
+### Get all theme names
+
+```swift
+themeService.allThemeNames
+```
+
+
 
 ### Binder presets
 

@@ -29,7 +29,7 @@ public extension Reactive where Base: UINavigationBar {
     }
 
     /// Bindable sink for `titleTextAttributes` property
-    public var titleTextAttributes: Binder<[NSAttributedStringKey: Any]?> {
+    public var titleTextAttributes: Binder<[NSAttributedString.Key: Any]?> {
         return Binder(self.base) { view, attr in
             view.titleTextAttributes = attr
         }

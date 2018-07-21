@@ -35,6 +35,6 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func didPressSwitch() {
-        themeService.set(index: themeService.index == 0 ? 1 : 0)
+        themeService.set(theme: themeService.index == 0 ? .dark : .light)
     }
 }
