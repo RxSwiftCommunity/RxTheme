@@ -18,21 +18,50 @@
 import RxTheme
 
 
-protocol Theme {
-    var backgroundColor: Color { get }
-    var textColor: Color { get }
+enum MDTheme:Int,CaseIterable,CustomStringConvertible {
+    case light
+    case dark
+    case green
+    case orange
+    
+    var description: String {
+        switch self {
+        case .light:
+            return "Light Theme"
+        case .dark:
+            return "Dark Theme"
+        case .green:
+            return "Green Theme"
+        case .orange:
+            return "Orange Theme"
+        }
+    }
+
+    var backgroundColor: Color {
+        switch self {
+        case .light:
+            return .white
+        case .dark:
+            return .black
+        case .green:
+            return .green
+        case .orange:
+            return .orange
+        }
+    }
+    
+    var textColor: Color {
+        switch self {
+        case .light:
+            return .black
+        case .dark:
+            return .white
+        case .green:
+            return .brown
+        case .orange:
+            return .blue
+        }
+    }
 }
 
-struct LightTheme: Theme {
-    let backgroundColor = Color.white
-    let textColor = Color.black
-}
-
-struct DarkTheme: Theme {
-    let backgroundColor = Color.black
-    let textColor = Color.white
-}
-
-let themeService = ThemeService<Theme>(themes: [LightTheme(), DarkTheme()])
-
-
+let themeService = ThemeService(theme: MDTheme.light)
