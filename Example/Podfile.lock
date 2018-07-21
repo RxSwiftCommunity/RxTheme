@@ -10,7 +10,7 @@ DEPENDENCIES:
   - RxTheme (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - RxCocoa
     - RxSwift
 
@@ -25,4 +25,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 14f78d9306c7d218e50d7b8eadc0d4b74342bb16
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3
