@@ -6,59 +6,48 @@
 import RxSwift
 import RxCocoa
 
+public protocol ThemeTypeCapable {
+    associatedtype T
+    var associatedObject: T { get }
+}
 
-public class ThemeService<T> {
-    private let _themes: Array<T>
-    private let _index: BehaviorRelay<Int>
+public extension ThemeTypeCapable {
+    static func service(initial: Self) -> ThemeService<Self> {
+        return ThemeService(initial: initial)
+    }
+}
 
-    public typealias bindSuit<U> = (((T) -> U), [Binder<U>])
-
-    public init(themes: Array<T>, initialIndex: Int = 0) {
-        if themes.count == 0 {
-            fatalError("There must be more than one themes")
-        }
-        if initialIndex > themes.count - 1 || initialIndex < 0 {
-            fatalError("No theme at index: \(initialIndex)")
-        }
-        self._themes = themes
-        self._index = BehaviorRelay<Int>(value: initialIndex)
+public class ThemeService<T: ThemeTypeCapable> {
+    fileprivate init(initial: T) {
+        self.relay = BehaviorRelay<T>(value: initial)
     }
 
-    private func _bind<U>(_ from: @escaping ((T) -> U), to: Binder<U>) -> Disposable {
-        return self.entry.map(from)
+    private func _bind<U>(_ from: @escaping ((T.T) -> U), to: Binder<U>) -> Disposable {
+        return self.relay.map { $0.associatedObject }.map(from)
             .observeOn(MainScheduler.instance)
             .bind(to: to)
     }
 
-    private func _bind<U>(_ from: @escaping ((T) -> U), to: [Binder<U>]) -> [Disposable] {
+    private func _bind<U>(_ from: @escaping ((T.T) -> U), to: [Binder<U>]) -> [Disposable] {
         return to.map { self._bind(from, to: $0) }
     }
 
-    /// return current theme index
-    public var index: Int { return self._index.value }
-    /// return current theme
-    public var theme: T { return self._themes[self.index] }
+    public let relay: BehaviorRelay<T>
+    public var theme: T { return self.relay.value }
+    public typealias bindSuit<U> = (((T.T) -> U), [Binder<U>])
 
-    /// set current theme index
-    public func set(index: Int) {
-        if index > self._themes.count - 1 || index < 0 {
-            fatalError("No theme at index: \(index)")
-        }
-        self._index.accept(index)
-    }
-
-    /// observable emits current theme
-    public var entry: Observable<T> {
-        return _index.map { [unowned self] idx in self._themes[idx] }
+    /// set current theme
+    public func set(_ theme: T) {
+        self.relay.accept(theme)
     }
 
     /// bind theme component to UI attributes
-    public func bind<U>(_ from: @escaping ((T) -> U), to: [Binder<U>]) -> Disposable {
+    public func bind<U>(_ from: @escaping ((T.T) -> U), to: [Binder<U>]) -> Disposable {
         return CompositeDisposable(disposables: _bind(from, to: to))
     }
 
     /// bind theme component to UI attributes
-    public func bind<U>(_ from: @escaping ((T) -> U), to: Binder<U>...) -> Disposable {
+    public func bind<U>(_ from: @escaping ((T.T) -> U), to: Binder<U>...) -> Disposable {
         return CompositeDisposable(disposables: _bind(from, to: to))
     }
 

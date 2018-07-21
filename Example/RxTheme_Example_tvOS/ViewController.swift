@@ -37,8 +37,7 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tapGesture)
         tapGesture.rx.event
             .bind { (_) in
-                let themeIndex = themeService.index
-                themeService.set(index: themeIndex == 0 ? 1 : 0)
+                themeService.set(themeService.theme == .dark ? .light : .dark)
             }
             .disposed(by: disposeBag)
 
