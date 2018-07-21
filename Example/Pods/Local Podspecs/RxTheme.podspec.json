@@ -1,7 +1,7 @@
 {
   "name": "RxTheme",
   "version": "1.0.1",
-  "swift_version": "4.0",
+  "swift_version": "4.1",
   "summary": "Theme management based on RxCocoa",
   "description": "Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.",
   "homepage": "https://github.com/RxSwiftCommunity/RxTheme",
