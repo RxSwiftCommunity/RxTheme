@@ -12,6 +12,7 @@ public protocol ThemeProvider {
 }
 
 public extension ThemeProvider {
+    /// Generate ThemeService
     public static func service(initial: Self) -> ThemeService<Self> {
         return ThemeService(initial: initial)
     }
