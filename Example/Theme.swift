@@ -35,7 +35,6 @@ struct DarkTheme: Theme {
 
 enum ThemeType: ThemeProvider {
     case light, dark
-    typealias T = Theme
     var associatedObject: Theme {
         switch self {
         case .light:
