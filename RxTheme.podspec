@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RxTheme'
-  s.version          = '1.0.1'
+  s.version          = '2.0.0'
   s.swift_version    = '4.1'
   s.summary          = 'Theme management based on RxCocoa'
   s.description      = <<-DESC
