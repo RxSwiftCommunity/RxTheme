@@ -181,7 +181,7 @@ RxTheme is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'RxTheme'
+pod 'RxTheme', '~> 2.0'
 ```
 
 ## Author
