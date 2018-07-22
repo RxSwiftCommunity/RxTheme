@@ -11,10 +11,7 @@
 ### Define theme service
 
 ```swift
-import RxSwift
-import RxCocoa
 import RxTheme
-
 
 protocol Theme {
     var backgroundColor: UIColor { get }

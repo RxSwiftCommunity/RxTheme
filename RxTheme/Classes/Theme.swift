@@ -22,10 +22,16 @@ public class ThemeService<T: ThemeProvider>: NSObject {
         self.relay = BehaviorRelay<T>(value: initial)
     }
 
+    /// BehaviorRelay for theme
     public let relay: BehaviorRelay<T>
+
+    /// Current theme
     public var theme: T { return self.relay.value }
 
-    /// set current theme
+    /// Current theme object
+    public var themeObject: T.T { return self.theme.associatedObject }
+
+    /// Set current theme
     public func set(_ theme: T) {
         self.relay.accept(theme)
     }
