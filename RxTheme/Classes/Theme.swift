@@ -6,18 +6,18 @@
 import RxSwift
 import RxCocoa
 
-public protocol ThemeTypeCapable {
+public protocol ThemeProvider {
     associatedtype T
     var associatedObject: T { get }
 }
 
-public extension ThemeTypeCapable {
+public extension ThemeProvider {
     public static func service(initial: Self) -> ThemeService<Self> {
         return ThemeService(initial: initial)
     }
 }
 
-public class ThemeService<T: ThemeTypeCapable>: NSObject {
+public class ThemeService<T: ThemeProvider>: NSObject {
     fileprivate init(initial: T) {
         self.relay = BehaviorRelay<T>(value: initial)
     }
@@ -37,7 +37,7 @@ public class ThemeService<T: ThemeTypeCapable>: NSObject {
     // todo: random and next method in Swift4.2 with CaseIterable
 }
 
-public class ThemeBindable<T: ThemeTypeCapable> {
+public class ThemeBindable<T: ThemeProvider> {
     private let relay: BehaviorRelay<T>
     private var disposables: [Disposable]
 

@@ -33,7 +33,7 @@ struct DarkTheme: Theme {
     let textColor = Color.white
 }
 
-enum ThemeType: ThemeTypeCapable {
+enum ThemeType: ThemeProvider {
     case light, dark
     typealias T = Theme
     var associatedObject: Theme {

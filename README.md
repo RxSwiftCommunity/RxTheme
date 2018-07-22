@@ -11,6 +11,11 @@
 ### Define theme service
 
 ```swift
+import RxSwift
+import RxCocoa
+import RxTheme
+
+
 protocol Theme {
     var backgroundColor: UIColor { get }
     var textColor: UIColor { get }
@@ -26,7 +31,7 @@ struct DarkTheme: Theme {
     let textColor = UIColor.white
 }
 
-enum ThemeType: ThemeTypeCapable {
+enum ThemeType: ThemeProvider {
     case light, dark
     typealias T = Theme
     var associatedObject: Theme {
@@ -45,7 +50,7 @@ let themeService = ThemeType.service(initial: .light)
 ### Apply theme to UI
 
 ```swift
-themeService
+themeService.rx
     .bind({ $0.textColor }, to: label.rx.textColor)
     .bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
     .disposed(by: disposeBag)
