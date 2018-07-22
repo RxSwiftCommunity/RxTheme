@@ -6,8 +6,8 @@
 //  2018 Copyright (c) RxSwiftCommunity. All rights reserved.
 //
 
-import WatchKit
 import Foundation
+import WatchKit
 import RxSwift
 import RxCocoa
 import RxTheme
@@ -30,7 +30,8 @@ class InterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        themeService.bind({ $0.textColor }, to: label.rx.textColor)
+        themeService.rx
+            .bind({ $0.textColor }, to: label.rx.textColor)
             .disposed(by: disposeBag)
     }
 

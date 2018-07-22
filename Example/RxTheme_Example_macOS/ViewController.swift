@@ -44,10 +44,10 @@ class ViewController: NSViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
-        themeService.bind([
-            ({ $0.textColor.cgColor }, [label.rx.textColor]),
-            ({ $0.backgroundColor.cgColor }, [view.layer!.rx.backgroundColor])
-        ]).disposed(by: disposeBag)
+        themeService.rx
+            .bind({ $0.textColor.cgColor }, to: label.rx.textColor)
+            .bind({ $0.backgroundColor.cgColor }, to: view.layer!.rx.backgroundColor)
+            .disposed(by: disposeBag)
     }
 
 

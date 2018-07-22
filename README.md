@@ -39,22 +39,22 @@ enum ThemeType: ThemeTypeCapable {
     }
 }
 
-let themeService = ThemeType.service(initial: .dark)
+let themeService = ThemeType.service(initial: .light)
 ```
 
 ### Apply theme to UI
 
 ```swift
-themeService.bind([
-    ({ $0.textColor }, [label.rx.textColor]),
-    ({ $0.backgroundColor }, [view.rx.backgroundColor])
-]).disposed(by: disposeBag)
+themeService
+    .bind({ $0.textColor }, to: label.rx.textColor)
+    .bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
+    .disposed(by: disposeBag)
 ```
 
 ### Switch themes
 
 ```swift
-themeService.set(index: 0)
+themeService.set(.dark)
 ```
 
 ### Binder presets

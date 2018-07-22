@@ -23,7 +23,8 @@ class Tests: XCTestCase {
     func testSwitchTheme() {
         // This is an example of a functional test case.
         let label = UILabel()
-        themeService.bind({ $0.textColor }, to: label.rx.textColor)
+        themeService.rx
+            .bind({ $0.textColor }, to: label.rx.textColor)
             .disposed(by: disposeBag)
         XCTAssertEqual(label.textColor, LightTheme().textColor)
         themeService.set(.dark)
