@@ -46,4 +46,4 @@ enum ThemeType: ThemeTypeCapable {
     }
 }
 
-let themeService = ThemeType.service(initial: .dark)
+let themeService = ThemeType.service(initial: .light)
