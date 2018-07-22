@@ -44,16 +44,16 @@ class ViewController: NSViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
-        themeService.bind([
-            ({ $0.textColor.cgColor }, [label.rx.textColor]),
-            ({ $0.backgroundColor.cgColor }, [view.layer!.rx.backgroundColor])
-        ]).disposed(by: disposeBag)
+        themeService.rx
+            .bind({ $0.textColor.cgColor }, to: label.rx.textColor)
+            .bind({ $0.backgroundColor.cgColor }, to: view.layer!.rx.backgroundColor)
+            .disposed(by: disposeBag)
     }
 
 
     override func mouseDown(with event: NSEvent) {
         super.mouseDown(with: event)
-        themeService.set(index: themeService.index == 0 ? 1 : 0)
+        themeService.set(themeService.theme == .dark ? .light : .dark)
     }
 
 }

@@ -33,6 +33,17 @@ struct DarkTheme: Theme {
     let textColor = Color.white
 }
 
-let themeService = ThemeService<Theme>(themes: [LightTheme(), DarkTheme()])
+enum ThemeType: ThemeTypeCapable {
+    case light, dark
+    typealias T = Theme
+    var associatedObject: Theme {
+        switch self {
+        case .light:
+            return LightTheme()
+        case .dark:
+            return DarkTheme()
+        }
+    }
+}
 
-
+let themeService = ThemeType.service(initial: .light)

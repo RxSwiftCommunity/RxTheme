@@ -8,6 +8,8 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
+import RxTheme
 
 
 class ViewController: UIViewController {
@@ -27,21 +29,19 @@ class ViewController: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
-        themeService.bind([
-            ({ $0.textColor }, [label.rx.textColor]),
-            ({ $0.backgroundColor }, [view.rx.backgroundColor])
-        ]).disposed(by: disposeBag)
+        themeService.rx
+            .bind({ $0.textColor }, to: label.rx.textColor)
+            .bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
+            .disposed(by: disposeBag)
 
         let tapGesture = UITapGestureRecognizer()
         tapGesture.allowedPressTypes = [NSNumber(value: UIPressType.playPause.rawValue)]
         view.addGestureRecognizer(tapGesture)
-        tapGesture.rx.event
-            .bind { (_) in
-                let themeIndex = themeService.index
-                themeService.set(index: themeIndex == 0 ? 1 : 0)
+        tapGesture.rx.event.withLatestFrom(themeService.relay)
+            .bind { theme in
+                themeService.set(theme == .dark ? .light : .dark)
             }
             .disposed(by: disposeBag)
-
     }
 }
 
