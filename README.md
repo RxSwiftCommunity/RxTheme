@@ -67,6 +67,7 @@ themeService.set(.dark)
 
 ##### UIButton
 - tintColor
+- titleColor
 
 ##### UILabel
 - font
