@@ -16,6 +16,7 @@ UIBarButtonItem:
 UIButton:
   attrs:
     tintColor: UIColor?
+    # titleColor(for state: UIControlState): UIColor?
   os: [iOS, tvOS]
 UILabel:
   attrs:
