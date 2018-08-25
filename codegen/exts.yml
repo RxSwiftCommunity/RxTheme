@@ -56,6 +56,10 @@ UISlider:
     minimumTrackTintColor: UIColor?
     maximumTrackTintColor: UIColor?
   os: [iOS]
+UIStepper:
+  attrs:
+    tintColor: UIColor?
+  os: [iOS]
 UISwitch:
   attrs:
     onTintColor: UIColor?
