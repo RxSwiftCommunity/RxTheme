@@ -13,11 +13,11 @@ UIBarButtonItem:
   attrs:
     tintColor: UIColor?
   os: [iOS, tvOS]
-UIButton:
-  attrs:
-    tintColor: UIColor?
+# UIButton:
+  # attrs:
+    # tintColor: UIColor?
     # titleColor(for state: UIControlState): UIColor?
-  os: [iOS, tvOS]
+  # os: [iOS, tvOS]
 UILabel:
   attrs:
     font: UIFont
@@ -45,6 +45,10 @@ UISearchBar:
   attrs:
     barStyle: UIBarStyle
     barTintColor: UIColor?
+  os: [iOS]
+UISegmentedControl:
+  attrs:
+    tintColor: UIColor?
   os: [iOS]
 UISlider:
   attrs:
