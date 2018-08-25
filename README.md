@@ -99,6 +99,9 @@ themeService.set(.dark)
 - minimumTrackTintColor
 - maximumTrackTintColor
 
+##### UIStepper
+- tintColor
+
 ##### UIToolbar
 - barTintColor
 
