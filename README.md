@@ -91,7 +91,7 @@ themeService.set(.dark)
 - pageIndicatorTintColor
 - currentPageIndicatorTintColor
 
-#### UISegmentedControl
+##### UISegmentedControl
 - tintColor
 
 ##### UISlider
