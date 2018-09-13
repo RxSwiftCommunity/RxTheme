@@ -7,7 +7,7 @@ CALayer:
   os: [iOS, tvOS, macOS]
 UIActivityIndicatorView:
   attrs:
-    activityIndicatorViewStyle: UIActivityIndicatorViewStyle
+    style: UIActivityIndicatorViewStyle
   os: [iOS, tvOS]
 UIBarButtonItem:
   attrs:

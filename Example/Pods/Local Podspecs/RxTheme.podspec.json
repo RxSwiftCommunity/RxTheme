@@ -1,7 +1,7 @@
 {
   "name": "RxTheme",
-  "version": "2.1.0",
-  "swift_version": "4.1",
+  "version": "2.2.0",
+  "swift_version": "4.2",
   "summary": "Theme management based on RxCocoa",
   "description": "Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.",
   "homepage": "https://github.com/RxSwiftCommunity/RxTheme",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/RxSwiftCommunity/RxTheme.git",
-    "tag": "2.1.0"
+    "tag": "2.2.0"
   },
   "social_media_url": "https://twitter.com/wddwycc",
   "platforms": {
@@ -27,10 +27,10 @@
   "source_files": "RxTheme/Classes/**/*",
   "dependencies": {
     "RxSwift": [
-      "~> 4.0"
+      "~> 4.3"
     ],
     "RxCocoa": [
-      "~> 4.0"
+      "~> 4.3"
     ]
   }
 }

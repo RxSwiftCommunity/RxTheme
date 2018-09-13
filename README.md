@@ -123,7 +123,7 @@ themeService.set(.dark)
 - textColor 
 
 ##### UIActivityIndicatorView
-- activityIndicatorViewStyle
+- style
 
 ##### UIBarButtonItem
 - tintColor
