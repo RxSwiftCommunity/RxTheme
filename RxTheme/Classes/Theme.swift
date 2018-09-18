@@ -12,50 +12,43 @@ public protocol ThemeProvider {
 }
 
 public extension ThemeProvider {
-    /// Generate ThemeService
+    /// Generate Theme service
     public static func service(initial: Self) -> ThemeService<Self> {
         return ThemeService(initial: initial)
     }
 }
 
-public class ThemeService<T: ThemeProvider>: NSObject {
-    fileprivate init(initial: T) {
-        self.relay = BehaviorRelay<T>(value: initial)
+public class ThemeService<Provider: ThemeProvider>: NSObject {
+    fileprivate init(initial: Provider) {
+        self.relay = BehaviorRelay<Provider>(value: initial)
     }
-
     /// BehaviorRelay for theme
-    public let relay: BehaviorRelay<T>
-
+    public let relay: BehaviorRelay<Provider>
     /// Current theme
-    public var theme: T { return self.relay.value }
-
+    public var theme: Provider { return self.relay.value }
     /// Current theme object
-    public var themeObject: T.T { return self.theme.associatedObject }
-
-    /// Set current theme
-    public func set(_ theme: T) {
+    public var themeObject: Provider.T { return self.theme.associatedObject }
+    /// Set theme
+    public func set(_ theme: Provider) {
         self.relay.accept(theme)
     }
-
-    public var rx: ThemeBindable<T> {
-        return ThemeBindable<T>(relay: self.relay)
+    /// Start binding
+    public var rx: ThemeBindable<Provider> {
+        return ThemeBindable<Provider>(relay: self.relay)
     }
-
-    // todo: random and next method in Swift4.2 with CaseIterable
 }
 
-public class ThemeBindable<T: ThemeProvider> {
-    private let relay: BehaviorRelay<T>
+public class ThemeBindable<Provider: ThemeProvider> {
+    private let relay: BehaviorRelay<Provider>
     private var disposables: [Disposable]
 
-    fileprivate init(relay: BehaviorRelay<T>) {
+    fileprivate init(relay: BehaviorRelay<Provider>) {
         self.relay = relay
         self.disposables = []
     }
 
     /// Bind theme component to UI attributes
-    // todo: avoid writing T.T
-    public func bind<U>(_ from: @escaping ((T.T) -> U), to binders: [Binder<U>]) -> ThemeBindable {
+    public func bind<U>(_ from: @escaping ((Provider.T) -> U), to binders: [Binder<U>]) -> ThemeBindable {
         disposables += binders.map {
             // todo: put $0.associatedObject to ThemeService
             self.relay.map { $0.associatedObject }.map(from)
@@ -66,7 +59,7 @@ public class ThemeBindable<T: ThemeProvider> {
     }
 
     /// Bind theme component to UI attributes
-    public func bind<U>(_ from: @escaping ((T.T) -> U), to binders: Binder<U>...) -> ThemeBindable {
+    public func bind<U>(_ from: @escaping ((Provider.T) -> U), to binders: Binder<U>...) -> ThemeBindable {
         return self.bind(from, to: binders)
     }
 
