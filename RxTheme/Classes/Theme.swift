@@ -54,8 +54,10 @@ public class ThemeBindable<T: ThemeProvider> {
     }
 
     /// Bind theme component to UI attributes
+    // todo: avoid writing T.T
     public func bind<U>(_ from: @escaping ((T.T) -> U), to binders: [Binder<U>]) -> ThemeBindable {
         disposables += binders.map {
+            // todo: put $0.associatedObject to ThemeService
             self.relay.map { $0.associatedObject }.map(from)
                 .observeOn(MainScheduler.instance)
                 .bind(to: $0)
