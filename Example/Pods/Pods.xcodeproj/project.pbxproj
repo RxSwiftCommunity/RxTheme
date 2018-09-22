@@ -4767,6 +4767,39 @@
 			};
 			name = Release;
 		};
+		2D7AF427504910473F7F877F42D89751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64A62E04D93AB4E8740147183EB85DD /* RxCocoa-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/RxCocoa-macOS/RxCocoa-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxCocoa-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/RxCocoa-macOS/RxCocoa-macOS.modulemap";
+				PRODUCT_MODULE_NAME = RxCocoa;
+				PRODUCT_NAME = RxCocoa;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3811325E83AF14841F45DE7153DC076D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AFD468D0E7F411F611995BD34AB2E5AD /* Pods-RxTheme_Example.debug.xcconfig */;
@@ -5062,39 +5095,6 @@
 			};
 			name = Debug;
 		};
-		700D0E9321373097EDA2BE0AB624014B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53860745A2533B94404C251806929BF3 /* RxSwift-macOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/RxSwift-macOS/RxSwift-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxSwift-macOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/RxSwift-macOS/RxSwift-macOS.modulemap";
-				PRODUCT_MODULE_NAME = RxSwift;
-				PRODUCT_NAME = RxSwift;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		768F2AB87BA4C6F4293A026C72EB2AED /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4554B7272D49DAED94C98A33140E0F34 /* Pods-RxTheme_Example_macOS.release.xcconfig */;
@@ -5198,7 +5198,7 @@
 			};
 			name = Debug;
 		};
-		93E34E3FBA69BB98DDB195B1ABCFD8D1 /* Release */ = {
+		89C65F8A665C73293BA4C63A6B19B8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C64A62E04D93AB4E8740147183EB85DD /* RxCocoa-macOS.xcconfig */;
 			buildSettings = {
@@ -5224,12 +5224,12 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		96BEFC931963BB259E062B536609BE68 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -5295,39 +5295,6 @@
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9F2F11693D8F7056B37F762241C8C3F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53860745A2533B94404C251806929BF3 /* RxSwift-macOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/RxSwift-macOS/RxSwift-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxSwift-macOS/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/RxSwift-macOS/RxSwift-macOS.modulemap";
-				PRODUCT_MODULE_NAME = RxSwift;
-				PRODUCT_NAME = RxSwift;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -5431,9 +5398,9 @@
 			};
 			name = Debug;
 		};
-		C5694D2C9EEEE234313DC6165E143E7B /* Debug */ = {
+		B19C18A9089DDD925884491A95BF3A0A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C64A62E04D93AB4E8740147183EB85DD /* RxCocoa-macOS.xcconfig */;
+			baseConfigurationReference = 53860745A2533B94404C251806929BF3 /* RxSwift-macOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -5446,23 +5413,56 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				GCC_PREFIX_HEADER = "Target Support Files/RxCocoa-macOS/RxCocoa-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxCocoa-macOS/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RxSwift-macOS/RxSwift-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxSwift-macOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				MODULEMAP_FILE = "Target Support Files/RxCocoa-macOS/RxCocoa-macOS.modulemap";
-				PRODUCT_MODULE_NAME = RxCocoa;
-				PRODUCT_NAME = RxCocoa;
+				MODULEMAP_FILE = "Target Support Files/RxSwift-macOS/RxSwift-macOS.modulemap";
+				PRODUCT_MODULE_NAME = RxSwift;
+				PRODUCT_NAME = RxSwift;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		C4B68E099140D4E7E32862BDA9173763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53860745A2533B94404C251806929BF3 /* RxSwift-macOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/RxSwift-macOS/RxSwift-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxSwift-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/RxSwift-macOS/RxSwift-macOS.modulemap";
+				PRODUCT_MODULE_NAME = RxSwift;
+				PRODUCT_NAME = RxSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		CD991A619247FB0D97740D0D2AA5ECA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -5854,8 +5854,8 @@
 		9520910891BB004CB41EEC6A66C66B93 /* Build configuration list for PBXNativeTarget "RxSwift-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				700D0E9321373097EDA2BE0AB624014B /* Debug */,
-				9F2F11693D8F7056B37F762241C8C3F7 /* Release */,
+				B19C18A9089DDD925884491A95BF3A0A /* Debug */,
+				C4B68E099140D4E7E32862BDA9173763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5863,8 +5863,8 @@
 		9986B030DAE00C59E1C44EE2B479D5EE /* Build configuration list for PBXNativeTarget "RxCocoa-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C5694D2C9EEEE234313DC6165E143E7B /* Debug */,
-				93E34E3FBA69BB98DDB195B1ABCFD8D1 /* Release */,
+				89C65F8A665C73293BA4C63A6B19B8DC /* Debug */,
+				2D7AF427504910473F7F877F42D89751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
