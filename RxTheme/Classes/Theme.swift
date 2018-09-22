@@ -6,6 +6,7 @@
 import RxSwift
 import RxCocoa
 
+// todo: better implementation when Swift releases more generic Enum
 public protocol ThemeProvider: Hashable {
     associatedtype T
     var associatedObject: T { get }

@@ -2,7 +2,7 @@ PODS:
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
-  - RxTheme (2.2.0):
+  - RxTheme (2.2.1):
     - RxCocoa (~> 4.3)
     - RxSwift (~> 4.3)
 
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
-  RxTheme: d990bab64f1d7756792c4313a3c5f416d426f733
+  RxTheme: d17a0e9f301e135e18c726483c61348f7fa5589c
 
 PODFILE CHECKSUM: 14f78d9306c7d218e50d7b8eadc0d4b74342bb16
 
