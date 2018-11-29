@@ -24,7 +24,7 @@ public class ThemeService<Provider: ThemeProvider>: NSObject {
         self.relay = BehaviorRelay<Provider>(value: initial)
     }
     private var cache = [Provider: Provider.T]()
-    private func getAssociateedObject(_ key: Provider) -> Provider.T {
+    private func getAssociatedObject(_ key: Provider) -> Provider.T {
         if let cached = cache[key] { return cached }
         let object = key.associatedObject
         cache[key] = object
@@ -35,7 +35,7 @@ public class ThemeService<Provider: ThemeProvider>: NSObject {
     /// Current theme
     public var theme: Provider { return self.relay.value }
     /// Current theme object
-    public var themeObject: Provider.T { return self.getAssociateedObject(self.theme) }
+    public var themeObject: Provider.T { return self.getAssociatedObject(self.theme) }
     /// Set theme
     public func set(_ theme: Provider) {
         self.relay.accept(theme)
@@ -43,7 +43,7 @@ public class ThemeService<Provider: ThemeProvider>: NSObject {
     /// Start binding
     public var rx: ThemeBindable<Provider.T> {
         let targetRelay = self.relay.map {
-            self.getAssociateedObject($0)
+            self.getAssociatedObject($0)
         }
         return ThemeBindable(relay: targetRelay)
     }
