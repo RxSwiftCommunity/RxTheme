@@ -66,7 +66,6 @@ themeService.set(.dark)
 - tintColor
 
 ##### UIButton
-- tintColor
 - titleColor
 
 ##### UILabel
@@ -90,9 +89,6 @@ themeService.set(.dark)
 ##### UIPageControl
 - pageIndicatorTintColor
 - currentPageIndicatorTintColor
-
-##### UISegmentedControl
-- tintColor
 
 ##### UISlider
 - thumbTintColor
