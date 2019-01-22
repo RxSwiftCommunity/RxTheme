@@ -15,6 +15,7 @@
     import Cocoa
     typealias Color = NSColor
 #endif
+import RxSwift
 import RxTheme
 
 
@@ -37,10 +38,8 @@ enum ThemeType: ThemeProvider {
     case light, dark
     var associatedObject: Theme {
         switch self {
-        case .light:
-            return LightTheme()
-        case .dark:
-            return DarkTheme()
+        case .light: return LightTheme()
+        case .dark: return DarkTheme()
         }
     }
 }

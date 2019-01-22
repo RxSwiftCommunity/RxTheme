@@ -1,0 +1,28 @@
+//
+//  Created by duan on 2018/3/7.
+//  2018 Copyright (c) RxSwiftCommunity. All rights reserved.
+//
+
+{{ if_os }}
+
+{% if need_uikit %}import UIKit{%- endif %}
+import RxSwift
+import RxCocoa
+
+
+public extension ThemeProxy where Base: {{ cls }} {
+{% for name, type in attrs.items() %}
+    /// (set only) bind a stream to {{ name }}
+    public var {{ name }}: Observable<{{ type }}> {
+        get { return .empty() }
+        set {
+            let disposable = newValue
+                .takeUntil(base.rx.deallocating)
+                .observeOn(MainScheduler.instance)
+                .bind(to: base.rx.{{ name }})
+            hold(disposable, for: "{{ name }}")
+        }
+    }
+{% endfor %}
+}
+#endif
