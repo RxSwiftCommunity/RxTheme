@@ -5,6 +5,11 @@ CALayer:
     borderColor: CGColor?
     shadowColor: CGColor?
   os: [iOS, tvOS, macOS]
+CAShapeLayer:
+  attrs:
+    strokeColor: CGColor?
+    fillColor: CGColor?
+  os: [iOS, tvOS, macOS]
 UIActivityIndicatorView:
   attrs:
     style: UIActivityIndicatorView.Style
