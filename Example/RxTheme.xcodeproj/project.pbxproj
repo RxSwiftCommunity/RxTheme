@@ -641,7 +641,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-macOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-macOS/RxTheme.framework",
@@ -654,7 +654,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Example_macOS/Pods-RxTheme_Example_macOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		50F0845440D446E4B9CE8FCD /* [CP] Embed Pods Frameworks */ = {
@@ -663,7 +663,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-iOS/RxTheme.framework",
@@ -676,7 +676,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Tests/Pods-RxTheme_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5757726B277AF347546D96FC /* [CP] Embed Pods Frameworks */ = {
@@ -685,7 +685,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-watchOS/RxTheme.framework",
@@ -698,7 +698,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Example_watchOS Extension/Pods-RxTheme_Example_watchOS Extension-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7A708D780BD691E69357B7FF /* [CP] Check Pods Manifest.lock */ = {
@@ -725,7 +725,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-iOS/RxTheme.framework",
@@ -738,7 +738,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Example/Pods-RxTheme_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AF684B1E637FBEDF0CD54A15 /* [CP] Embed Pods Frameworks */ = {
@@ -747,7 +747,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa-tvOS/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift-tvOS/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxTheme-tvOS/RxTheme.framework",
@@ -760,7 +760,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTheme_Example_tvOS/Pods-RxTheme_Example_tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BB3CAE0E214C2D06472F27F2 /* [CP] Check Pods Manifest.lock */ = {
