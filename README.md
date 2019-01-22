@@ -56,7 +56,7 @@ themeService.rx
 ### Switch themes
 
 ```swift
-themeService.set(.dark)
+themeService.switch(.dark)
 ```
 
 ### Binder presets

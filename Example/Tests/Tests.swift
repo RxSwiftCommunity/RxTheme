@@ -27,7 +27,7 @@ class Tests: XCTestCase {
             .bind({ $0.textColor }, to: label.rx.textColor)
             .disposed(by: disposeBag)
         XCTAssertEqual(label.textColor, LightTheme().textColor)
-        themeService.set(.dark)
+        themeService.switch(.dark)
         XCTAssertEqual(label.textColor, DarkTheme().textColor)
     }
 
