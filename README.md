@@ -61,75 +61,98 @@ themeService.switch(.dark)
 
 ### Binder presets
 
-##### UIView
-- backgroundColor
-- tintColor
-
-##### UIButton
-- titleColor
-
-##### UILabel
-- font
-- textColor
-- highlightedTextColor
-- shadowColor
-
-##### UITextField
-- font
-- keyboardAppearance
-- textColor
-
-##### UIImageView
-- image
-
-##### UIProgressView
-- progressTintColor
-- trackTintColor 
-
-##### UIPageControl
-- pageIndicatorTintColor
-- currentPageIndicatorTintColor
-
-##### UISlider
-- thumbTintColor
-- minimumTrackTintColor
-- maximumTrackTintColor
-
-##### UIToolbar
-- barTintColor
-
-##### UISwitch
-- onTintColor
-- thumbTintColor
-
-##### UITableView
-- separatorColor
-
-##### UINavigationBar
-- barStyle
-- barTintColor
-- titleTextAttributes
-
-##### UITabBar
-- barStyle
-- barTintColor
-
-##### UITextView
-- font
-- textColor 
-
-##### UIActivityIndicatorView
-- style
-
-##### UIBarButtonItem
-- tintColor
-
 ##### CALayer
+
 - backgroundColor
 - borderWidth
 - borderColor
 - shadowColor
 
+##### CAShapeLayer
+
+- strokeColor
+- fillColor
+
+##### UIActivityIndicatorView
+
+- style
+
+##### UIBarButtonItem
+
+- tintColor
+
+##### UIButton
+
+- titleColor
+
+##### UILabel
+
+- font
+- textColor
+- highlightedTextColor
+- shadowColor
+
+##### UINavigationBar
+
+- barStyle
+- barTintColor
+- titleTextAttributes
+
+##### UIPageControl
+
+- pageIndicatorTintColor
+- currentPageIndicatorTintColor
+
+##### UIProgressView
+
+- progressTintColor
+- trackTintColor
+
+##### UISearchBar
+
+- barStyle
+- barTintColor
+
+##### UISlider
+
+- thumbTintColor
+- minimumTrackTintColor
+- maximumTrackTintColor
+
+##### UISwitch
+
+- onTintColor
+- thumbTintColor
+
+##### UITabBar
+
+- barStyle
+- barTintColor
+
+##### UITableView
+
+- separatorColor
+
+##### UITextField
+
+- font
+- textColor
+- keyboardAppearance
+
+##### UITextView
+
+- font
+- textColor
+
+##### UIToolbar
+
+- barStyle
+- barTintColor
+
+##### UIView
+
+- backgroundColor
+- tintColor
 
 ### Extend binders in your codebase
 

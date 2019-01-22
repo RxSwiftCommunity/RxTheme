@@ -49,6 +49,7 @@ def show_exts():
     lines = []
     for k, v in data.items():
         lines.append(f'##### {k}')
+        lines.append('')
         for attr in v['attrs']:
             lines.append(f'- {attr}')
         lines.append('')
