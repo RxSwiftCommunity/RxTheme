@@ -47,4 +47,17 @@ public extension Reactive where Base: UILabel {
     }
 
 }
+
+public extension ThemeProxy where Base: UILabel {
+    public var textColor: Observable<UIColor?> {
+        get { return .empty() }
+        set {
+            let disposable = newValue
+                .takeUntil(base.rx.deallocating)
+                .bind(to: base.rx.textColor)
+            self.hold(disposable, for: "backgroundColor")
+        }
+    }
+}
+
 #endif

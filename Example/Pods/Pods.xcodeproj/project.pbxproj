@@ -47,6 +47,15 @@
 		068B13BD655B431223CC66E4AB5A735C /* SchedulerType+SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5A5B46D4CBEA5558E4A408AC510AAB /* SchedulerType+SharedSequence.swift */; };
 		06A58D5A110EDE73A85EEE8B4E3DEA1C /* InfiniteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED22CBBBA12706234ACB9394AB6494 /* InfiniteSequence.swift */; };
 		0724D33039F08DD476C750D2DC927379 /* GroupBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9729A2C20391CFF50A35D052A01BE64F /* GroupBy.swift */; };
+		072F99B721F71E4300E6721D /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99B521F71E0400E6721D /* ThemeService.swift */; };
+		072F99B821F71E4400E6721D /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99B521F71E0400E6721D /* ThemeService.swift */; };
+		072F99B921F71E4400E6721D /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99B521F71E0400E6721D /* ThemeService.swift */; };
+		072F99BA21F71E4500E6721D /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99B521F71E0400E6721D /* ThemeService.swift */; };
+		072F99BD21F722C400E6721D /* ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99BB21F722BF00E6721D /* ThemeProvider.swift */; };
+		072F99BE21F722C400E6721D /* ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99BB21F722BF00E6721D /* ThemeProvider.swift */; };
+		072F99BF21F722C500E6721D /* ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99BB21F722BF00E6721D /* ThemeProvider.swift */; };
+		072F99C021F722C500E6721D /* ThemeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99BB21F722BF00E6721D /* ThemeProvider.swift */; };
+		072F99C721F7475A00E6721D /* ThemeProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072F99C621F7475A00E6721D /* ThemeProxy.swift */; };
 		0759B01FBE6727857FDB9A20399DC443 /* UIGestureRecognizer+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D180C9E414811CFE20C1FEEF2E11B17 /* UIGestureRecognizer+Rx.swift */; };
 		075DDA4E38D2B81CCACD9A1306C9FA83 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB6048E6A42C0C3FDDFF212BFBBC494 /* TextInput.swift */; };
 		07644BFE063FF199528C69C1766AA6D3 /* Pods-RxTheme_Example_tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9CBD84F5A50FF45DF15A16AB0BF52 /* Pods-RxTheme_Example_tvOS-dummy.m */; };
@@ -115,7 +124,7 @@
 		16E1FB182D396FB8214D9F88EE712A30 /* DistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1D17D57CAA1FF1AB10FE06393B7D0B /* DistinctUntilChanged.swift */; };
 		16F10EB76C00F413925783BE01542D80 /* SingleAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEA2086E040A8FECAC561906BC016AF /* SingleAsync.swift */; };
 		17357A88463C801332FD15CC79687D61 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0041A81E13DCDA23F1CCAE8D0354DE2D /* Just.swift */; };
-		1744543C42FFBC495F1C46C4DEB08E95 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF27723398D042CDB4BBAF1918334A /* Theme.swift */; };
+		1744543C42FFBC495F1C46C4DEB08E95 /* ThemeBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF27723398D042CDB4BBAF1918334A /* ThemeBindable.swift */; };
 		17DF18BBE1CEFC2C34F3D06279AD3C63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EDE4867777EE52297ED4597B3CC280 /* Foundation.framework */; };
 		187CA3CE346700E63844145A1C27BEE3 /* UIStepper+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38ECC8C40843B71E01104D726BFE183B /* UIStepper+Rx.swift */; };
 		189FD73A893CCFC14BDA532681D9801A /* RxTheme-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F09ABA0E1457AADB2ED5C81E80D1 /* RxTheme-iOS-dummy.m */; };
@@ -579,7 +588,7 @@
 		7CCCDA4B0C439798BB0B30091A85AAD7 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945675075A079183CCD7523AD50F893 /* Optional.swift */; };
 		7CFEC73DF2A18B521182F5C463FC1BB0 /* DeprecationWarner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC2227D8C63C9406FBD94872FBF3EEB /* DeprecationWarner.swift */; };
 		7D7B532E03E601F20CC871B7BF4A9928 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF6BA03E62935B4DF941E69D76F29BC /* Queue.swift */; };
-		7DAF6A2943C095AB3A382EC1BC7ECD32 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF27723398D042CDB4BBAF1918334A /* Theme.swift */; };
+		7DAF6A2943C095AB3A382EC1BC7ECD32 /* ThemeBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF27723398D042CDB4BBAF1918334A /* ThemeBindable.swift */; };
 		7DDD9C63B1656D4FEB363784E833DF3D /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7DAA33D04617F6E61EFE404100D7E /* Producer.swift */; };
 		7DFAA93119E43C1634315683B9F0ECED /* AsSingle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470DDD2CB18E5A59E78AB13A407FB499 /* AsSingle.swift */; };
 		7E6336B749B0A39C6E838B0D591B2601 /* AnonymousObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8825D4EFFB99B485A7B2A445AAD225 /* AnonymousObserver.swift */; };
@@ -933,7 +942,7 @@
 		CD63D3EDDB96A5C936F399E55CF71534 /* Signal+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE129B63E04370691D2BE091F16195BF /* Signal+Subscription.swift */; };
 		CD6C21B16519AA2D97E67A788877D46B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8494BCB7555DCD8211EF3ADA849F80E1 /* Foundation.framework */; };
 		CD7BE97ED531F4B88B44E2071702C35C /* ObserverBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AE4F2B5328D317FF00DFA45032033 /* ObserverBase.swift */; };
-		CDF0398F3ECC766FD500ECDB5CAFE3FC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF27723398D042CDB4BBAF1918334A /* Theme.swift */; };
+		CDF0398F3ECC766FD500ECDB5CAFE3FC /* ThemeBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF27723398D042CDB4BBAF1918334A /* ThemeBindable.swift */; };
 		CE057F87CE5FAB963F27CEDA99ED2D50 /* SingleAssignmentDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8A09B4EBFBA0E72D1CEE7F536DAB7A /* SingleAssignmentDisposable.swift */; };
 		CE4E67405D2CBBC27E704A7C94CCC2EA /* RxTabBarDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932943F8B1956DE61BD74131C0E89D88 /* RxTabBarDelegateProxy.swift */; };
 		CECC51049C6B51520E4AC9001B3513CC /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14438FDC956D26D863AA9F39C8DB06F5 /* Window.swift */; };
@@ -949,7 +958,7 @@
 		D1D68DFFB49D67F20E36F007A5107AE9 /* SubscriptionDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62EC66FF6B45F8C7A00688A0C99EDEF /* SubscriptionDisposable.swift */; };
 		D1D906F7A12A45B69E95A98AF345213A /* UITableView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5BB6AD5C4CDCEE88D5A622B749B50A /* UITableView+Rx.swift */; };
 		D21A1295D9308EB267633C0FC43D709F /* Pods-RxTheme_Example_watchOS Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D68F1195CD7CDE37584CAEF94294A26 /* Pods-RxTheme_Example_watchOS Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D230DC24436F413C8C0617DAA93A66B7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF27723398D042CDB4BBAF1918334A /* Theme.swift */; };
+		D230DC24436F413C8C0617DAA93A66B7 /* ThemeBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AF27723398D042CDB4BBAF1918334A /* ThemeBindable.swift */; };
 		D27B91F62FD7E60CF2FA7FEB48C01372 /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67BD79B947D5BBDE34F13971975E7FD /* RecursiveLock.swift */; };
 		D2C17516A8257CAB3F7E93E28097F515 /* URLSession+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB640FD881F6B228C7B88386830A2634 /* URLSession+Rx.swift */; };
 		D2D21740FA56CF4B5AC230DF279F05F3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E770ECA9733AA017318C01F90F8453A /* Error.swift */; };
@@ -1372,6 +1381,9 @@
 		0598374D4B7BC45E56A7FF1456B38FDB /* AnonymousDisposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnonymousDisposable.swift; path = RxSwift/Disposables/AnonymousDisposable.swift; sourceTree = "<group>"; };
 		05ACAAC408D17C004DA2D58C9F8EA7B4 /* RxCocoa-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RxCocoa-macOS-prefix.pch"; path = "../RxCocoa-macOS/RxCocoa-macOS-prefix.pch"; sourceTree = "<group>"; };
 		072972EBC08F1BC6B6C13B0AC9274839 /* RxSwift-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RxSwift-iOS-dummy.m"; sourceTree = "<group>"; };
+		072F99B521F71E0400E6721D /* ThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeService.swift; path = RxTheme/Classes/ThemeService.swift; sourceTree = "<group>"; };
+		072F99BB21F722BF00E6721D /* ThemeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeProvider.swift; path = RxTheme/Classes/ThemeProvider.swift; sourceTree = "<group>"; };
+		072F99C621F7475A00E6721D /* ThemeProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeProxy.swift; path = RxTheme/Classes/ThemeProxy.swift; sourceTree = "<group>"; };
 		080D2D868009968588CEB3CA54DDE910 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F8871C896E21DAD23903F5AAE67B47 /* RxCocoa-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxCocoa-iOS-umbrella.h"; sourceTree = "<group>"; };
 		0A165AD512018EF2374C59B6EA8B85FE /* Pods-RxTheme_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RxTheme_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1554,7 +1566,7 @@
 		66B488DE4F7309BF8030AB0CB811EA0D /* RxSwift-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "RxSwift-watchOS.modulemap"; path = "../RxSwift-watchOS/RxSwift-watchOS.modulemap"; sourceTree = "<group>"; };
 		66D0241FE84F47768CA091716C93EAA3 /* Pods-RxTheme_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RxTheme_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		670AB9B07C358E23E316C252159C0332 /* ObservableType+PrimitiveSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableType+PrimitiveSequence.swift"; path = "RxSwift/Traits/ObservableType+PrimitiveSequence.swift"; sourceTree = "<group>"; };
-		67AF27723398D042CDB4BBAF1918334A /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = RxTheme/Classes/Theme.swift; sourceTree = "<group>"; };
+		67AF27723398D042CDB4BBAF1918334A /* ThemeBindable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeBindable.swift; path = RxTheme/Classes/ThemeBindable.swift; sourceTree = "<group>"; };
 		688256892F08D6E1A0E92528084D6A1E /* RxNavigationControllerDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxNavigationControllerDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxNavigationControllerDelegateProxy.swift; sourceTree = "<group>"; };
 		69876CB40D1FDF2A76959C8D1F485E48 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "Platform/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		69BA4C46C3004150EDA51013CFE5F674 /* HistoricalSchedulerTimeConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HistoricalSchedulerTimeConverter.swift; path = RxSwift/Schedulers/HistoricalSchedulerTimeConverter.swift; sourceTree = "<group>"; };
@@ -2454,7 +2466,10 @@
 		B083257D123AAE086F4BA912A8FEFB86 /* RxTheme */ = {
 			isa = PBXGroup;
 			children = (
-				67AF27723398D042CDB4BBAF1918334A /* Theme.swift */,
+				67AF27723398D042CDB4BBAF1918334A /* ThemeBindable.swift */,
+				072F99B521F71E0400E6721D /* ThemeService.swift */,
+				072F99BB21F722BF00E6721D /* ThemeProvider.swift */,
+				072F99C621F7475A00E6721D /* ThemeProxy.swift */,
 				0D69CF0184706F5626AADB2A33209818 /* Extensions */,
 				71CC58F12948C3BF837759F884D6DA83 /* Pod */,
 				347FFE93195E76BB4E4CE908536C5830 /* Support Files */,
@@ -3092,6 +3107,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					64D234776E43FF9D8F81021C1513FAD3 = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3420,10 +3440,12 @@
 			files = (
 				423031EEF6AAEC2BC333CA2D7A5A33D6 /* CALayer+Rx.swift in Sources */,
 				D0B209CDB82E15DED559518F61E1E048 /* RxTheme-tvOS-dummy.m in Sources */,
-				D230DC24436F413C8C0617DAA93A66B7 /* Theme.swift in Sources */,
+				D230DC24436F413C8C0617DAA93A66B7 /* ThemeBindable.swift in Sources */,
 				442062BEBF7648BCB8FC2612151CB034 /* UIActivityIndicatorView+Rx.swift in Sources */,
 				F4AD3351A7083228E695011865BF3884 /* UIBarButtonItem+Rx.swift in Sources */,
+				072F99B921F71E4400E6721D /* ThemeService.swift in Sources */,
 				D0A5C1C2C910D1F98A5F1F9379470942 /* UIButton+Rx.swift in Sources */,
+				072F99BF21F722C500E6721D /* ThemeProvider.swift in Sources */,
 				EDEED039E416C5F93C08FC23D00B0784 /* UILabel+Rx.swift in Sources */,
 				729A1166DA1CA80C0FF64BF426A7B910 /* UINavigationBar+Rx.swift in Sources */,
 				00C6ED26291B9B8BE215699C96BEC93A /* UIPageControl+Rx.swift in Sources */,
@@ -3446,10 +3468,12 @@
 			files = (
 				91571C1DE33217113C1197392C846162 /* CALayer+Rx.swift in Sources */,
 				189FD73A893CCFC14BDA532681D9801A /* RxTheme-iOS-dummy.m in Sources */,
-				1744543C42FFBC495F1C46C4DEB08E95 /* Theme.swift in Sources */,
+				1744543C42FFBC495F1C46C4DEB08E95 /* ThemeBindable.swift in Sources */,
 				14DFB12024F9A675F75061C8C2469060 /* UIActivityIndicatorView+Rx.swift in Sources */,
 				86E626EDD2F9E5EEA3A66E96610EFAE1 /* UIBarButtonItem+Rx.swift in Sources */,
+				072F99B721F71E4300E6721D /* ThemeService.swift in Sources */,
 				67CAAC4502ECFB37F1172AB21E9DCE78 /* UIButton+Rx.swift in Sources */,
+				072F99BD21F722C400E6721D /* ThemeProvider.swift in Sources */,
 				80E1C2DC47180B10BA857C736954544A /* UILabel+Rx.swift in Sources */,
 				3FF72C2DAEF29F2C746EA7044FA04715 /* UINavigationBar+Rx.swift in Sources */,
 				8F50488C6406689410D12FE37065E45F /* UIPageControl+Rx.swift in Sources */,
@@ -3609,10 +3633,12 @@
 			files = (
 				6858B09C6CF7CAE748DEB27ECB861ECF /* CALayer+Rx.swift in Sources */,
 				C0B3BD75F090A04B300CF88C16CB543F /* RxTheme-macOS-dummy.m in Sources */,
-				7DAF6A2943C095AB3A382EC1BC7ECD32 /* Theme.swift in Sources */,
+				7DAF6A2943C095AB3A382EC1BC7ECD32 /* ThemeBindable.swift in Sources */,
 				36903E508E6EC9C64AC27D099968E609 /* UIActivityIndicatorView+Rx.swift in Sources */,
 				CC75D045B63D0CBBE7E64E1F897C2409 /* UIBarButtonItem+Rx.swift in Sources */,
+				072F99B821F71E4400E6721D /* ThemeService.swift in Sources */,
 				C8C7B98550FDF6F7A8F4160AE76F9DA2 /* UIButton+Rx.swift in Sources */,
+				072F99BE21F722C400E6721D /* ThemeProvider.swift in Sources */,
 				0ABB3ADB51733E3E43BFA924B451E6A0 /* UILabel+Rx.swift in Sources */,
 				5D3A53452B94615E9EC7D3D2A110AFC7 /* UINavigationBar+Rx.swift in Sources */,
 				D837A49E39F5AD05FF64E61D6D08E2AB /* UIPageControl+Rx.swift in Sources */,
@@ -3633,6 +3659,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072F99C721F7475A00E6721D /* ThemeProxy.swift in Sources */,
 				BDF48028FFA7D564E9B475FF0142F675 /* Pods-RxTheme_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -4147,10 +4174,12 @@
 			files = (
 				44BE49A8BC155E4C1AE1E3306DB47192 /* CALayer+Rx.swift in Sources */,
 				B0CB07C42CBDCEDC54D6F381B0873C90 /* RxTheme-watchOS-dummy.m in Sources */,
-				CDF0398F3ECC766FD500ECDB5CAFE3FC /* Theme.swift in Sources */,
+				CDF0398F3ECC766FD500ECDB5CAFE3FC /* ThemeBindable.swift in Sources */,
 				308AF931824529CD27A03A08BFBD266C /* UIActivityIndicatorView+Rx.swift in Sources */,
 				FA76E7EFDC66D2B3692651BCCFCC90CB /* UIBarButtonItem+Rx.swift in Sources */,
+				072F99BA21F71E4500E6721D /* ThemeService.swift in Sources */,
 				6A15679D3B331C65BFD4198203ECEFCE /* UIButton+Rx.swift in Sources */,
+				072F99C021F722C500E6721D /* ThemeProvider.swift in Sources */,
 				442D3B64F68BE3A39DE757A142A0E7A6 /* UILabel+Rx.swift in Sources */,
 				47684A86C652F4BF80D490D69B489DB9 /* UINavigationBar+Rx.swift in Sources */,
 				53DB6A6E0AA574B7A2DF9B69BF42444C /* UIPageControl+Rx.swift in Sources */,
@@ -5625,6 +5654,7 @@
 			baseConfigurationReference = 0D04A2A8E11B3B6F0B59C268EC6162D4 /* Pods-RxTheme_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -5648,6 +5678,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -5830,6 +5861,7 @@
 			baseConfigurationReference = AFD468D0E7F411F611995BD34AB2E5AD /* Pods-RxTheme_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -5854,6 +5886,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

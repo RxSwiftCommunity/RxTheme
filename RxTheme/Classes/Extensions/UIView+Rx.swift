@@ -31,4 +31,17 @@ public extension Reactive where Base: UIView {
     }
 
 }
+
+public extension ThemeProxy where Base: UIView {
+    public var backgroundColor: Observable<UIColor?> {
+        get { return .empty() }
+        set {
+            let disposable = newValue
+                .takeUntil(base.rx.deallocating)
+                .bind(to: base.rx.backgroundColor)
+            self.hold(disposable, for: "backgroundColor")
+        }
+    }
+}
+
 #endif
