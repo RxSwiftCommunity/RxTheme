@@ -69,18 +69,31 @@ public class ThemeBindable<T> {
     }
 
     /// Bind theme attributes to UI attributes
-    public func bind<U>(_ from: @escaping ((T) -> U), to binders: [Binder<U>]) -> ThemeBindable {
-        disposables += binders.map {
-            self.relay.map(from)
-                .observeOn(MainScheduler.instance)
-                .bind(to: $0)
+    @discardableResult
+    public func bind<U>(_ from: @escaping ((T) -> U), until: Observable<()>? = nil,
+                        to binders: [Binder<U>]) -> ThemeBindable {
+        if let until = until {
+            disposables += binders.map {
+                self.relay.map(from)
+                    .takeUntil(until)
+                    .observeOn(MainScheduler.instance)
+                    .bind(to: $0)
+            }
+        } else {
+            disposables += binders.map {
+                self.relay.map(from)
+                    .observeOn(MainScheduler.instance)
+                    .bind(to: $0)
+            }
         }
         return self
     }
 
     /// Bind theme attributes to UI attributes
-    public func bind<U>(_ from: @escaping ((T) -> U), to binders: Binder<U>...) -> ThemeBindable {
-        return self.bind(from, to: binders)
+    @discardableResult
+    public func bind<U>(_ from: @escaping ((T) -> U), until: Observable<()>? = nil,
+                        to binders: Binder<U>...) -> ThemeBindable {
+        return self.bind(from, until: until, to: binders)
     }
 
     /// Add self to bag
