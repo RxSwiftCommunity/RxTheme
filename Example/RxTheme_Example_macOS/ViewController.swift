@@ -53,7 +53,7 @@ class ViewController: NSViewController {
 
     override func mouseDown(with event: NSEvent) {
         super.mouseDown(with: event)
-        themeService.set(themeService.theme == .dark ? .light : .dark)
+        themeService.switch(themeService.type == .dark ? .light : .dark)
     }
 
 }

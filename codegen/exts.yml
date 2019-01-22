@@ -5,9 +5,14 @@ CALayer:
     borderColor: CGColor?
     shadowColor: CGColor?
   os: [iOS, tvOS, macOS]
+CAShapeLayer:
+  attrs:
+    strokeColor: CGColor?
+    fillColor: CGColor?
+  os: [iOS, tvOS, macOS]
 UIActivityIndicatorView:
   attrs:
-    style: UIActivityIndicatorViewStyle
+    style: UIActivityIndicatorView.Style
   os: [iOS, tvOS]
 UIBarButtonItem:
   attrs:
@@ -28,7 +33,7 @@ UINavigationBar:
   attrs:
     barStyle: UIBarStyle
     barTintColor: UIColor?
-    titleTextAttributes: "[NSAttributedStringKey: Any]?"
+    titleTextAttributes: "[NSAttributedString.Key: Any]?"
   os: [iOS]
 UIPageControl:
   attrs:

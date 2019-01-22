@@ -1,3 +1,4 @@
+import click
 import os
 import yaml
 from jinja2 import Environment, FileSystemLoader
@@ -5,14 +6,6 @@ from jinja2 import Environment, FileSystemLoader
 _here = os.path.dirname(os.path.abspath(__file__))
 j2_env = Environment(loader=FileSystemLoader(_here),trim_blocks=False)
 animatable_cls = ['UIColor', 'UIColor?']
-
-
-def run():
-    stream = open('./codegen/exts.yml', 'r')
-    data = yaml.load_all(stream)
-    data = next(data)
-    for k, v in data.items():
-        gen_ext_file(k, v)
 
 
 def gen_ext_file(cls, data):
@@ -32,5 +25,37 @@ def gen_ext_file(cls, data):
     print('[*] {}'.format(file))
 
 
+def read_config():
+    stream = open('./codegen/exts.yml', 'r')
+    data = yaml.load_all(stream)
+    return next(data)
+
+
+@click.group()
+def cli():
+    pass
+
+
+@cli.command()
+def update_exts():
+    data = read_config()
+    for k, v in data.items():
+        gen_ext_file(k, v)
+
+
+@cli.command()
+def show_exts():
+    data = read_config()
+    lines = []
+    for k, v in data.items():
+        lines.append(f'##### {k}')
+        lines.append('')
+        for attr in v['attrs']:
+            lines.append(f'- {attr}')
+        lines.append('')
+    content = '\n'.join(lines)
+    print(content)
+
+
 if __name__ == '__main__':
-    run()
+    cli()
