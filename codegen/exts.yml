@@ -7,7 +7,7 @@ CALayer:
   os: [iOS, tvOS, macOS]
 UIActivityIndicatorView:
   attrs:
-    style: UIActivityIndicatorViewStyle
+    style: UIActivityIndicatorView.Style
   os: [iOS, tvOS]
 UIBarButtonItem:
   attrs:
@@ -28,7 +28,7 @@ UINavigationBar:
   attrs:
     barStyle: UIBarStyle
     barTintColor: UIColor?
-    titleTextAttributes: "[NSAttributedStringKey: Any]?"
+    titleTextAttributes: "[NSAttributedString.Key: Any]?"
   os: [iOS]
 UIPageControl:
   attrs:
