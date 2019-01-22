@@ -20,13 +20,13 @@ protocol Theme {
 }
 
 struct LightTheme: Theme {
-    let backgroundColor = UIColor.white
-    let textColor = UIColor.black
+    let backgroundColor = .white
+    let textColor = .black
 }
 
 struct DarkTheme: Theme {
-    let backgroundColor = UIColor.black
-    let textColor = UIColor.white
+    let backgroundColor = .black
+    let textColor = .white
 }
 
 enum ThemeType: ThemeProvider {
@@ -204,13 +204,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ### Cocoapods
 
 ```ruby
-pod 'RxTheme', '~> 2.0'
+pod 'RxTheme', '~> 3.0'
 ```
 
 ### Carthage
 
 ```
-github "RxSwiftCommunity/RxTheme" ~> 2.0.0
+github "RxSwiftCommunity/RxTheme" ~> 3.0.0
 ```
 
 ## Author
