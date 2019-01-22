@@ -47,16 +47,30 @@ let themeService = ThemeType.service(initial: .light)
 ### Apply theme to UI
 
 ```swift
+
+// bind stream to single attribute
+// RxTheme would automatically manage the lifecycle of the binded stream in this way
+view.theme.backgroundColor = themeService.attrStream { $0.backgroundColor }
+
+// Or bind a bunch of signals, add them to a disposeBag
 themeService.rx
-    .bind({ $0.textColor }, to: label.rx.textColor)
+    .bind({ $0.textColor }, to: label1.rx.textColor, label2.rx.textColor)
     .bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
     .disposed(by: disposeBag)
+
+// Or if you don't have a disposeBag
+// you can add `until` to control the stream's lifecycle
+themeService.rx
+    .bind({ $0.textColor }, until: label.rx.deallocating, to: label.rx.textColor)
+    .bind({ $0.backgroundColor }, until: view.rx.deallocating, to: view.rx.backgroundColor)
 ```
 
 ### Switch themes
 
 ```swift
 themeService.switch(.dark)
+// There is also a bindable sink for ThemeService, so you can do:
+someSignal.bind(to: themeService.switcher)
 ```
 
 ### Binder presets
@@ -165,6 +179,23 @@ extension Reactive where Base: UIView {
     var borderColor: Binder<UIColor?> {
         return Binder(self.base) { view, color in
             view.layer.borderColor = color?.cgColor
+        }
+    }
+}
+```
+
+if you also want to use the sugar `view.theme.borderColor`, you have to write another extension:
+
+```swift
+extension ThemeProxy where Base: UIView {
+    var borderColor: Observable<UIColor?> {
+        get { return .empty() }
+        set {
+            let disposable = newValue
+                .takeUntil(base.rx.deallocating)
+                .observeOn(MainScheduler.instance)
+                .bind(to: base.rx.borderColor)
+            hold(disposable, for: "borderColor")
         }
     }
 }
