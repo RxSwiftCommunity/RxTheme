@@ -166,7 +166,7 @@ then run codegen script
 ```shell
 // make sure you have python3 and pipenv installed
 $ pipenv install
-$ pipenv run python -m codegen
+$ pipenv run python -m codegen update-exts
 ```
 
 If you think it's commonly used, please send us a PR.
