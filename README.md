@@ -141,6 +141,7 @@ themeService.attrsStream
 
 - barStyle
 - barTintColor
+- keyboardAppearance
 
 ##### UISlider
 
@@ -162,6 +163,10 @@ themeService.attrsStream
 
 - separatorColor
 
+##### UITAbleViewCell
+
+- selectionStyle
+
 ##### UITextField
 
 - font
@@ -172,6 +177,7 @@ themeService.attrsStream
 
 - font
 - textColor
+- keyboardAppearance
 
 ##### UIToolbar
 
