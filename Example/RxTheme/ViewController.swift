@@ -29,8 +29,8 @@ class ViewController: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
-        view.theme.backgroundColor = themeService.attrStream { $0.backgroundColor }
-        label.theme.textColor = themeService.attrStream { $0.textColor }
+        view.theme.backgroundColor = themed { $0.backgroundColor }
+        label.theme.textColor = themed { $0.textColor }
 
         let tapGesture = UITapGestureRecognizer()
         view.addGestureRecognizer(tapGesture)

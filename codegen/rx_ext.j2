@@ -15,13 +15,7 @@ public extension Reactive where Base: {{ cls }} {
     /// Bindable sink for `{{ name }}` property
     public var {{ name }}: Binder<{{ type }}> {
         return Binder(self.base) { view, attr in
-{%- if type in animatable_cls %}
-            UIView.animate(withDuration: 0.3, animations: {
-                view.{{ name }} = attr
-            })
-{%- else %}
             view.{{ name }} = attr
-{%- endif %}
         }
     }
 {% endfor %}

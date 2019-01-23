@@ -36,5 +36,17 @@ public extension ThemeProxy where Base: UISearchBar {
         }
     }
 
+    /// (set only) bind a stream to keyboardAppearance
+    public var keyboardAppearance: Observable<UIKeyboardAppearance> {
+        get { return .empty() }
+        set {
+            let disposable = newValue
+                .takeUntil(base.rx.deallocating)
+                .observeOn(MainScheduler.instance)
+                .bind(to: base.rx.keyboardAppearance)
+            hold(disposable, for: "keyboardAppearance")
+        }
+    }
+
 }
 #endif

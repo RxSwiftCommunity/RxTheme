@@ -22,9 +22,14 @@ public extension Reactive where Base: UISearchBar {
     /// Bindable sink for `barTintColor` property
     public var barTintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            UIView.animate(withDuration: 0.3, animations: {
-                view.barTintColor = attr
-            })
+            view.barTintColor = attr
+        }
+    }
+
+    /// Bindable sink for `keyboardAppearance` property
+    public var keyboardAppearance: Binder<UIKeyboardAppearance> {
+        return Binder(self.base) { view, attr in
+            view.keyboardAppearance = attr
         }
     }
 

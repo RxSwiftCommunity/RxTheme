@@ -10,12 +10,12 @@ import RxSwift
 import RxCocoa
 
 
-public extension Reactive where Base: UITableView {
+public extension Reactive where Base: UITAbleViewCell {
 
-    /// Bindable sink for `separatorColor` property
-    public var separatorColor: Binder<UIColor?> {
+    /// Bindable sink for `selectionStyle` property
+    public var selectionStyle: Binder<UITableViewCell.SelectionStyle> {
         return Binder(self.base) { view, attr in
-            view.separatorColor = attr
+            view.selectionStyle = attr
         }
     }
 
