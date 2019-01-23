@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 
-public extension ThemeProxy where Base: UITAbleViewCell {
+public extension ThemeProxy where Base: UITableViewCell {
 
     /// (set only) bind a stream to selectionStyle
     public var selectionStyle: Observable<UITableViewCell.SelectionStyle> {

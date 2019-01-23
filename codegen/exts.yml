@@ -71,7 +71,7 @@ UITableView:
   attrs:
     separatorColor: UIColor?
   os: [iOS]
-UITAbleViewCell:
+UITableViewCell:
   attrs:
     selectionStyle: UITableViewCell.SelectionStyle
   os: [iOS]
