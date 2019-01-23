@@ -28,5 +28,12 @@ public extension Reactive where Base: UISearchBar {
         }
     }
 
+    /// Bindable sink for `keyboardAppearance` property
+    public var keyboardAppearance: Binder<UIKeyboardAppearance> {
+        return Binder(self.base) { view, attr in
+            view.keyboardAppearance = attr
+        }
+    }
+
 }
 #endif
