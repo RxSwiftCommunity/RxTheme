@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 
-public extension Reactive where Base: UITAbleViewCell {
+public extension Reactive where Base: UITableViewCell {
 
     /// Bindable sink for `selectionStyle` property
     public var selectionStyle: Binder<UITableViewCell.SelectionStyle> {
