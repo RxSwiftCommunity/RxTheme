@@ -22,9 +22,7 @@ public extension Reactive where Base: UITextField {
     /// Bindable sink for `textColor` property
     public var textColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            UIView.animate(withDuration: 0.3, animations: {
-                view.textColor = attr
-            })
+            view.textColor = attr
         }
     }
 

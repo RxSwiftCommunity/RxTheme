@@ -15,27 +15,21 @@ public extension Reactive where Base: UISlider {
     /// Bindable sink for `thumbTintColor` property
     public var thumbTintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            UIView.animate(withDuration: 0.3, animations: {
-                view.thumbTintColor = attr
-            })
+            view.thumbTintColor = attr
         }
     }
 
     /// Bindable sink for `minimumTrackTintColor` property
     public var minimumTrackTintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            UIView.animate(withDuration: 0.3, animations: {
-                view.minimumTrackTintColor = attr
-            })
+            view.minimumTrackTintColor = attr
         }
     }
 
     /// Bindable sink for `maximumTrackTintColor` property
     public var maximumTrackTintColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            UIView.animate(withDuration: 0.3, animations: {
-                view.maximumTrackTintColor = attr
-            })
+            view.maximumTrackTintColor = attr
         }
     }
 

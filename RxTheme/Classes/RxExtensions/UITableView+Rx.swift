@@ -15,9 +15,7 @@ public extension Reactive where Base: UITableView {
     /// Bindable sink for `separatorColor` property
     public var separatorColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
-            UIView.animate(withDuration: 0.3, animations: {
-                view.separatorColor = attr
-            })
+            view.separatorColor = attr
         }
     }
 
