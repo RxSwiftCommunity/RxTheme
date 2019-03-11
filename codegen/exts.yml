@@ -94,6 +94,5 @@ UIToolbar:
   os: [iOS]
 UIView:
   attrs:
-    backgroundColor: UIColor?
     tintColor: UIColor?
   os: [iOS, tvOS]

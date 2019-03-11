@@ -16,7 +16,7 @@ target 'RxTheme_Example_macOS' do
 end
 
 target 'RxTheme_Example_watchOS Extension' do
-	platform :watchos, '2.0'
+	platform :watchos, '3.0'
 	pod 'RxTheme', :path => '../'
 end
 
