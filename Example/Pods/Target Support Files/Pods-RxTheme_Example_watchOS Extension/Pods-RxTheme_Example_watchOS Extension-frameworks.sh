@@ -153,11 +153,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic-watchOS/RxAtomic.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxTheme-watchOS/RxTheme.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic-watchOS/RxAtomic.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-watchOS/RxCocoa.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-watchOS/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxTheme-watchOS/RxTheme.framework"

@@ -186,7 +186,6 @@ themeService.attrsStream
 
 ##### UIView
 
-- backgroundColor
 - tintColor
 
 ### Extend binders in your codebase
