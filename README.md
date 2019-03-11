@@ -223,7 +223,7 @@ extension ThemeProxy where Base: UIView {
 
 ### Extend binders in the lib
 
-Open `codegen/exts.yml`, add class, attributes and supported os.
+Open `codegen/rx_exts.yml` and `codegen/theme_exts.yml`, add class, attributes and supported os.
 
 ```
 UILabel:
