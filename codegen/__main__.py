@@ -5,17 +5,15 @@ from jinja2 import Environment, FileSystemLoader
 
 _here = os.path.dirname(os.path.abspath(__file__))
 j2_env = Environment(loader=FileSystemLoader(_here), trim_blocks=False)
-animatable_cls = ['UIColor', 'UIColor?']
 
 
-def gen_ext_file(cls, data):
+def gen_rx_ext(cls, data):
     # if os(iOS) || os(tvOS) || os(macOS)
     need_uikit = cls.startswith('UI')
     if_os = '#if ' + ' || '.join(['os({})'.format(x) for x in data['os']])
     # MARK: Rx extension
     rx_ext = j2_env.get_template('rx_ext.j2').render(
         cls=cls, if_os=if_os, need_uikit=need_uikit,
-        animatable_cls=animatable_cls,
         **data
     )
     rx_ext += '\n'
@@ -25,6 +23,11 @@ def gen_ext_file(cls, data):
         f.write(rx_ext)
     print('[*] {}'.format(file))
 
+
+def gen_theme_rx(cls, data):
+    # if os(iOS) || os(tvOS) || os(macOS)
+    need_uikit = cls.startswith('UI')
+    if_os = '#if ' + ' || '.join(['os({})'.format(x) for x in data['os']])
     # MARK: Theme extension
     theme_ext = j2_env.get_template('theme_ext.j2').render(
         cls=cls, if_os=if_os, need_uikit=need_uikit,
@@ -39,8 +42,8 @@ def gen_ext_file(cls, data):
 
 
 
-def read_config():
-    stream = open('./codegen/exts.yml', 'r')
+def read_config(file):
+    stream = open(f'./codegen/{file}', 'r')
     data = yaml.load_all(stream)
     return next(data)
 
@@ -52,14 +55,15 @@ def cli():
 
 @cli.command()
 def update_exts():
-    data = read_config()
-    for k, v in data.items():
-        gen_ext_file(k, v)
+    for k, v in read_config('rx_exts.yml').items():
+        gen_rx_ext(k, v)
+    for k, v in read_config('theme_exts.yml').items():
+        gen_theme_rx(k, v)
 
 
 @cli.command()
 def show_exts():
-    data = read_config()
+    data = read_config('rx_exts.yml')
     lines = []
     for k, v in data.items():
         lines.append(f'##### {k}')

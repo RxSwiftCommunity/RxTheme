@@ -5508,6 +5508,39 @@
 			};
 			name = Debug;
 		};
+		02CF7CD9F587CF185EB3699140BCBBA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB9D6EDF9F8E3888BE86CC5ED1ED1453 /* RxTheme-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = RxTheme;
+				PRODUCT_NAME = RxTheme;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		03E16C758CFFCB53344A4CB644EFBB5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4349D86E15D8C14D80A420F5E74A8D9D /* Pods-RxTheme_Example_watchOS Extension.release.xcconfig */;
@@ -6261,38 +6294,6 @@
 			};
 			name = Release;
 		};
-		9C70A86C45D6B14F4CAE4603425C2DA7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB9D6EDF9F8E3888BE86CC5ED1ED1453 /* RxTheme-watchOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS.modulemap";
-				PRODUCT_MODULE_NAME = RxTheme;
-				PRODUCT_NAME = RxTheme;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
 		9F8F4C39BF2AF2C89926A2A83A37C908 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F32A74AD2F563AF33D542C97721020E8 /* RxSwift-macOS.xcconfig */;
@@ -6815,6 +6816,38 @@
 			};
 			name = Debug;
 		};
+		EC8928CC50AB7694F79ECBB8917ECCB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB9D6EDF9F8E3888BE86CC5ED1ED1453 /* RxTheme-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS.modulemap";
+				PRODUCT_MODULE_NAME = RxTheme;
+				PRODUCT_NAME = RxTheme;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
 		ED096923374870309453DB7B11C6E7EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09345B9E368ACE8574DC344DFA682254 /* RxAtomic-watchOS.xcconfig */;
@@ -6877,39 +6910,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		F8B5E0CD04B72F17B087BBA77BAF45A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB9D6EDF9F8E3888BE86CC5ED1ED1453 /* RxTheme-watchOS.xcconfig */;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RxTheme-watchOS/RxTheme-watchOS.modulemap";
-				PRODUCT_MODULE_NAME = RxTheme;
-				PRODUCT_NAME = RxTheme;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
 		};
 		FAFA4FAE9336D335E80D3859A6714B10 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -7128,8 +7128,8 @@
 		CC2D39F336D9D9A101596FE2B60AACB3 /* Build configuration list for PBXNativeTarget "RxTheme-watchOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C70A86C45D6B14F4CAE4603425C2DA7 /* Debug */,
-				F8B5E0CD04B72F17B087BBA77BAF45A9 /* Release */,
+				EC8928CC50AB7694F79ECBB8917ECCB5 /* Debug */,
+				02CF7CD9F587CF185EB3699140BCBBA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
