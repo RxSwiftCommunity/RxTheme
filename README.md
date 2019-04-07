@@ -88,8 +88,6 @@ themeService.typeStream
 themeService.attrsStream
 ```
 
-If you prefer, there is also a nice [video tutorial](https://www.youtube.com/watch?v=aV9qEcmJ7nY) by [@rebeloper](https://github.com/rebeloper).
-
 ### Binder presets
 
 ##### CALayer
@@ -247,10 +245,14 @@ $ pipenv run python -m codegen update-exts
 
 If you think it's commonly used, please send us a PR.
 
+## Examples
 
-## Example
+You can run the example project, clone the repo, run `pod install` from the Example directory first, and open up the workspace file.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+If you prefer, there is also a nice [video tutorial](https://www.youtube.com/watch?v=aV9qEcmJ7nY) by [@rebeloper](https://github.com/rebeloper).
+
+<img width="300" src="https://user-images.githubusercontent.com/2488011/55673846-23d58a00-58b6-11e9-9621-a799b6efb561.png" />
+
 
 ## Installation
 
