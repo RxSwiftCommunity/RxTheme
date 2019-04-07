@@ -88,6 +88,8 @@ themeService.typeStream
 themeService.attrsStream
 ```
 
+If you prefer, there is also a nice [video tutorial](https://www.youtube.com/watch?v=aV9qEcmJ7nY) by [@rebeloper](https://github.com/rebeloper).
+
 ### Binder presets
 
 ##### CALayer
