@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UINavigationBar {
 
     /// (set only) bind a stream to barStyle
-    public var barStyle: Observable<UIBarStyle> {
+    var barStyle: Observable<UIBarStyle> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: UINavigationBar {
     }
 
     /// (set only) bind a stream to barTintColor
-    public var barTintColor: Observable<UIColor?> {
+    var barTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -37,7 +37,7 @@ public extension ThemeProxy where Base: UINavigationBar {
     }
 
     /// (set only) bind a stream to titleTextAttributes
-    public var titleTextAttributes: Observable<[NSAttributedString.Key: Any]?> {
+    var titleTextAttributes: Observable<[NSAttributedString.Key: Any]?> {
         get { return .empty() }
         set {
             let disposable = newValue

@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UITableViewCell {
 
     /// (set only) bind a stream to selectionStyle
-    public var selectionStyle: Observable<UITableViewCell.SelectionStyle> {
+    var selectionStyle: Observable<UITableViewCell.SelectionStyle> {
         get { return .empty() }
         set {
             let disposable = newValue

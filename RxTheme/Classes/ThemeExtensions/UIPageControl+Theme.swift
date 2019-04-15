@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UIPageControl {
 
     /// (set only) bind a stream to pageIndicatorTintColor
-    public var pageIndicatorTintColor: Observable<UIColor?> {
+    var pageIndicatorTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: UIPageControl {
     }
 
     /// (set only) bind a stream to currentPageIndicatorTintColor
-    public var currentPageIndicatorTintColor: Observable<UIColor?> {
+    var currentPageIndicatorTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue

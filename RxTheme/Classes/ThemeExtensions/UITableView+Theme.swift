@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UITableView {
 
     /// (set only) bind a stream to separatorColor
-    public var separatorColor: Observable<UIColor?> {
+    var separatorColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue

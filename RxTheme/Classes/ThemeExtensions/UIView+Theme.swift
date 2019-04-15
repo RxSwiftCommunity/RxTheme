@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UIView {
 
     /// (set only) bind a stream to backgroundColor
-    public var backgroundColor: Observable<UIColor?> {
+    var backgroundColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: UIView {
     }
 
     /// (set only) bind a stream to tintColor
-    public var tintColor: Observable<UIColor?> {
+    var tintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue

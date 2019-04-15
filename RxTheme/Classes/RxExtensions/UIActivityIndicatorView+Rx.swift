@@ -13,7 +13,7 @@ import RxCocoa
 public extension Reactive where Base: UIActivityIndicatorView {
 
     /// Bindable sink for `style` property
-    public var style: Binder<UIActivityIndicatorView.Style> {
+    var style: Binder<UIActivityIndicatorView.Style> {
         return Binder(self.base) { view, attr in
             view.style = attr
         }

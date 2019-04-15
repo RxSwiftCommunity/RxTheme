@@ -14,7 +14,7 @@ import RxCocoa
 
 public extension ThemeProxy where Base: UIButton {
 
-    public func titleColor(from stream: Observable<UIColor?>, for state: UIControl.State) {
+    func titleColor(from stream: Observable<UIColor?>, for state: UIControl.State) {
         let disposable = stream
             .takeUntil(base.rx.deallocating)
             .observeOn(MainScheduler.instance)

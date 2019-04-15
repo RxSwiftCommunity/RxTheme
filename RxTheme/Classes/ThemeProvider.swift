@@ -16,7 +16,7 @@ public protocol ThemeProvider: Hashable {
 
 public extension ThemeProvider {
     /// Generate Theme service
-    public static func service(initial: Self) -> ThemeService<Self> {
+    static func service(initial: Self) -> ThemeService<Self> {
         return ThemeService(initial: initial)
     }
 }

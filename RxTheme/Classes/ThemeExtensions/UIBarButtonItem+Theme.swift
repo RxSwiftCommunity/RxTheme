@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UIBarButtonItem {
 
     /// (set only) bind a stream to tintColor
-    public var tintColor: Observable<UIColor?> {
+    var tintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue

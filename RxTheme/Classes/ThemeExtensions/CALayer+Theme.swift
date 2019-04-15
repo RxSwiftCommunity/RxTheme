@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: CALayer {
 
     /// (set only) bind a stream to backgroundColor
-    public var backgroundColor: Observable<CGColor?> {
+    var backgroundColor: Observable<CGColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: CALayer {
     }
 
     /// (set only) bind a stream to borderWidth
-    public var borderWidth: Observable<CGFloat> {
+    var borderWidth: Observable<CGFloat> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -37,7 +37,7 @@ public extension ThemeProxy where Base: CALayer {
     }
 
     /// (set only) bind a stream to borderColor
-    public var borderColor: Observable<CGColor?> {
+    var borderColor: Observable<CGColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -49,7 +49,7 @@ public extension ThemeProxy where Base: CALayer {
     }
 
     /// (set only) bind a stream to shadowColor
-    public var shadowColor: Observable<CGColor?> {
+    var shadowColor: Observable<CGColor?> {
         get { return .empty() }
         set {
             let disposable = newValue

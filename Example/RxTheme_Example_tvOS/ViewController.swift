@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             .disposed(by: disposeBag)
 
         let tapGesture = UITapGestureRecognizer()
-        tapGesture.allowedPressTypes = [NSNumber(value: UIPressType.playPause.rawValue)]
+        tapGesture.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
         view.addGestureRecognizer(tapGesture)
         tapGesture.rx.event.withLatestFrom(themeService.typeStream)
             .map { $0 == .dark ? .light : .dark }

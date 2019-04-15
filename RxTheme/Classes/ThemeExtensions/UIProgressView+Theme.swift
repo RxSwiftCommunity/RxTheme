@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UIProgressView {
 
     /// (set only) bind a stream to progressTintColor
-    public var progressTintColor: Observable<UIColor?> {
+    var progressTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: UIProgressView {
     }
 
     /// (set only) bind a stream to trackTintColor
-    public var trackTintColor: Observable<UIColor?> {
+    var trackTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue

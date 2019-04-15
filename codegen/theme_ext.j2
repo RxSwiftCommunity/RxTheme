@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: {{ cls }} {
 {% for name, type in attrs.items() %}
     /// (set only) bind a stream to {{ name }}
-    public var {{ name }}: Observable<{{ type }}> {
+    var {{ name }}: Observable<{{ type }}> {
         get { return .empty() }
         set {
             let disposable = newValue

@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UITextField {
 
     /// (set only) bind a stream to font
-    public var font: Observable<UIFont?> {
+    var font: Observable<UIFont?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: UITextField {
     }
 
     /// (set only) bind a stream to textColor
-    public var textColor: Observable<UIColor?> {
+    var textColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -37,7 +37,7 @@ public extension ThemeProxy where Base: UITextField {
     }
 
     /// (set only) bind a stream to keyboardAppearance
-    public var keyboardAppearance: Observable<UIKeyboardAppearance> {
+    var keyboardAppearance: Observable<UIKeyboardAppearance> {
         get { return .empty() }
         set {
             let disposable = newValue
