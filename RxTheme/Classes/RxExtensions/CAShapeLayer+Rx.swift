@@ -13,14 +13,14 @@ import RxCocoa
 public extension Reactive where Base: CAShapeLayer {
 
     /// Bindable sink for `strokeColor` property
-    public var strokeColor: Binder<CGColor?> {
+    var strokeColor: Binder<CGColor?> {
         return Binder(self.base) { view, attr in
             view.strokeColor = attr
         }
     }
 
     /// Bindable sink for `fillColor` property
-    public var fillColor: Binder<CGColor?> {
+    var fillColor: Binder<CGColor?> {
         return Binder(self.base) { view, attr in
             view.fillColor = attr
         }

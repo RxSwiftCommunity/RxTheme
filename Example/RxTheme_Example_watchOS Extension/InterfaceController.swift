@@ -15,7 +15,7 @@ import RxTheme
 
 public extension Reactive where Base: WKInterfaceLabel {
     /// Bindable sink for `backgroundColor` property
-    public var textColor: Binder<UIColor?> {
+    var textColor: Binder<UIColor?> {
         return Binder(self.base) { view, attr in
             view.setTextColor(attr)
         }

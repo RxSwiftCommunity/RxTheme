@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UISlider {
 
     /// (set only) bind a stream to thumbTintColor
-    public var thumbTintColor: Observable<UIColor?> {
+    var thumbTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: UISlider {
     }
 
     /// (set only) bind a stream to minimumTrackTintColor
-    public var minimumTrackTintColor: Observable<UIColor?> {
+    var minimumTrackTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -37,7 +37,7 @@ public extension ThemeProxy where Base: UISlider {
     }
 
     /// (set only) bind a stream to maximumTrackTintColor
-    public var maximumTrackTintColor: Observable<UIColor?> {
+    var maximumTrackTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue

@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UIActivityIndicatorView {
 
     /// (set only) bind a stream to style
-    public var style: Observable<UIActivityIndicatorView.Style> {
+    var style: Observable<UIActivityIndicatorView.Style> {
         get { return .empty() }
         set {
             let disposable = newValue

@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: UISearchBar {
 
     /// (set only) bind a stream to barStyle
-    public var barStyle: Observable<UIBarStyle> {
+    var barStyle: Observable<UIBarStyle> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: UISearchBar {
     }
 
     /// (set only) bind a stream to barTintColor
-    public var barTintColor: Observable<UIColor?> {
+    var barTintColor: Observable<UIColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -37,7 +37,7 @@ public extension ThemeProxy where Base: UISearchBar {
     }
 
     /// (set only) bind a stream to keyboardAppearance
-    public var keyboardAppearance: Observable<UIKeyboardAppearance> {
+    var keyboardAppearance: Observable<UIKeyboardAppearance> {
         get { return .empty() }
         set {
             let disposable = newValue

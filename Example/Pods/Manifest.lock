@@ -1,20 +1,21 @@
 PODS:
-  - RxAtomic (4.4.2)
-  - RxCocoa (4.4.2):
-    - RxSwift (>= 4.4.2, ~> 4.4)
-  - RxSwift (4.4.2):
-    - RxAtomic (>= 4.4.2, ~> 4.4)
-  - RxTheme (3.3.0):
-    - RxCocoa (>= 4.4.2, ~> 4.4)
-    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - RxTheme (4.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
 
 DEPENDENCIES:
   - RxTheme (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - RxAtomic
     - RxCocoa
+    - RxRelay
     - RxSwift
 
 EXTERNAL SOURCES:
@@ -22,11 +23,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RxAtomic: d00e97c10db88c6f08540e0bf2752fc5a2404167
-  RxCocoa: 477990dc3b4c3ff55fb0ac77e1cc06244e0aaec8
-  RxSwift: 74c29b693c8e42b0f64400e8b06564575742d649
-  RxTheme: 40fdcdeba539402beface070d8472e8d0db78d66
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  RxTheme: 0b642f47c7d197a803c6b9c083964188c34f7ddb
 
 PODFILE CHECKSUM: 3549b3ef30393f1fa7f52c030ff2aa0e1452a120
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.7.0.beta.3

@@ -13,7 +13,7 @@ import RxCocoa
 public extension Reactive where Base: UIButton {
 
     /// Bindable sink for `titleColor` property
-    public func titleColor(for state: UIControl.State) -> Binder<UIColor?> {
+    func titleColor(for state: UIControl.State) -> Binder<UIColor?> {
         return Binder(self.base) { view, attr in
             view.setTitleColor(attr, for: state)
         }

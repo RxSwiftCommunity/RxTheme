@@ -13,7 +13,7 @@ import RxCocoa
 public extension Reactive where Base: {{ cls }} {
 {% for name, type in attrs.items() %}
     /// Bindable sink for `{{ name }}` property
-    public var {{ name }}: Binder<{{ type }}> {
+    var {{ name }}: Binder<{{ type }}> {
         return Binder(self.base) { view, attr in
             view.{{ name }} = attr
         }

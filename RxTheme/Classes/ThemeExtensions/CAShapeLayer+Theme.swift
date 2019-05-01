@@ -13,7 +13,7 @@ import RxCocoa
 public extension ThemeProxy where Base: CAShapeLayer {
 
     /// (set only) bind a stream to strokeColor
-    public var strokeColor: Observable<CGColor?> {
+    var strokeColor: Observable<CGColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
@@ -25,7 +25,7 @@ public extension ThemeProxy where Base: CAShapeLayer {
     }
 
     /// (set only) bind a stream to fillColor
-    public var fillColor: Observable<CGColor?> {
+    var fillColor: Observable<CGColor?> {
         get { return .empty() }
         set {
             let disposable = newValue
