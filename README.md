@@ -259,13 +259,13 @@ If you prefer, there is also a nice [video tutorial](https://www.youtube.com/wat
 ### Cocoapods
 
 ```ruby
-pod 'RxTheme', '~> 3.0'
+pod 'RxTheme', '~> 4.0'
 ```
 
 ### Carthage
 
 ```
-github "RxSwiftCommunity/RxTheme" ~> 3.0.0
+github "RxSwiftCommunity/RxTheme" ~> 4.0.0
 ```
 
 ## Author

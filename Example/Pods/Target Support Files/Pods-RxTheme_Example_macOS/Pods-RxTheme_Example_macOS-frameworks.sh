@@ -161,14 +161,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic-macOS/RxAtomic.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-macOS/RxCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxRelay-macOS/RxRelay.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxTheme-macOS/RxTheme.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic-macOS/RxAtomic.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-macOS/RxCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxRelay-macOS/RxRelay.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-macOS/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/RxTheme-macOS/RxTheme.framework"
 fi
