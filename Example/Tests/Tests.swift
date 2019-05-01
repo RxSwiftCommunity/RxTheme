@@ -4,30 +4,87 @@
 //
 
 import XCTest
+#if os(iOS) || os(tvOS) || os(watchOS)
 import UIKit
+typealias Color = UIColor
+#endif
+#if os(macOS)
+import Cocoa
+typealias Color = NSColor
+#endif
 import RxSwift
 import RxTheme
 
+
+protocol Theme {
+    var backgroundColor: Color { get }
+    var textColor: Color { get }
+}
+
+struct LightTheme: Theme {
+    let backgroundColor = Color.white
+    let textColor = Color.black
+}
+
+struct DarkTheme: Theme {
+    let backgroundColor = Color.black
+    let textColor = Color.white
+}
+
+enum ThemeType: ThemeProvider {
+    case light, dark
+    var associatedObject: Theme {
+        switch self {
+        case .light: return LightTheme()
+        case .dark: return DarkTheme()
+        }
+    }
+}
+
 class Tests: XCTestCase {
 
-    let disposeBag = DisposeBag()
-    
+    var disposeBag: DisposeBag!
+    var themeService: ThemeService<ThemeType>!
+
     override func setUp() {
         super.setUp()
+        self.disposeBag = DisposeBag()
+        self.themeService = ThemeType.service(initial: .light)
     }
     
     override func tearDown() {
         super.tearDown()
     }
     
-    func testSwitchTheme() {
+    func testSingleBind() {
         let label = UILabel()
-        themeService.rx
-            .bind({ $0.textColor }, to: label.rx.textColor)
-            .disposed(by: disposeBag)
+        label.theme.textColor = themeService.attrStream { $0.textColor }
         XCTAssertEqual(label.textColor, LightTheme().textColor)
         themeService.switch(.dark)
         XCTAssertEqual(label.textColor, DarkTheme().textColor)
     }
 
+    func testMultiBind() {
+        let label1 = UILabel()
+        let label2 = UILabel()
+
+        themeService.rx
+            .bind({ $0.textColor }, to: label1.rx.textColor, label2.rx.textColor)
+            .disposed(by: disposeBag)
+        XCTAssertEqual(label1.textColor, LightTheme().textColor)
+        XCTAssertEqual(label2.textColor, LightTheme().textColor)
+        themeService.switch(.dark)
+        XCTAssertEqual(label1.textColor, DarkTheme().textColor)
+        XCTAssertEqual(label2.textColor, DarkTheme().textColor)
+    }
+
+    func testOverrideBind() {
+        let label = UILabel()
+        label.theme.textColor = themeService.attrStream { $0.backgroundColor }
+        XCTAssertEqual(label.textColor, LightTheme().backgroundColor)
+        label.theme.textColor = themeService.attrStream { $0.textColor }
+        XCTAssertEqual(label.textColor, LightTheme().textColor)
+        themeService.switch(.dark)
+        XCTAssertEqual(label.textColor, DarkTheme().textColor)
+    }
 }
