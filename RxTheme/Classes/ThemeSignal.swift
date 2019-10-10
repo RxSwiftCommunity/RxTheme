@@ -11,6 +11,9 @@ import RxSwift
 public class ThemeSignal<A> {
     public let value: A
     public let onChange: Observable<A>
+    public var behavior: Observable<A> {
+        onChange.startWith(value)
+    }
 
     public init(value: A, onChange: Observable<A>) {
         self.value = value
