@@ -31,3 +31,9 @@ public class ThemeSignal<A> {
             .bind(onNext: binder.setter)
     }
 }
+
+public extension ThemeSignal {
+    func asOptional() -> ThemeSignal<A?> {
+        map { $0 as A? }
+    }
+}
