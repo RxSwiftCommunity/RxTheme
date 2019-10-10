@@ -13,13 +13,11 @@ import RxCocoa
 public extension ThemeProxy where Base: UIBarButtonItem {
 
     /// (set only) bind a stream to tintColor
-    var tintColor: Observable<UIColor?> {
-        get { return .empty() }
+    var tintColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.tintColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.tintColor))
             hold(disposable, for: "tintColor")
         }
     }

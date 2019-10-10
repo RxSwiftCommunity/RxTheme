@@ -34,8 +34,8 @@ class ViewController: UIViewController {
 
         let tapGesture = UITapGestureRecognizer()
         view.addGestureRecognizer(tapGesture)
-        tapGesture.rx.event.withLatestFrom(themeService.typeStream)
-            .map { $0 == .dark ? .light : .dark }
+        tapGesture.rx.event
+            .map { _ in themeService.type == .dark ? .light : .dark }
             .bind(to: themeService.switcher)
             .disposed(by: disposeBag)
     }

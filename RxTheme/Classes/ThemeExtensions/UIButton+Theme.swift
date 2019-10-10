@@ -14,11 +14,11 @@ import RxCocoa
 
 public extension ThemeProxy where Base: UIButton {
 
-    func titleColor(from stream: Observable<UIColor?>, for state: UIControl.State) {
-        let disposable = stream
-            .takeUntil(base.rx.deallocating)
-            .observeOn(MainScheduler.instance)
-            .bind(to: base.rx.titleColor(for: state))
+    func titleColor(from stream: ThemeSignal<UIColor?>, for state: UIControl.State) {
+        let binder = ThemeBinder<UIColor?>(base, setter: { a, v in
+            a.setTitleColor(v, for: state)
+        })
+        let disposable = stream.bind(to: binder)
         hold(disposable, for: "titleColor.forState.\(state.rawValue)")
     }
 

@@ -13,25 +13,21 @@ import RxCocoa
 public extension ThemeProxy where Base: UITabBar {
 
     /// (set only) bind a stream to barStyle
-    var barStyle: Observable<UIBarStyle> {
-        get { return .empty() }
+    var barStyle: ThemeSignal<UIBarStyle> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.barStyle)
+            let disposable = newValue.bind(to: base.theme.binder(\.barStyle))
             hold(disposable, for: "barStyle")
         }
     }
 
     /// (set only) bind a stream to barTintColor
-    var barTintColor: Observable<UIColor?> {
-        get { return .empty() }
+    var barTintColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.barTintColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.barTintColor))
             hold(disposable, for: "barTintColor")
         }
     }

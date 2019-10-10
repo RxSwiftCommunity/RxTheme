@@ -69,7 +69,7 @@ class Tests: XCTestCase {
         let label2 = UILabel()
 
         themeService.rx
-            .bind({ $0.textColor }, to: label1.rx.textColor, label2.rx.textColor)
+            .bind({ $0.textColor }, to: label1.theme.binder(\.textColor), label2.theme.binder(\.textColor))
             .disposed(by: disposeBag)
         XCTAssertEqual(label1.textColor, LightTheme().textColor)
         XCTAssertEqual(label2.textColor, LightTheme().textColor)

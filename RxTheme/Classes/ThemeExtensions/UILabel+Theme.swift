@@ -13,49 +13,41 @@ import RxCocoa
 public extension ThemeProxy where Base: UILabel {
 
     /// (set only) bind a stream to font
-    var font: Observable<UIFont> {
-        get { return .empty() }
+    var font: ThemeSignal<UIFont> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.font)
+            let disposable = newValue.bind(to: base.theme.binder(\.font))
             hold(disposable, for: "font")
         }
     }
 
     /// (set only) bind a stream to textColor
-    var textColor: Observable<UIColor?> {
-        get { return .empty() }
+    var textColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.textColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.textColor))
             hold(disposable, for: "textColor")
         }
     }
 
     /// (set only) bind a stream to highlightedTextColor
-    var highlightedTextColor: Observable<UIColor?> {
-        get { return .empty() }
+    var highlightedTextColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.highlightedTextColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.highlightedTextColor))
             hold(disposable, for: "highlightedTextColor")
         }
     }
 
     /// (set only) bind a stream to shadowColor
-    var shadowColor: Observable<UIColor?> {
-        get { return .empty() }
+    var shadowColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.shadowColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.shadowColor))
             hold(disposable, for: "shadowColor")
         }
     }

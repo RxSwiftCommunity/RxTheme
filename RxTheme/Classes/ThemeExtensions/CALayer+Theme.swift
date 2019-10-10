@@ -13,49 +13,41 @@ import RxCocoa
 public extension ThemeProxy where Base: CALayer {
 
     /// (set only) bind a stream to backgroundColor
-    var backgroundColor: Observable<CGColor?> {
-        get { return .empty() }
+    var backgroundColor: ThemeSignal<CGColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.backgroundColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.backgroundColor))
             hold(disposable, for: "backgroundColor")
         }
     }
 
     /// (set only) bind a stream to borderWidth
-    var borderWidth: Observable<CGFloat> {
-        get { return .empty() }
+    var borderWidth: ThemeSignal<CGFloat> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.borderWidth)
+            let disposable = newValue.bind(to: base.theme.binder(\.borderWidth))
             hold(disposable, for: "borderWidth")
         }
     }
 
     /// (set only) bind a stream to borderColor
-    var borderColor: Observable<CGColor?> {
-        get { return .empty() }
+    var borderColor: ThemeSignal<CGColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.borderColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.borderColor))
             hold(disposable, for: "borderColor")
         }
     }
 
     /// (set only) bind a stream to shadowColor
-    var shadowColor: Observable<CGColor?> {
-        get { return .empty() }
+    var shadowColor: ThemeSignal<CGColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.shadowColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.shadowColor))
             hold(disposable, for: "shadowColor")
         }
     }

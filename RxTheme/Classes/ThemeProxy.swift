@@ -16,7 +16,7 @@ public protocol ThemeCompatible {
 }
 
 extension ThemeCompatible {
-    public var theme: ThemeProxy<Self> { return ThemeProxy(self) }
+    public var theme: ThemeProxy<Self> { ThemeProxy(self) }
 }
 
 extension NSObject: ThemeCompatible {}
@@ -48,7 +48,7 @@ public class ThemeProxy<Base> {
         get {
             let val = objc_getAssociatedObject(
                 base, &ThemeProxyDisposablesHandle
-                ) as? NSMutableDictionary
+            ) as? NSMutableDictionary
             return val ?? [:]
         }
         set {
@@ -57,5 +57,13 @@ public class ThemeProxy<Base> {
                 newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC
             )
         }
+    }
+}
+
+public extension ThemeProxy where Base: AnyObject {
+    func binder<A>(_ keyPath: ReferenceWritableKeyPath<Base, A>) -> ThemeBinder<A> {
+        ThemeBinder<A>.init(base, setter: { a, v in
+            a[keyPath: keyPath] = v
+        })
     }
 }

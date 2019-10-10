@@ -8,13 +8,13 @@ import RxSwift
 import RxCocoa
 
 
-public class ThemeBindable<T> {
-    private let relay: Observable<T>
-    private var disposables: [Disposable]
 
-    init(relay: Observable<T>) {
-        self.relay = relay
-        self.disposables = []
+public class ThemeBindable<A> {
+    private let signal: ThemeSignal<A>
+    private var disposables: [Disposable] = []
+
+    init(signal: ThemeSignal<A>) {
+        self.signal = signal
     }
 
     /// Bind theme attributes to UI attributes
@@ -24,12 +24,10 @@ public class ThemeBindable<T> {
     ///   - binders: Binder sinks
     /// - Returns: ThemeBindable instance
     @discardableResult
-    public func bind<U>(_ from: @escaping ((T) -> U),
-                        to binders: [Binder<U>]) -> ThemeBindable {
+    public func bind<B>(_ from: @escaping ((A) -> B),
+                        to binders: [ThemeBinder<B>]) -> ThemeBindable {
         disposables += binders.map {
-            self.relay.map(from)
-                .observeOn(MainScheduler.instance)
-                .bind(to: $0)
+            self.signal.map(from).bind(to: $0)
         }
         return self
     }
@@ -41,7 +39,7 @@ public class ThemeBindable<T> {
     ///   - binders: Binder sinks
     /// - Returns: ThemeBindable instance
     @discardableResult
-    public func bind<U>(_ from: @escaping ((T) -> U), to binders: Binder<U>...) -> ThemeBindable {
+    public func bind<B>(_ from: @escaping ((A) -> B), to binders: ThemeBinder<B>...) -> ThemeBindable {
         return self.bind(from, to: binders)
     }
 

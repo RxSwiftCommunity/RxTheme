@@ -13,37 +13,31 @@ import RxCocoa
 public extension ThemeProxy where Base: UISlider {
 
     /// (set only) bind a stream to thumbTintColor
-    var thumbTintColor: Observable<UIColor?> {
-        get { return .empty() }
+    var thumbTintColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.thumbTintColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.thumbTintColor))
             hold(disposable, for: "thumbTintColor")
         }
     }
 
     /// (set only) bind a stream to minimumTrackTintColor
-    var minimumTrackTintColor: Observable<UIColor?> {
-        get { return .empty() }
+    var minimumTrackTintColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.minimumTrackTintColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.minimumTrackTintColor))
             hold(disposable, for: "minimumTrackTintColor")
         }
     }
 
     /// (set only) bind a stream to maximumTrackTintColor
-    var maximumTrackTintColor: Observable<UIColor?> {
-        get { return .empty() }
+    var maximumTrackTintColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.maximumTrackTintColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.maximumTrackTintColor))
             hold(disposable, for: "maximumTrackTintColor")
         }
     }

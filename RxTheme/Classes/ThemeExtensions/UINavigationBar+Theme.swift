@@ -13,37 +13,31 @@ import RxCocoa
 public extension ThemeProxy where Base: UINavigationBar {
 
     /// (set only) bind a stream to barStyle
-    var barStyle: Observable<UIBarStyle> {
-        get { return .empty() }
+    var barStyle: ThemeSignal<UIBarStyle> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.barStyle)
+            let disposable = newValue.bind(to: base.theme.binder(\.barStyle))
             hold(disposable, for: "barStyle")
         }
     }
 
     /// (set only) bind a stream to barTintColor
-    var barTintColor: Observable<UIColor?> {
-        get { return .empty() }
+    var barTintColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.barTintColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.barTintColor))
             hold(disposable, for: "barTintColor")
         }
     }
 
     /// (set only) bind a stream to titleTextAttributes
-    var titleTextAttributes: Observable<[NSAttributedString.Key: Any]?> {
-        get { return .empty() }
+    var titleTextAttributes: ThemeSignal<[NSAttributedString.Key: Any]?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.titleTextAttributes)
+            let disposable = newValue.bind(to: base.theme.binder(\.titleTextAttributes))
             hold(disposable, for: "titleTextAttributes")
         }
     }

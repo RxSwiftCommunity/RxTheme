@@ -13,11 +13,20 @@ import RxCocoa
 import RxTheme
 
 
-public extension Reactive where Base: WKInterfaceLabel {
-    /// Bindable sink for `backgroundColor` property
-    var textColor: Binder<UIColor?> {
-        return Binder(self.base) { view, attr in
-            view.setTextColor(attr)
+extension ThemeProxy where Base: WKInterfaceLabel {
+    var binderForTextColor: ThemeBinder<UIColor?> {
+        ThemeBinder(base, setter: { a, v in
+            a.setTextColor(v)
+        })
+    }
+
+    /// (set only) bind a stream to textColor
+    var textColor: ThemeSignal<UIColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
+        set {
+            let disposable = newValue.bind(to: binderForTextColor)
+            self.hold(disposable, for: "textColor")
         }
     }
 }
@@ -31,7 +40,7 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         themeService.rx
-            .bind({ $0.textColor }, to: label.rx.textColor)
+            .bind({ $0.textColor }, to: label.theme.binderForTextColor)
             .disposed(by: disposeBag)
     }
 

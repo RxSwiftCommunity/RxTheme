@@ -1,0 +1,30 @@
+//
+//  ThemeSignal.swift
+//  Pods
+//
+//  Created by duan on 2019/10/10.
+//
+
+import Foundation
+import RxSwift
+
+public class ThemeSignal<A> {
+    let value: A
+    let onChange: Observable<A>
+
+    init(value: A, onChange: Observable<A>) {
+        self.value = value
+        self.onChange = onChange
+    }
+
+    public func map<B>(_ f: @escaping (A) -> B) -> ThemeSignal<B> {
+        ThemeSignal<B>(value: f(value), onChange: onChange.map(f))
+    }
+
+    public func bind(to binder: ThemeBinder<A>) -> Disposable {
+        binder.setter(value)
+        return onChange
+            .observeOn(MainScheduler.instance)
+            .bind(onNext: binder.setter)
+    }
+}

@@ -13,25 +13,21 @@ import RxCocoa
 public extension ThemeProxy where Base: CAShapeLayer {
 
     /// (set only) bind a stream to strokeColor
-    var strokeColor: Observable<CGColor?> {
-        get { return .empty() }
+    var strokeColor: ThemeSignal<CGColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.strokeColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.strokeColor))
             hold(disposable, for: "strokeColor")
         }
     }
 
     /// (set only) bind a stream to fillColor
-    var fillColor: Observable<CGColor?> {
-        get { return .empty() }
+    var fillColor: ThemeSignal<CGColor?> {
+        @available(*, unavailable)
+        get { fatalError("Should use set only") }
         set {
-            let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
-                .bind(to: base.rx.fillColor)
+            let disposable = newValue.bind(to: base.theme.binder(\.fillColor))
             hold(disposable, for: "fillColor")
         }
     }

@@ -55,15 +55,13 @@ def cli():
 
 @cli.command()
 def update_exts():
-    for k, v in read_config('rx_exts.yml').items():
-        gen_rx_ext(k, v)
     for k, v in read_config('theme_exts.yml').items():
         gen_theme_rx(k, v)
 
 
 @cli.command()
 def show_exts():
-    data = read_config('rx_exts.yml')
+    data = read_config('theme_exts.yml')
     lines = []
     for k, v in data.items():
         lines.append(f'##### {k}')
