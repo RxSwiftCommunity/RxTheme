@@ -9,10 +9,10 @@ import Foundation
 import RxSwift
 
 public class ThemeSignal<A> {
-    let value: A
-    let onChange: Observable<A>
+    public let value: A
+    public let onChange: Observable<A>
 
-    init(value: A, onChange: Observable<A>) {
+    public init(value: A, onChange: Observable<A>) {
         self.value = value
         self.onChange = onChange
     }
