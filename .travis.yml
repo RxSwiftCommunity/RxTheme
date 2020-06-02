@@ -1,6 +1,6 @@
-osx_image: xcode10.2
+osx_image: xcode11.5
 language: objective-c
 
 script:
 - set -o pipefail
-- xcodebuild test -configuration Release -enableCodeCoverage YES -workspace Example/RxTheme.xcworkspace -scheme RxTheme-Example -destination 'OS=12.0,name=iPhone X' ONLY_ACTIVE_ARCH=NO | xcpretty
+- xcodebuild test -configuration Release -enableCodeCoverage YES -workspace Example/RxTheme.xcworkspace -scheme RxTheme-Example -destination 'OS=13.5,name=iPhone 11' ONLY_ACTIVE_ARCH=NO | xcpretty
