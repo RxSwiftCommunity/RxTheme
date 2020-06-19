@@ -120,6 +120,7 @@ themeService.attrsStream
 - barStyle
 - barTintColor
 - titleTextAttributes
+- largeTitleTextAttributes
 
 ##### UIPageControl
 
