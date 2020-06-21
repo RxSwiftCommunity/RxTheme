@@ -221,29 +221,7 @@ extension ThemeProxy where Base: UIView {
 }
 ```
 
-### Extend binders in the lib
-
-Open `codegen/rx_exts.yml` and `codegen/theme_exts.yml`, add class, attributes and supported os.
-
-```
-UILabel:
-  attrs:
-    font: UIFont
-    textColor: UIColor?
-    highlightedTextColor: UIColor?
-    shadowColor: UIColor?
-  os: [iOS, tvOS]
-```
-
-then run codegen script
-
-```shell
-// make sure you have python3 and pipenv installed
-$ pipenv install
-$ pipenv run python -m codegen update-exts
-```
-
-If you think it's commonly used, please send us a PR.
+If you think your extension is commonly used, please send us a PR.
 
 ## Examples
 
