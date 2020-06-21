@@ -48,5 +48,18 @@ public extension ThemeProxy where Base: UINavigationBar {
         }
     }
 
+    /// (set only) bind a stream to largeTitleTextAttributes
+    @available(iOS, introduced:11.0)
+    var largeTitleTextAttributes: Observable<[NSAttributedString.Key: Any]?> {
+        get { return .empty() }
+        set {
+            let disposable = newValue
+                .takeUntil(base.rx.deallocating)
+                .observeOn(MainScheduler.instance)
+                .bind(to: base.rx.largeTitleTextAttributes)
+            hold(disposable, for: "largeTitleTextAttributes")
+        }
+    }
+
 }
 #endif
