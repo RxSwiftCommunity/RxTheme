@@ -49,7 +49,7 @@ public extension ThemeProxy where Base: UINavigationBar {
     }
 
     /// (set only) bind a stream to largeTitleTextAttributes
-    @available(iOS, introduced:11.0)
+    @available(iOS 11.0, *)
     var largeTitleTextAttributes: Observable<[NSAttributedString.Key: Any]?> {
         get { return .empty() }
         set {

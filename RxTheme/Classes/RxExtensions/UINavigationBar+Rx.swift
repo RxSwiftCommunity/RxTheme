@@ -34,7 +34,7 @@ public extension Reactive where Base: UINavigationBar {
     }
 
     /// Bindable sink for `largeTitleTextAttributes` property
-    @available(iOS, introduced:11.0)
+    @available(iOS 11.0, *)
     var largeTitleTextAttributes: Binder<[NSAttributedString.Key: Any]?> {
         return Binder(self.base) { view, attr in
             view.largeTitleTextAttributes = attr

@@ -1,5 +1,9 @@
 # changelog
 
+## 4.1.1
+
+* Support `UINavigationBar.largeTitleTextAttributes`
+
 ## 4.1.0
 
 * Support `UISegmentedControl.selectedSegmentTintColor`
