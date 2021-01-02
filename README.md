@@ -87,8 +87,6 @@ Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa c
 
 This also makes the lib super easy to extend in your codebase, here is an example
 
-> Since RxSwift 6, most variable based rx extensions should already been derived by @dynamicMemberLookup.
-
 ```swift
 extension Reactive where Base: UIView {
     var borderColor: Binder<UIColor?> {
@@ -98,6 +96,8 @@ extension Reactive where Base: UIView {
     }
 }
 ```
+
+> NOTICE: Since RxSwift 6, most variable based rx extensions should already been derived by @dynamicMemberLookup.
 
 if you also want to use the sugar `view.theme.borderColor`, you have to write another extension:
 
