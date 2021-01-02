@@ -22,6 +22,6 @@ Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.
 
   s.source_files = 'RxTheme/Classes/**/*'
   
-  s.dependency 'RxSwift', '~> 5.0'
-  s.dependency 'RxCocoa', '~> 5.0'
+  s.dependency 'RxSwift', '~> 6.0'
+  s.dependency 'RxCocoa', '~> 6.0'
 end

@@ -76,16 +76,27 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Swif
      
      - parameter onCompleted: Action to invoke upon graceful termination of the observable sequence.
      - parameter onError: Action to invoke upon errored termination of the observable sequence.
+     - parameter onDisposed: Action to invoke upon any type of termination of sequence (if the sequence has
+     gracefully completed, errored, or if the generation is canceled by disposing subscription).
      - returns: Subscription object used to unsubscribe from the observable sequence.
      */
-    public func subscribe(onCompleted: (() -> Void)? = nil, onError: ((Swift.Error) -> Void)? = nil) -> Disposable {
+    public func subscribe(onCompleted: (() -> Void)? = nil,
+                          onError: ((Swift.Error) -> Void)? = nil,
+                          onDisposed: (() -> Void)? = nil) -> Disposable {
         #if DEBUG
                 let callStack = Hooks.recordCallStackOnError ? Thread.callStackSymbols : []
         #else
                 let callStack = [String]()
         #endif
 
-        return self.primitiveSequence.subscribe { event in
+        let disposable: Disposable
+        if let onDisposed = onDisposed {
+            disposable = Disposables.create(with: onDisposed)
+        } else {
+            disposable = Disposables.create()
+        }
+
+        let observer: CompletableObserver = { event in
             switch event {
             case .error(let error):
                 if let onError = onError {
@@ -93,10 +104,17 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Swif
                 } else {
                     Hooks.defaultErrorHandler(callStack, error)
                 }
+                disposable.dispose()
             case .completed:
                 onCompleted?()
+                disposable.dispose()
             }
         }
+
+        return Disposables.create(
+            self.primitiveSequence.subscribe(observer),
+            disposable
+        )
     }
 }
 
@@ -109,7 +127,7 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Swif
      - returns: The observable sequence that terminates with specified error.
      */
     public static func error(_ error: Swift.Error) -> Completable {
-        return PrimitiveSequence(raw: Observable.error(error))
+        PrimitiveSequence(raw: Observable.error(error))
     }
 
     /**
@@ -120,7 +138,7 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Swif
      - returns: An observable sequence whose observers will never get called.
      */
     public static func never() -> Completable {
-        return PrimitiveSequence(raw: Observable.never())
+        PrimitiveSequence(raw: Observable.never())
     }
 
     /**
@@ -131,7 +149,7 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Swif
      - returns: An observable sequence with no elements.
      */
     public static func empty() -> Completable {
-        return Completable(raw: Observable.empty())
+        Completable(raw: Observable.empty())
     }
 
 }
@@ -182,7 +200,7 @@ extension PrimitiveSequenceType where Trait == CompletableTrait, Element == Swif
      - returns: An observable sequence that contains the elements of `self`, followed by those of the second sequence.
      */
     public func concat(_ second: Completable) -> Completable {
-        return Completable.concat(self.primitiveSequence, second)
+        Completable.concat(self.primitiveSequence, second)
     }
     
     /**

@@ -28,7 +28,7 @@ public class ThemeBindable<T> {
                         to binders: [Binder<U>]) -> ThemeBindable {
         disposables += binders.map {
             self.relay.map(from)
-                .observeOn(MainScheduler.instance)
+                .observe(on: MainScheduler.instance)
                 .bind(to: $0)
         }
         return self

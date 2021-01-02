@@ -17,7 +17,9 @@ extension ObservableType {
      - returns: Disposable object that can be used to unsubscribe the observers.
      */
     public func bind<Observer: ObserverType>(to observers: Observer...) -> Disposable where Observer.Element == Element {
-        return self.bind(to: observers)
+        self.subscribe { event in
+            observers.forEach { $0.on(event) }
+        }
     }
 
     /**
@@ -28,20 +30,10 @@ extension ObservableType {
      - returns: Disposable object that can be used to unsubscribe the observers.
      */
     public func bind<Observer: ObserverType>(to observers: Observer...) -> Disposable where Observer.Element == Element? {
-        return self.map { $0 as Element? }.bind(to: observers)
-    }
-
-    /**
-     Creates new subscription and sends elements to observer(s).
-     In this form, it's equivalent to the `subscribe` method, but it better conveys intent, and enables
-     writing more consistent binding code.
-     - parameter to: Observers to receives events.
-     - returns: Disposable object that can be used to unsubscribe the observers.
-     */
-    private func bind<Observer: ObserverType>(to observers: [Observer]) -> Disposable where Observer.Element == Element {
-        return self.subscribe { event in
-            observers.forEach { $0.on(event) }
-        }
+        self.map { $0 as Element? }
+            .subscribe { event in
+                observers.forEach { $0.on(event) }
+            }
     }
 
     /**
@@ -51,7 +43,7 @@ extension ObservableType {
     - returns: Object representing subscription.
     */
     public func bind<Result>(to binder: (Self) -> Result) -> Result {
-        return binder(self)
+        binder(self)
     }
 
     /**
@@ -67,9 +59,8 @@ extension ObservableType {
     - returns: Object representing subscription.
     */
     public func bind<R1, R2>(to binder: (Self) -> (R1) -> R2, curriedArgument: R1) -> R2 {
-         return binder(self)(curriedArgument)
+        binder(self)(curriedArgument)
     }
-
 
     /**
     Subscribes an element handler to an observable sequence.
@@ -80,8 +71,9 @@ extension ObservableType {
     - returns: Subscription object used to unsubscribe from the observable sequence.
     */
     public func bind(onNext: @escaping (Element) -> Void) -> Disposable {
-        return self.subscribe(onNext: onNext, onError: { error in
-            rxFatalErrorInDebug("Binding error: \(error)")
-        })
+        self.subscribe(onNext: onNext,
+                       onError: { error in
+                        rxFatalErrorInDebug("Binding error: \(error)")
+                       })
     }
 }

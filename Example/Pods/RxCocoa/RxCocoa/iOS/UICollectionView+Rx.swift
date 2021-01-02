@@ -56,7 +56,7 @@ extension Reactive where Base: UICollectionView {
     - parameter cellIdentifier: Identifier used to dequeue cells.
     - parameter source: Observable sequence of items.
     - parameter configureCell: Transform between sequence elements and view cells.
-    - parameter cellType: Type of table view cell.
+    - parameter cellType: Type of collection view cell.
     - returns: Disposable object that can be used to unbind.
      
      Example
@@ -166,7 +166,7 @@ extension Reactive where Base: UICollectionView {
     ///
     /// For more information take a look at `DelegateProxyType` protocol documentation.
     public var dataSource: DelegateProxy<UICollectionView, UICollectionViewDataSource> {
-        return RxCollectionViewDataSourceProxy.proxy(for: base)
+        RxCollectionViewDataSourceProxy.proxy(for: base)
     }
     
     /// Installs data source as forwarding delegate on `rx.dataSource`.
@@ -178,7 +178,7 @@ extension Reactive where Base: UICollectionView {
     /// - returns: Disposable object that can be used to unbind the data source.
     public func setDataSource(_ dataSource: UICollectionViewDataSource)
         -> Disposable {
-        return RxCollectionViewDataSourceProxy.installForwardDelegate(dataSource, retainDelegate: false, onProxyForObject: self.base)
+        RxCollectionViewDataSourceProxy.installForwardDelegate(dataSource, retainDelegate: false, onProxyForObject: self.base)
     }
    
     /// Reactive wrapper for `delegate` message `collectionView(_:didSelectItemAtIndexPath:)`.
@@ -324,7 +324,7 @@ extension Reactive where Base: UICollectionView {
     ///
     /// For more information take a look at `DelegateProxyType` protocol documentation.
     public var prefetchDataSource: DelegateProxy<UICollectionView, UICollectionViewDataSourcePrefetching> {
-        return RxCollectionViewDataSourcePrefetchingProxy.proxy(for: base)
+        RxCollectionViewDataSourcePrefetchingProxy.proxy(for: base)
     }
 
     /**

@@ -25,6 +25,24 @@ extension SharedSequenceConvertibleType {
     }
 }
 
+// MARK: compactMap
+extension SharedSequenceConvertibleType {
+    
+    /**
+     Projects each element of an observable sequence into an optional form and filters all optional results.
+     
+     - parameter transform: A transform function to apply to each source element and which returns an element or nil.
+     - returns: An observable sequence whose elements are the result of filtering the transform function for each element of the source.
+     
+     */
+    public func compactMap<Result>(_ selector: @escaping (Element) -> Result?) -> SharedSequence<SharingStrategy, Result> {
+        let source = self
+            .asObservable()
+            .compactMap(selector)
+        return SharedSequence<SharingStrategy, Result>(source)
+    }
+}
+
 // MARK: filter
 extension SharedSequenceConvertibleType {
     /**
@@ -42,7 +60,7 @@ extension SharedSequenceConvertibleType {
 }
 
 // MARK: switchLatest
-extension SharedSequenceConvertibleType where Element : SharedSequenceConvertibleType {
+extension SharedSequenceConvertibleType where Element: SharedSequenceConvertibleType {
     
     /**
     Transforms an observable sequence of observable sequences into an observable sequence
@@ -261,7 +279,7 @@ extension SharedSequenceConvertibleType {
 }
 
 // MARK: merge
-extension SharedSequenceConvertibleType where Element : SharedSequenceConvertibleType {
+extension SharedSequenceConvertibleType where Element: SharedSequenceConvertibleType {
     /**
     Merges elements from all observable sequences in the given enumerable sequence into a single observable sequence.
     
@@ -422,6 +440,37 @@ extension SharedSequence {
         where Collection.Element == SharedSequence<SharingStrategy, Element> {
         let source = Observable.combineLatest(collection.map { $0.asObservable() })
         return SharedSequence<SharingStrategy, [Element]>(source)
+    }
+}
+
+// MARK: - withUnretained
+extension SharedSequenceConvertibleType {
+    /**
+     Provides an unretained, safe to use (i.e. not implicitly unwrapped), reference to an object along with the events emitted by the sequence.
+     
+     In the case the provided object cannot be retained successfully, the seqeunce will complete.
+     
+     - parameter obj: The object to provide an unretained reference on.
+     - parameter resultSelector: A function to combine the unretained referenced on `obj` and the value of the observable sequence.
+     - returns: An observable sequence that contains the result of `resultSelector` being called with an unretained reference on `obj` and the values of the original sequence.
+     */
+    public func withUnretained<Object: AnyObject, Out>(
+        _ obj: Object,
+        resultSelector: @escaping (Object, Element) -> Out
+    ) -> SharedSequence<SharingStrategy, Out> {
+        SharedSequence(self.asObservable().withUnretained(obj, resultSelector: resultSelector))
+    }
+
+    /**
+     Provides an unretained, safe to use (i.e. not implicitly unwrapped), reference to an object along with the events emitted by the sequence.
+     
+     In the case the provided object cannot be retained successfully, the seqeunce will complete.
+     
+     - parameter obj: The object to provide an unretained reference on.
+     - returns: An observable sequence of tuples that contains both an unretained reference on `obj` and the values of the original sequence.
+     */
+    public func withUnretained<Object: AnyObject>(_ obj: Object) -> SharedSequence<SharingStrategy, (Object, Element)> {
+        withUnretained(obj) { ($0, $1) }
     }
 }
 
