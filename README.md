@@ -128,9 +128,9 @@ If you prefer, there is also a nice [video tutorial](https://www.youtube.com/wat
 
 ## Installation
 
-### Cocoapods
-
 > 5.x requires RxSwift 6, If you are using RxSwift 5, please use 4.x.
+
+### Cocoapods
 
 ```ruby
 pod 'RxTheme', '~> 5.0'
@@ -139,7 +139,7 @@ pod 'RxTheme', '~> 5.0'
 ### Carthage
 
 ```
-github "RxSwiftCommunity/RxTheme" ~> 4.0.0
+github "RxSwiftCommunity/RxTheme" ~> 5.0.0
 ```
 
 ## Author
