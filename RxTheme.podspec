@@ -16,6 +16,7 @@ Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.
   s.osx.deployment_target = '10.10'
   s.watchos.deployment_target = '3.0'
 
+  s.swift_version = '5.1'
   s.requires_arc = true
 
   s.source_files = 'RxTheme/Classes/**/*'
