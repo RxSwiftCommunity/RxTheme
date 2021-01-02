@@ -1,12 +1,10 @@
 Pod::Spec.new do |s|
   s.name             = 'RxTheme'
-  s.version          = '4.1.1'
-  s.swift_version    = '5.0'
+  s.version          = '5.0.0'
   s.summary          = 'Theme management based on RxCocoa'
   s.description      = <<-DESC
 Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.
                        DESC
-
   s.homepage         = 'https://github.com/RxSwiftCommunity/RxTheme'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'wddwycc' => 'wddwyss@gmail.com' }
@@ -25,3 +23,4 @@ Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.
   s.dependency 'RxSwift', '~> 6.0'
   s.dependency 'RxCocoa', '~> 6.0'
 end
+
