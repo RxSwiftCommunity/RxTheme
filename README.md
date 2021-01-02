@@ -6,7 +6,6 @@
 [![License](https://img.shields.io/cocoapods/l/RxTheme.svg?style=flat)](http://cocoapods.org/pods/RxTheme)
 [![Platform](https://img.shields.io/cocoapods/p/RxTheme.svg?style=flat)](http://cocoapods.org/pods/RxTheme)
 
-
 ## Manual
 
 ### Define theme service
@@ -49,7 +48,7 @@ let themeService = ThemeType.service(initial: .light)
 ```swift
 
 // Bind stream to a single attribute
-// In the way, RxTheme would automatically manage the lifecycle of the binded stream 
+// In the way, RxTheme would automatically manage the lifecycle of the binded stream
 view.theme.backgroundColor = themeService.attrStream { $0.backgroundColor }
 
 // Or bind a bunch of attributes, add them to a disposeBag
@@ -84,9 +83,11 @@ themeService.attrsStream
 
 ### Extend binders in your codebase
 
-Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa could be used here. (Since RxSwift 6, most rx extensions should already rerived by @dynamicMemberLookup)
+Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa could be used here.
 
 This also makes the lib super easy to extend in your codebase, here is an example
+
+> Since RxSwift 6, most variable based rx extensions should already been derived by @dynamicMemberLookup.
 
 ```swift
 extension Reactive where Base: UIView {
@@ -125,7 +126,6 @@ If you prefer, there is also a nice [video tutorial](https://www.youtube.com/wat
 
 <img width="300" src="https://user-images.githubusercontent.com/2488011/55673846-23d58a00-58b6-11e9-9621-a799b6efb561.png" />
 
-
 ## Installation
 
 ### Cocoapods
@@ -147,4 +147,3 @@ duan, wddwyss@gmail.com
 ## License
 
 RxTheme is available under the MIT license. See the LICENSE file for more info.
-
