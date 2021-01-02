@@ -82,115 +82,9 @@ themeService.typeStream
 themeService.attrsStream
 ```
 
-### Binder presets
-
-##### CALayer
-
-- backgroundColor
-- borderWidth
-- borderColor
-- shadowColor
-
-##### CAShapeLayer
-
-- strokeColor
-- fillColor
-
-##### UIActivityIndicatorView
-
-- style
-
-##### UIBarButtonItem
-
-- tintColor
-
-##### UIButton
-
-- titleColor
-
-##### UILabel
-
-- font
-- textColor
-- highlightedTextColor
-- shadowColor
-
-##### UINavigationBar
-
-- barStyle
-- barTintColor
-- titleTextAttributes
-- largeTitleTextAttributes
-
-##### UIPageControl
-
-- pageIndicatorTintColor
-- currentPageIndicatorTintColor
-
-##### UIProgressView
-
-- progressTintColor
-- trackTintColor
-
-
-##### UISearchBar
-
-- barStyle
-- barTintColor
-- keyboardAppearance
-
-##### UISegmentControl
-
-- selectedSegmentTintColor
-
-##### UISlider
-
-- thumbTintColor
-- minimumTrackTintColor
-- maximumTrackTintColor
-
-##### UISwitch
-
-- onTintColor
-- thumbTintColor
-
-##### UITabBar
-
-- barStyle
-- barTintColor
-
-##### UITableView
-
-- separatorColor
-
-##### UITAbleViewCell
-
-- selectionStyle
-
-##### UITextField
-
-- font
-- textColor
-- keyboardAppearance
-
-##### UITextView
-
-- font
-- textColor
-- keyboardAppearance
-
-##### UIToolbar
-
-- barStyle
-- barTintColor
-
-##### UIView
-
-- tintColor
-
 ### Extend binders in your codebase
 
-Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa could be used here. 
+Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa could be used here. (Since RxSwift 6, most rx extensions should already rerived by @dynamicMemberLookup)
 
 This also makes the lib super easy to extend in your codebase, here is an example
 
@@ -212,8 +106,8 @@ extension ThemeProxy where Base: UIView {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.borderColor)
             hold(disposable, for: "borderColor")
         }

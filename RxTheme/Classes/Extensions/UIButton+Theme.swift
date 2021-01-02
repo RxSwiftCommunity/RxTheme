@@ -11,13 +11,23 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+public extension Reactive where Base: UIButton {
+
+    /// Bindable sink for `titleColor` property
+    func titleColor(for state: UIControl.State) -> Binder<UIColor?> {
+        return Binder(self.base) { view, attr in
+            view.setTitleColor(attr, for: state)
+        }
+    }
+
+}
 
 public extension ThemeProxy where Base: UIButton {
 
     func titleColor(from stream: Observable<UIColor?>, for state: UIControl.State) {
         let disposable = stream
-            .takeUntil(base.rx.deallocating)
-            .observeOn(MainScheduler.instance)
+            .take(until: base.rx.deallocating)
+            .observe(on: MainScheduler.instance)
             .bind(to: base.rx.titleColor(for: state))
         hold(disposable, for: "titleColor.forState.\(state.rawValue)")
     }

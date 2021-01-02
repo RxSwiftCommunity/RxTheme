@@ -17,8 +17,8 @@ public extension ThemeProxy where Base: UISlider {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.thumbTintColor)
             hold(disposable, for: "thumbTintColor")
         }
@@ -29,8 +29,8 @@ public extension ThemeProxy where Base: UISlider {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.minimumTrackTintColor)
             hold(disposable, for: "minimumTrackTintColor")
         }
@@ -41,8 +41,8 @@ public extension ThemeProxy where Base: UISlider {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.maximumTrackTintColor)
             hold(disposable, for: "maximumTrackTintColor")
         }

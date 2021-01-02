@@ -18,8 +18,8 @@ public extension ThemeProxy where Base: UISegmentedControl {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.selectedSegmentTintColor)
             hold(disposable, for: "selectedSegmentTintColor")
         }

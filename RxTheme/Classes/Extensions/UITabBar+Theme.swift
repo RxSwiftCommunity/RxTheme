@@ -17,8 +17,8 @@ public extension ThemeProxy where Base: UITabBar {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.barStyle)
             hold(disposable, for: "barStyle")
         }
@@ -29,8 +29,8 @@ public extension ThemeProxy where Base: UITabBar {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.barTintColor)
             hold(disposable, for: "barTintColor")
         }

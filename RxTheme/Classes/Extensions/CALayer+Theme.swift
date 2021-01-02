@@ -17,8 +17,8 @@ public extension ThemeProxy where Base: CALayer {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.backgroundColor)
             hold(disposable, for: "backgroundColor")
         }
@@ -29,8 +29,8 @@ public extension ThemeProxy where Base: CALayer {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.borderWidth)
             hold(disposable, for: "borderWidth")
         }
@@ -41,8 +41,8 @@ public extension ThemeProxy where Base: CALayer {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.borderColor)
             hold(disposable, for: "borderColor")
         }
@@ -53,8 +53,8 @@ public extension ThemeProxy where Base: CALayer {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.shadowColor)
             hold(disposable, for: "shadowColor")
         }

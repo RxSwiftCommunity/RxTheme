@@ -17,8 +17,8 @@ public extension ThemeProxy where Base: UITableViewCell {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.selectionStyle)
             hold(disposable, for: "selectionStyle")
         }

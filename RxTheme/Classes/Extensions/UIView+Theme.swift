@@ -17,8 +17,8 @@ public extension ThemeProxy where Base: UIView {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.backgroundColor)
             hold(disposable, for: "backgroundColor")
         }
@@ -29,8 +29,8 @@ public extension ThemeProxy where Base: UIView {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.tintColor)
             hold(disposable, for: "tintColor")
         }

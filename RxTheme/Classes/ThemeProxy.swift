@@ -47,8 +47,9 @@ public class ThemeProxy<Base> {
     private var disposables: NSMutableDictionary {
         get {
             let val = objc_getAssociatedObject(
-                base, &ThemeProxyDisposablesHandle
-                ) as? NSMutableDictionary
+                base,
+                &ThemeProxyDisposablesHandle
+            ) as? NSMutableDictionary
             return val ?? [:]
         }
         set {

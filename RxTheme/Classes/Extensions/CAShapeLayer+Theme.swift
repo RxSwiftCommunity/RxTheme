@@ -17,8 +17,8 @@ public extension ThemeProxy where Base: CAShapeLayer {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.strokeColor)
             hold(disposable, for: "strokeColor")
         }
@@ -29,8 +29,8 @@ public extension ThemeProxy where Base: CAShapeLayer {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.fillColor)
             hold(disposable, for: "fillColor")
         }

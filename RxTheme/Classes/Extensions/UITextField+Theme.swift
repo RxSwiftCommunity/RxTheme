@@ -17,8 +17,8 @@ public extension ThemeProxy where Base: UITextField {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.font)
             hold(disposable, for: "font")
         }
@@ -29,8 +29,8 @@ public extension ThemeProxy where Base: UITextField {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.textColor)
             hold(disposable, for: "textColor")
         }
@@ -41,8 +41,8 @@ public extension ThemeProxy where Base: UITextField {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.keyboardAppearance)
             hold(disposable, for: "keyboardAppearance")
         }

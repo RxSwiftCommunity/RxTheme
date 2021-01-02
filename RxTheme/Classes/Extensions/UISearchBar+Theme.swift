@@ -10,15 +10,15 @@ import RxSwift
 import RxCocoa
 
 
-public extension ThemeProxy where Base: UIToolbar {
+public extension ThemeProxy where Base: UISearchBar {
 
     /// (set only) bind a stream to barStyle
     var barStyle: Observable<UIBarStyle> {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.barStyle)
             hold(disposable, for: "barStyle")
         }
@@ -29,10 +29,22 @@ public extension ThemeProxy where Base: UIToolbar {
         get { return .empty() }
         set {
             let disposable = newValue
-                .takeUntil(base.rx.deallocating)
-                .observeOn(MainScheduler.instance)
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.barTintColor)
             hold(disposable, for: "barTintColor")
+        }
+    }
+
+    /// (set only) bind a stream to keyboardAppearance
+    var keyboardAppearance: Observable<UIKeyboardAppearance> {
+        get { return .empty() }
+        set {
+            let disposable = newValue
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.keyboardAppearance)
+            hold(disposable, for: "keyboardAppearance")
         }
     }
 
