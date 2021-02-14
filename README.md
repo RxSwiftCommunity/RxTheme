@@ -130,6 +130,11 @@ If you prefer, there is also a nice [video tutorial](https://www.youtube.com/wat
 
 > 5.x requires RxSwift 6, If you are using RxSwift 5, please use 4.x.
 
+### SPM
+
+1. File > Swift Packages > Add Package Dependency
+2. Add https://github.com/RxSwiftCommunity/RxTheme
+
 ### Cocoapods
 
 ```ruby
