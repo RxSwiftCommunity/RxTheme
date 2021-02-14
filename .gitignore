@@ -142,4 +142,11 @@ venv.bak/
 # End of https://www.gitignore.io/api/python
 
 .build/
+Packages
+.build/
+xcuserdata
+DerivedData/
+*.xcodeproj
+
+
 
