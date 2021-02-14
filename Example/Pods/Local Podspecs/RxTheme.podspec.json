@@ -22,8 +22,9 @@
     "osx": "10.10",
     "watchos": "3.0"
   },
+  "swift_versions": "5.1",
   "requires_arc": true,
-  "source_files": "RxTheme/Classes/**/*",
+  "source_files": "Sources/**/*",
   "dependencies": {
     "RxSwift": [
       "~> 6.0"
@@ -31,5 +32,6 @@
     "RxCocoa": [
       "~> 6.0"
     ]
-  }
+  },
+  "swift_version": "5.1"
 }

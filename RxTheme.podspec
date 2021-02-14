@@ -19,7 +19,7 @@ Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.
   s.swift_version = '5.1'
   s.requires_arc = true
 
-  s.source_files = 'RxTheme/Classes/**/*'
+  s.source_files = 'Sources/**/*'
   
   s.dependency 'RxSwift', '~> 6.0'
   s.dependency 'RxCocoa', '~> 6.0'
