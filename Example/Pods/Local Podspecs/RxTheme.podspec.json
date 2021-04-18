@@ -1,6 +1,6 @@
 {
   "name": "RxTheme",
-  "version": "5.0.0",
+  "version": "5.0.4",
   "summary": "Theme management based on RxCocoa",
   "description": "Theme management based on RxSwift and RxCocoa, easy to use, easy to extend.",
   "homepage": "https://github.com/RxSwiftCommunity/RxTheme",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/RxSwiftCommunity/RxTheme.git",
-    "tag": "5.0.0"
+    "tag": "5.0.4"
   },
   "social_media_url": "https://twitter.com/wddwycc",
   "platforms": {
