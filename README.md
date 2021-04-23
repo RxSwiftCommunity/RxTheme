@@ -83,13 +83,13 @@ You can run the example project, clone the repo, run `pod install` from the Exam
 ### Cocoapods
 
 ```ruby
-pod 'RxTheme', '~> 5.0'
+pod 'RxTheme', '~> 6.0'
 ```
 
 ### Carthage
 
 ```
-github "RxSwiftCommunity/RxTheme" ~> 5.0.0
+github "RxSwiftCommunity/RxTheme" ~> 6.0.0
 ```
 
 ## Author
