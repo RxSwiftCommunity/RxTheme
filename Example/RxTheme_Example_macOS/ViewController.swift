@@ -25,6 +25,22 @@ extension Reactive where Base: NSTextField {
     }
 }
 
+public extension ThemeProxy where Base: NSTextField {
+
+    /// (set only) bind a stream to textColor
+    var textColor: ThemeAttribute<NSColor?> {
+        get { fatalError("set only") }
+        set {
+            base.textColor = newValue.value
+            let disposable = newValue.stream
+                .take(until: base.rx.deallocating)
+                .observe(on: MainScheduler.instance)
+                .bind(to: base.rx.textColor)
+            hold(disposable, for: "tintColor")
+        }
+    }
+
+}
 
 class ViewController: NSViewController {
 
@@ -44,10 +60,8 @@ class ViewController: NSViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
-        themeService.rx
-            .bind({ $0.textColor.cgColor }, to: label.rx.textColor)
-            .bind({ $0.backgroundColor.cgColor }, to: view.layer!.rx.backgroundColor)
-            .disposed(by: disposeBag)
+        label.theme.textColor = themed { $0.textColor }
+        view.layer!.theme.backgroundColor = themed { $0.backgroundColor.cgColor }
     }
 
 

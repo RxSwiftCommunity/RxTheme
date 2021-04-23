@@ -29,10 +29,8 @@ class ViewController: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
 
-        themeService.rx
-            .bind({ $0.textColor }, to: label.rx.textColor)
-            .bind({ $0.backgroundColor }, to: view.rx.backgroundColor)
-            .disposed(by: disposeBag)
+        label.theme.textColor = themed { $0.textColor }
+        view.theme.backgroundColor = themed { $0.backgroundColor }
 
         let tapGesture = UITapGestureRecognizer()
         tapGesture.allowedPressTypes = [NSNumber(value: UIPress.PressType.playPause.rawValue)]
