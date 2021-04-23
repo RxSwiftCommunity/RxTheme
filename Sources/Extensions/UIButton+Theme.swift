@@ -24,8 +24,11 @@ public extension Reactive where Base: UIButton {
 
 public extension ThemeProxy where Base: UIButton {
 
-    func titleColor(from stream: Observable<UIColor?>, for state: UIControl.State) {
-        let disposable = stream
+    func titleColor(from newValue: ThemeAttribute<UIColor?>, for state: UIControl.State) {
+        if let value = newValue.value {
+            base.setTitleColor(value, for: state)
+        }
+        let disposable = newValue.stream
             .take(until: base.rx.deallocating)
             .observe(on: MainScheduler.instance)
             .bind(to: base.rx.titleColor(for: state))

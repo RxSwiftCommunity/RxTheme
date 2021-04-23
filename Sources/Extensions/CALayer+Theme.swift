@@ -14,10 +14,13 @@ import RxCocoa
 public extension ThemeProxy where Base: CALayer {
 
     /// (set only) bind a stream to backgroundColor
-    var backgroundColor: Observable<CGColor?> {
+    var backgroundColor: ThemeAttribute<CGColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.backgroundColor = value
+            }
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.backgroundColor)
@@ -26,10 +29,13 @@ public extension ThemeProxy where Base: CALayer {
     }
 
     /// (set only) bind a stream to borderWidth
-    var borderWidth: Observable<CGFloat> {
+    var borderWidth: ThemeAttribute<CGFloat> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.borderWidth = value
+            }
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.borderWidth)
@@ -38,10 +44,13 @@ public extension ThemeProxy where Base: CALayer {
     }
 
     /// (set only) bind a stream to borderColor
-    var borderColor: Observable<CGColor?> {
-        get { return .empty() }
+    var borderColor: ThemeAttribute<CGColor?> {
+        get { return ThemeAttribute() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.borderColor = value
+            }
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.borderColor)
@@ -50,10 +59,13 @@ public extension ThemeProxy where Base: CALayer {
     }
 
     /// (set only) bind a stream to shadowColor
-    var shadowColor: Observable<CGColor?> {
+    var shadowColor: ThemeAttribute<CGColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.shadowColor = value
+            }
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.shadowColor)

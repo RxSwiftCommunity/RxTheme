@@ -58,7 +58,7 @@ class Tests: XCTestCase {
     
     func testSingleBind() {
         let label = UILabel()
-        label.theme.textColor = themeService.attrStream { $0.textColor }
+        label.theme.textColor = themeService.attribute { $0.textColor }
         XCTAssertEqual(label.textColor, LightTheme().textColor)
         themeService.switch(.dark)
         XCTAssertEqual(label.textColor, DarkTheme().textColor)
@@ -80,9 +80,9 @@ class Tests: XCTestCase {
 
     func testOverrideBind() {
         let label = UILabel()
-        label.theme.textColor = themeService.attrStream { $0.backgroundColor }
+        label.theme.textColor = themeService.attribute { $0.backgroundColor }
         XCTAssertEqual(label.textColor, LightTheme().backgroundColor)
-        label.theme.textColor = themeService.attrStream { $0.textColor }
+        label.theme.textColor = themeService.attribute { $0.textColor }
         XCTAssertEqual(label.textColor, LightTheme().textColor)
         themeService.switch(.dark)
         XCTAssertEqual(label.textColor, DarkTheme().textColor)

@@ -13,10 +13,13 @@ import RxCocoa
 public extension ThemeProxy where Base: UITableViewCell {
 
     /// (set only) bind a stream to selectionStyle
-    var selectionStyle: Observable<UITableViewCell.SelectionStyle> {
+    var selectionStyle: ThemeAttribute<UITableViewCell.SelectionStyle> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.selectionStyle = value
+            }
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.selectionStyle)
