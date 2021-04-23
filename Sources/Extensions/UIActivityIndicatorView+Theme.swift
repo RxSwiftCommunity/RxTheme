@@ -13,10 +13,13 @@ import RxCocoa
 public extension ThemeProxy where Base: UIActivityIndicatorView {
 
     /// (set only) bind a stream to style
-    var style: Observable<UIActivityIndicatorView.Style> {
+    var style: ThemeAttribute<UIActivityIndicatorView.Style> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.style = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.style)

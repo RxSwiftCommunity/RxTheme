@@ -13,10 +13,13 @@ import RxCocoa
 public extension ThemeProxy where Base: UIPageControl {
 
     /// (set only) bind a stream to pageIndicatorTintColor
-    var pageIndicatorTintColor: Observable<UIColor?> {
+    var pageIndicatorTintColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.pageIndicatorTintColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.pageIndicatorTintColor)
@@ -25,10 +28,13 @@ public extension ThemeProxy where Base: UIPageControl {
     }
 
     /// (set only) bind a stream to currentPageIndicatorTintColor
-    var currentPageIndicatorTintColor: Observable<UIColor?> {
+    var currentPageIndicatorTintColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.currentPageIndicatorTintColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.currentPageIndicatorTintColor)

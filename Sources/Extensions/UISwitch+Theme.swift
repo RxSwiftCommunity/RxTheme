@@ -13,10 +13,13 @@ import RxCocoa
 public extension ThemeProxy where Base: UISwitch {
 
     /// (set only) bind a stream to onTintColor
-    var onTintColor: Observable<UIColor?> {
+    var onTintColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.onTintColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.onTintColor)
@@ -25,10 +28,13 @@ public extension ThemeProxy where Base: UISwitch {
     }
 
     /// (set only) bind a stream to thumbTintColor
-    var thumbTintColor: Observable<UIColor?> {
+    var thumbTintColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.thumbTintColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.thumbTintColor)

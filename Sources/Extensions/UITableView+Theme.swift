@@ -13,10 +13,13 @@ import RxCocoa
 public extension ThemeProxy where Base: UITableView {
 
     /// (set only) bind a stream to separatorColor
-    var separatorColor: Observable<UIColor?> {
+    var separatorColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.separatorColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.separatorColor)

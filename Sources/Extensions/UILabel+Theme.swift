@@ -13,10 +13,13 @@ import RxCocoa
 public extension ThemeProxy where Base: UILabel {
 
     /// (set only) bind a stream to font
-    var font: Observable<UIFont> {
+    var font: ThemeAttribute<UIFont> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.font = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.font)
@@ -25,10 +28,13 @@ public extension ThemeProxy where Base: UILabel {
     }
 
     /// (set only) bind a stream to textColor
-    var textColor: Observable<UIColor?> {
+    var textColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.textColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.textColor)
@@ -37,10 +43,13 @@ public extension ThemeProxy where Base: UILabel {
     }
 
     /// (set only) bind a stream to highlightedTextColor
-    var highlightedTextColor: Observable<UIColor?> {
+    var highlightedTextColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.highlightedTextColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.highlightedTextColor)
@@ -49,10 +58,13 @@ public extension ThemeProxy where Base: UILabel {
     }
 
     /// (set only) bind a stream to shadowColor
-    var shadowColor: Observable<UIColor?> {
+    var shadowColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.shadowColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.shadowColor)

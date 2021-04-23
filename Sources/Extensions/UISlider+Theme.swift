@@ -13,10 +13,13 @@ import RxCocoa
 public extension ThemeProxy where Base: UISlider {
 
     /// (set only) bind a stream to thumbTintColor
-    var thumbTintColor: Observable<UIColor?> {
+    var thumbTintColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.thumbTintColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.thumbTintColor)
@@ -25,10 +28,13 @@ public extension ThemeProxy where Base: UISlider {
     }
 
     /// (set only) bind a stream to minimumTrackTintColor
-    var minimumTrackTintColor: Observable<UIColor?> {
+    var minimumTrackTintColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.minimumTrackTintColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.minimumTrackTintColor)
@@ -37,10 +43,13 @@ public extension ThemeProxy where Base: UISlider {
     }
 
     /// (set only) bind a stream to maximumTrackTintColor
-    var maximumTrackTintColor: Observable<UIColor?> {
+    var maximumTrackTintColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.maximumTrackTintColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.maximumTrackTintColor)

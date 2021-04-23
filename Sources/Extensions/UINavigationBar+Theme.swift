@@ -13,10 +13,13 @@ import RxCocoa
 public extension ThemeProxy where Base: UINavigationBar {
 
     /// (set only) bind a stream to barStyle
-    var barStyle: Observable<UIBarStyle> {
+    var barStyle: ThemeAttribute<UIBarStyle> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.barStyle = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.barStyle)
@@ -25,10 +28,13 @@ public extension ThemeProxy where Base: UINavigationBar {
     }
 
     /// (set only) bind a stream to barTintColor
-    var barTintColor: Observable<UIColor?> {
+    var barTintColor: ThemeAttribute<UIColor?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.barTintColor = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.barTintColor)
@@ -37,10 +43,13 @@ public extension ThemeProxy where Base: UINavigationBar {
     }
 
     /// (set only) bind a stream to titleTextAttributes
-    var titleTextAttributes: Observable<[NSAttributedString.Key: Any]?> {
+    var titleTextAttributes: ThemeAttribute<[NSAttributedString.Key: Any]?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.titleTextAttributes = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.titleTextAttributes)
@@ -50,10 +59,13 @@ public extension ThemeProxy where Base: UINavigationBar {
 
     /// (set only) bind a stream to largeTitleTextAttributes
     @available(iOS 11.0, *)
-    var largeTitleTextAttributes: Observable<[NSAttributedString.Key: Any]?> {
+    var largeTitleTextAttributes: ThemeAttribute<[NSAttributedString.Key: Any]?> {
         get { return .empty() }
         set {
-            let disposable = newValue
+            if let value = newValue.value {
+                base.largeTitleTextAttributes = value
+            }
+            let disposable = newValue.steam
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.largeTitleTextAttributes)
