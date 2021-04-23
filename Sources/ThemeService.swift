@@ -26,22 +26,17 @@ public class ThemeService<Provider: ThemeProvider>: NSObject {
     /// Current theme type
     public var type: Provider { return self.relay.value }
 
-    /// Current theme attributes
-    public var attrs: Provider.T { return self.getAssociatedObject(self.type) }
-
     /// Theme type stream
     public var typeStream: Observable<Provider> {
         return relay.asObservable()
     }
 
-    /// Theme attributes stream
-    public var attrsStream: Observable<Provider.T> {
-        return relay.map { [unowned self] in self.getAssociatedObject($0) }
-    }
-
-    /// Theme attribute stream for mapper
-    public func attrStream<U>(_ mapper: @escaping ((Provider.T) -> U)) -> Observable<U> {
-        return attrsStream.map(mapper)
+    /// Current theme attributes
+    public func attribute<U>(_ mapper: @escaping ((Provider.T) -> U)) -> ThemeAttribute<U> {
+        return ThemeAttribute(
+            value: mapper(self.getAssociatedObject(self.type)),
+            stream: relay.map { [unowned self] in self.getAssociatedObject($0) }.map(mapper)
+        )
     }
 
     /// Update theme type
@@ -55,12 +50,6 @@ public class ThemeService<Provider: ThemeProvider>: NSObject {
             obj.switch(attr)
         }
     }
-
-    /// Start chainable binding
-    public var rx: ThemeBindable<Provider.T> {
-        return ThemeBindable(relay: attrsStream)
-    }
-
 }
 
 

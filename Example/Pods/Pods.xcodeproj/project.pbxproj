@@ -385,7 +385,6 @@
 		48982FE922F96E2BC1C7950C403627BB /* Catch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3104D80E1B1F2C384119ADED398B7F /* Catch.swift */; };
 		48E6A5521A57B613D11F1DCA9794E79A /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810AFD3F59B6AC07D26886C33D124920 /* Error.swift */; };
 		48F442988CA7D8771E6AE5CE631831C3 /* UIView+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291080A2D916089DB4578C16C5DC73BF /* UIView+Theme.swift */; };
-		48F7759E87357CAF98104B75D4296032 /* ThemeBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D02DDA940BB5BBD888B4EA19127D11 /* ThemeBindable.swift */; };
 		4A2371903E005B5E3185627BD9C5A5D1 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB5773557B8F032E8DAE29872064E28 /* Queue.swift */; };
 		4A8FFDD0031465275F4CBEBE1F2531DF /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB01230C2AFDC4D0AE87B6D1CF15881 /* Buffer.swift */; };
 		4ABBD6D21D943E3AD60708BB864F1DBA /* DistinctUntilChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7805562C7FA059F3B0FF4B1CAC963F8 /* DistinctUntilChanged.swift */; };
@@ -810,7 +809,6 @@
 		A3422149799F997F1D49C161A1F3E13F /* ObservableType+PrimitiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF5B2114ECDD11760578D64EA8A19DF /* ObservableType+PrimitiveSequence.swift */; };
 		A353D25EEB7EF8B2AC15B04C055AFB90 /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1D9213EDB1156350E9EC13632BD4FA /* Bag.swift */; };
 		A370CDA7FB2ABAAB7320A17D2A75B4CC /* RxCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = D07B2ED1318F4AE6FBD0F6CE3A8B0DA3 /* RxCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A397AD8EDDD2355F8EE66E04B0869D63 /* ThemeBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D02DDA940BB5BBD888B4EA19127D11 /* ThemeBindable.swift */; };
 		A3A0B3C643B260562E479EFFFAD29799 /* Signal+Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95059998D02635732061161C64554582 /* Signal+Subscription.swift */; };
 		A3B48B571A56C1B1173098E7E566AF59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D38A48CB5DC62402140AD2C9539B6D /* Foundation.framework */; };
 		A41B171B67130D201676E9FD7CF045E4 /* SerialDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E700B2E551E509469B1C2C645F7C11 /* SerialDispatchQueueScheduler.swift */; };
@@ -973,7 +971,6 @@
 		C31559A13CF43395A756653C49DB230D /* VirtualTimeConverterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA953DD0C736599130EAAA4AE3D9981 /* VirtualTimeConverterType.swift */; };
 		C377482B6127C7FF433181DAA36ABFC8 /* StartWith.swift in Sources */ = {isa = PBXBuildFile; fileRef = D006D8EF0D73F1A40C69871354908946 /* StartWith.swift */; };
 		C39735DEEC1B9044FE1896EF623D56D4 /* BehaviorRelay+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E72B95B7FD4F2FEB2DA9AE8D0C4856 /* BehaviorRelay+Driver.swift */; };
-		C3D4793870F14B195BD617E128E55A19 /* ThemeBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D02DDA940BB5BBD888B4EA19127D11 /* ThemeBindable.swift */; };
 		C3E63E3DC909B8F00F71C64799F34BEA /* _RXObjCRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 943DC20EB4EA6D33AA358CF4CE48A08E /* _RXObjCRuntime.m */; };
 		C46C9DC29DA9CF9ADBAE443C42FD3E47 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E0E884E75F4903D00A598A83C08A22 /* Disposables.swift */; };
 		C474E1054802F258DBA84D4B07EEFFF0 /* KVORepresentable+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC837EEE4F81A8F4C8FD0A6BA4123F4B /* KVORepresentable+CoreGraphics.swift */; };
@@ -994,7 +991,6 @@
 		C6233770A942BF141A2E9950B4A35DB2 /* WithUnretained.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC931225E5F902D828786CAD6C58E84 /* WithUnretained.swift */; };
 		C628E954D28CEDC13E5B14D59727B6B1 /* ObserverBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1F987A7A02482640024593A732F949 /* ObserverBase.swift */; };
 		C62FB0DE9A129DF4C9ADE9C7C2B8249D /* Pods-RxTheme_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47EF8748C5F1587641D8FA9260CA7453 /* Pods-RxTheme_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6BF0329DC0DD2036A93FFDD01369987 /* ThemeBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D02DDA940BB5BBD888B4EA19127D11 /* ThemeBindable.swift */; };
 		C6D06FE67B394158B830648068DBAF2A /* ElementAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F051B38A866EBEC280A3C4F53FF70C14 /* ElementAt.swift */; };
 		C71A7DD5578BA0EE74079EC524D0583B /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3477DD366ADFF1FBC6433275718DBB /* RxRelay.framework */; };
 		C77B0654338C740129042D1C8FE6419A /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BC09F91184DFE6B69BE98903C944A /* Empty.swift */; };
@@ -1832,7 +1828,6 @@
 		889EE9103539DA27AE9B3C571A6233BE /* Date+Dispatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+Dispatch.swift"; path = "RxSwift/Date+Dispatch.swift"; sourceTree = "<group>"; };
 		89357B920929FD51C18391BABF5FC019 /* Pods-RxTheme_Example_watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RxTheme_Example_watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		894058F6E77E3105DB1ED66B857D8993 /* RxSwift-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "RxSwift-tvOS.modulemap"; path = "../RxSwift-tvOS/RxSwift-tvOS.modulemap"; sourceTree = "<group>"; };
-		89D02DDA940BB5BBD888B4EA19127D11 /* ThemeBindable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThemeBindable.swift; path = Sources/ThemeBindable.swift; sourceTree = "<group>"; };
 		8A16017171FE1426A3893BDB89BAB447 /* SchedulerType+SharedSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SchedulerType+SharedSequence.swift"; path = "RxCocoa/Traits/SharedSequence/SchedulerType+SharedSequence.swift"; sourceTree = "<group>"; };
 		8A6E4A151297C9936D9856FF363FBDF7 /* Platform.Linux.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Linux.swift; path = Platform/Platform.Linux.swift; sourceTree = "<group>"; };
 		8B758F298596EB3E75D175DB15552DF1 /* Infallible+Zip+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Infallible+Zip+arity.swift"; path = "RxSwift/Traits/Infallible/Infallible+Zip+arity.swift"; sourceTree = "<group>"; };
@@ -2715,7 +2710,6 @@
 			isa = PBXGroup;
 			children = (
 				4D99F2572632AF0F0028345B /* ThemeAttribute.swift */,
-				89D02DDA940BB5BBD888B4EA19127D11 /* ThemeBindable.swift */,
 				385822ADC340473BFB7960B172BCAA35 /* ThemeProvider.swift */,
 				3D16642E4472E5ACF609FE0B7D018390 /* ThemeProxy.swift */,
 				EDF32366211DA3B91DE1C5BE39340CE9 /* ThemeService.swift */,
@@ -4038,7 +4032,6 @@
 				38711104F2944478E197644E87CEC81A /* CALayer+Theme.swift in Sources */,
 				595D79E8E99A76F66D2E2787B4913786 /* CAShapeLayer+Theme.swift in Sources */,
 				0B5C7A8B568986DEDD6C2096AEB5A7BD /* RxTheme-watchOS-dummy.m in Sources */,
-				C6BF0329DC0DD2036A93FFDD01369987 /* ThemeBindable.swift in Sources */,
 				AF34A35A7DC91E608D7B2F64D527B361 /* ThemeProvider.swift in Sources */,
 				10748BDC5A2F4695843D49E6BEB6B5D9 /* ThemeProxy.swift in Sources */,
 				7C344B92E154D082D8FF0E058A296E8B /* ThemeService.swift in Sources */,
@@ -4071,7 +4064,6 @@
 				69A57F9B07445E01704BB2EFAD1F2894 /* CALayer+Theme.swift in Sources */,
 				049D52822E0452138F349943F3444D1B /* CAShapeLayer+Theme.swift in Sources */,
 				EC19017EB44A1B84A18738BC56F82AC9 /* RxTheme-tvOS-dummy.m in Sources */,
-				48F7759E87357CAF98104B75D4296032 /* ThemeBindable.swift in Sources */,
 				8E62D04550B88FF861C8169801C40429 /* ThemeProvider.swift in Sources */,
 				DE9193066E78128A3F9D07E4F8B54E63 /* ThemeProxy.swift in Sources */,
 				8FD191C544577A5788D7CF35DB2020BA /* ThemeService.swift in Sources */,
@@ -4285,7 +4277,6 @@
 				E4F695FC23BC46170175C5BA2605743B /* CALayer+Theme.swift in Sources */,
 				FA381F399F660CB4843DDCDACC50189D /* CAShapeLayer+Theme.swift in Sources */,
 				3DC4D1F734363E1D6E47FB423038544A /* RxTheme-iOS-dummy.m in Sources */,
-				A397AD8EDDD2355F8EE66E04B0869D63 /* ThemeBindable.swift in Sources */,
 				0FEA57FAB33F7BBF492C0B2FA5A4DE9C /* ThemeProvider.swift in Sources */,
 				0A7483BAA916CCAE905E01030BB1E76E /* ThemeProxy.swift in Sources */,
 				8442976C5466DD83FADF9D7D8AA17ED8 /* ThemeService.swift in Sources */,
@@ -4917,7 +4908,6 @@
 				EA839E8105973783AEA858C7DD16B1FD /* CALayer+Theme.swift in Sources */,
 				65FECD8EFA0F50DE1C1118949D9B056C /* CAShapeLayer+Theme.swift in Sources */,
 				691FEE37F936FB0A17BD27C67B60DCEB /* RxTheme-macOS-dummy.m in Sources */,
-				C3D4793870F14B195BD617E128E55A19 /* ThemeBindable.swift in Sources */,
 				08B3F1AFC2F8804FEAC79F62E04A2AC3 /* ThemeProvider.swift in Sources */,
 				6F82214766A68A20AF5610AF2CBE0381 /* ThemeProxy.swift in Sources */,
 				9DA8E92B8B64D5F56C8C49CE5C33B531 /* ThemeService.swift in Sources */,
