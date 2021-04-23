@@ -14,6 +14,7 @@ public class ThemeService<Provider: ThemeProvider>: NSObject {
     init(initial: Provider) {
         self.relay = BehaviorRelay<Provider>(value: initial)
     }
+
     private let relay: BehaviorRelay<Provider>
     private var cache = [Provider: Provider.T]()
     private func getAssociatedObject(_ key: Provider) -> Provider.T {

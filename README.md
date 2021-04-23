@@ -67,62 +67,15 @@ someSignal.bind(to: themeService.switcher)
 ```swift
 // Current theme type
 themeService.type
-// Current theme attributes
-themeService.attrs
 // Theme type stream
 themeService.typeStream
-// Theme attributes stream
-themeService.attrsStream
 ```
-
-### Extend binders in your codebase
-
-Because RxTheme uses `Binder<T>` from RxCocoa, any `Binder` defined in RxCocoa could be used here.
-
-This also makes the lib super easy to extend in your codebase, here is an example
-
-```swift
-extension Reactive where Base: UIView {
-    var borderColor: Binder<UIColor?> {
-        return Binder(self.base) { view, color in
-            view.layer.borderColor = color?.cgColor
-        }
-    }
-}
-```
-
-> NOTICE: Since RxSwift 6, most variable based rx extensions should already been derived by @dynamicMemberLookup.
-
-if you also want to use the sugar `view.theme.borderColor`, you have to write another extension:
-
-```swift
-extension ThemeProxy where Base: UIView {
-    var borderColor: Observable<UIColor?> {
-        get { return .empty() }
-        set {
-            let disposable = newValue
-                .take(until: base.rx.deallocating)
-                .observe(on: MainScheduler.instance)
-                .bind(to: base.rx.borderColor)
-            hold(disposable, for: "borderColor")
-        }
-    }
-}
-```
-
-If you think your extension is commonly used, please send us a PR.
 
 ## Examples
 
 You can run the example project, clone the repo, run `pod install` from the Example directory first, and open up the workspace file.
 
-If you prefer, there is also a nice [video tutorial](https://www.youtube.com/watch?v=aV9qEcmJ7nY) by [@rebeloper](https://github.com/rebeloper).
-
-<img width="300" src="https://user-images.githubusercontent.com/2488011/55673846-23d58a00-58b6-11e9-9621-a799b6efb561.png" />
-
 ## Installation
-
-> 5.x requires RxSwift 6, If you are using RxSwift 5, please use 4.x.
 
 ### SPM
 
