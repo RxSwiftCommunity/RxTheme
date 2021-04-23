@@ -403,10 +403,10 @@
 		4CAB3C7979A1B18C8671ED112AB8B937 /* UIButton+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989613A7C41318379F15BA011253788C /* UIButton+Theme.swift */; };
 		4CF26965E0AA398CCDD369FC1C8113B0 /* Enumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC845F8C3A04D2674766C3A1E0FD2EAF /* Enumerated.swift */; };
 		4D26ED1F7896D44AE8A5D1DF62895375 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3477DD366ADFF1FBC6433275718DBB /* RxRelay.framework */; };
-		4D99F1F92632A1400028345B /* ThemeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99F1F82632A1400028345B /* ThemeAttribute.swift */; };
-		4D99F1FA2632A1400028345B /* ThemeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99F1F82632A1400028345B /* ThemeAttribute.swift */; };
-		4D99F1FB2632A1400028345B /* ThemeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99F1F82632A1400028345B /* ThemeAttribute.swift */; };
-		4D99F1FC2632A1400028345B /* ThemeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99F1F82632A1400028345B /* ThemeAttribute.swift */; };
+		4D99F2582632AF0F0028345B /* ThemeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99F2572632AF0F0028345B /* ThemeAttribute.swift */; };
+		4D99F2592632AF0F0028345B /* ThemeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99F2572632AF0F0028345B /* ThemeAttribute.swift */; };
+		4D99F25A2632AF0F0028345B /* ThemeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99F2572632AF0F0028345B /* ThemeAttribute.swift */; };
+		4D99F25B2632AF0F0028345B /* ThemeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D99F2572632AF0F0028345B /* ThemeAttribute.swift */; };
 		4DA92CDB54B5DE7557352381CDD3C3AB /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5AA96B975E343C751F89A6315BFA42 /* PriorityQueue.swift */; };
 		4E03857D91825D82ACFDFDE3BBF99669 /* TailRecursiveSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0BAFD5FD7D4886FAC556E232E4DC0 /* TailRecursiveSink.swift */; };
 		4E062BE0A1658E7D2ADA7EB5ED2EB460 /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ED909010DA6DE34542059F4C6534EC /* DisposeBag.swift */; };
@@ -1720,7 +1720,7 @@
 		49A709EDEBB5B8323F674D2F1828D6B9 /* Sink.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sink.swift; path = RxSwift/Observables/Sink.swift; sourceTree = "<group>"; };
 		4A30FDD4FEB1A17E4C8970ECDDCEB109 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		4CACE97442099665AFAC5DDA168D81F1 /* RxTheme-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "RxTheme-tvOS.release.xcconfig"; path = "../RxTheme-tvOS/RxTheme-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		4D99F1F82632A1400028345B /* ThemeAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeAttribute.swift; sourceTree = "<group>"; };
+		4D99F2572632AF0F0028345B /* ThemeAttribute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThemeAttribute.swift; path = Sources/ThemeAttribute.swift; sourceTree = "<group>"; };
 		4EA63A484DDC4ECF2854B542CFE7B910 /* ControlEvent+Driver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ControlEvent+Driver.swift"; path = "RxCocoa/Traits/Driver/ControlEvent+Driver.swift"; sourceTree = "<group>"; };
 		4F70447D4DF96EF4D694518F3CDEB1F9 /* RxCocoaRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RxCocoaRuntime.h; path = RxCocoa/Runtime/include/RxCocoaRuntime.h; sourceTree = "<group>"; };
 		501FD836278BAFA038222D44209D5438 /* _RXObjCRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = _RXObjCRuntime.h; path = RxCocoa/Runtime/include/_RXObjCRuntime.h; sourceTree = "<group>"; };
@@ -2714,11 +2714,11 @@
 		8BAD5A0E7794737C4F31AD944981289F /* RxTheme */ = {
 			isa = PBXGroup;
 			children = (
+				4D99F2572632AF0F0028345B /* ThemeAttribute.swift */,
 				89D02DDA940BB5BBD888B4EA19127D11 /* ThemeBindable.swift */,
 				385822ADC340473BFB7960B172BCAA35 /* ThemeProvider.swift */,
 				3D16642E4472E5ACF609FE0B7D018390 /* ThemeProxy.swift */,
 				EDF32366211DA3B91DE1C5BE39340CE9 /* ThemeService.swift */,
-				4D99F1F82632A1400028345B /* ThemeAttribute.swift */,
 				32DE1C5BC16042A46B9619C9236B655E /* Extensions */,
 				6CA6239EC23C59AC852F2E0F9E097FCB /* Pod */,
 				A23BE6449CE3DD1DBCA0605558918B75 /* Support Files */,
@@ -4049,7 +4049,7 @@
 				EDB480089477A9B5649B6F36E9BFE455 /* UINavigationBar+Theme.swift in Sources */,
 				E889F26F856FF17FB12E7E7F9C56B7FF /* UIPageControl+Theme.swift in Sources */,
 				013627029915E84CD477CB52B80CC81B /* UIProgressView+Theme.swift in Sources */,
-				4D99F1FC2632A1400028345B /* ThemeAttribute.swift in Sources */,
+				4D99F25B2632AF0F0028345B /* ThemeAttribute.swift in Sources */,
 				9BFB8AB6A51C51B541DD96F59E5A0D11 /* UISearchBar+Theme.swift in Sources */,
 				DB25384BE132ADDECD92D2AEFC4495BE /* UISegmentedControl+Theme.swift in Sources */,
 				C89F9D52DF7C95E05BB3C806DC410002 /* UISlider+Theme.swift in Sources */,
@@ -4082,7 +4082,7 @@
 				54824C304F0EA86705A11BBA915FF3F4 /* UINavigationBar+Theme.swift in Sources */,
 				DA1A5419D0744FA86BE53A76026DA30F /* UIPageControl+Theme.swift in Sources */,
 				3E9F1C7A9804B25885448F85CCF1349C /* UIProgressView+Theme.swift in Sources */,
-				4D99F1FB2632A1400028345B /* ThemeAttribute.swift in Sources */,
+				4D99F25A2632AF0F0028345B /* ThemeAttribute.swift in Sources */,
 				95816719F6B025322E3BEEC51708E10F /* UISearchBar+Theme.swift in Sources */,
 				94A380599AB43368CDEE59D10C01D699 /* UISegmentedControl+Theme.swift in Sources */,
 				52997431CB82F86AB1899CB32ADF749E /* UISlider+Theme.swift in Sources */,
@@ -4296,7 +4296,7 @@
 				70A513A52286794810C5C676B5A4CCD7 /* UINavigationBar+Theme.swift in Sources */,
 				8516E425822368AAB2AF9435327C0F7E /* UIPageControl+Theme.swift in Sources */,
 				9B8EDF720368F703798A4588F7FA02F6 /* UIProgressView+Theme.swift in Sources */,
-				4D99F1F92632A1400028345B /* ThemeAttribute.swift in Sources */,
+				4D99F2582632AF0F0028345B /* ThemeAttribute.swift in Sources */,
 				2EEA70B1F1AB9D03E8D8D3B9EA756F7B /* UISearchBar+Theme.swift in Sources */,
 				2216090E37B9073A8A0E0A46A650B821 /* UISegmentedControl+Theme.swift in Sources */,
 				B918CE59EA158D593726FCBDAB4FE5CB /* UISlider+Theme.swift in Sources */,
@@ -4928,7 +4928,7 @@
 				85E97C58858EF75C5DEF4F600D3E1291 /* UINavigationBar+Theme.swift in Sources */,
 				FB1F656D85C8C4F6BD9888B7B1567A08 /* UIPageControl+Theme.swift in Sources */,
 				072547A6ED68A30A93EE5E78B4D03A49 /* UIProgressView+Theme.swift in Sources */,
-				4D99F1FA2632A1400028345B /* ThemeAttribute.swift in Sources */,
+				4D99F2592632AF0F0028345B /* ThemeAttribute.swift in Sources */,
 				B60473DE7EA4CAA028805FD736576270 /* UISearchBar+Theme.swift in Sources */,
 				B8C0DFB09DCB3550A735BE37DF808744 /* UISegmentedControl+Theme.swift in Sources */,
 				9AECEA19A3309396A192915C186198E2 /* UISlider+Theme.swift in Sources */,
