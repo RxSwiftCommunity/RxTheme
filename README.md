@@ -49,7 +49,7 @@ let themeService = ThemeType.service(initial: .light)
 
 // Bind stream to a single attribute
 // In the way, RxTheme would automatically manage the lifecycle of the binded stream
-view.theme.backgroundColor = themeService.attrStream { $0.backgroundColor }
+view.theme.backgroundColor = themeService.attribute { $0.backgroundColor }
 
 // Or bind a bunch of attributes, add them to a disposeBag
 themeService.rx
