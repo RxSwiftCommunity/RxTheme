@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UITableViewCell {
 
     /// (set only) bind a stream to selectionStyle
     var selectionStyle: ThemeAttribute<UITableViewCell.SelectionStyle> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.selectionStyle = value
-            }
+            base.selectionStyle = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

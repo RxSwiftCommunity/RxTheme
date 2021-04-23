@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UIPageControl {
 
     /// (set only) bind a stream to pageIndicatorTintColor
     var pageIndicatorTintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.pageIndicatorTintColor = value
-            }
+            base.pageIndicatorTintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -29,11 +27,9 @@ public extension ThemeProxy where Base: UIPageControl {
 
     /// (set only) bind a stream to currentPageIndicatorTintColor
     var currentPageIndicatorTintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.currentPageIndicatorTintColor = value
-            }
+            base.currentPageIndicatorTintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

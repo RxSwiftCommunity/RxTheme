@@ -15,11 +15,9 @@ public extension ThemeProxy where Base: CAShapeLayer {
 
     /// (set only) bind a stream to strokeColor
     var strokeColor: ThemeAttribute<CGColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.strokeColor = value
-            }
+            base.strokeColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -30,11 +28,9 @@ public extension ThemeProxy where Base: CAShapeLayer {
 
     /// (set only) bind a stream to fillColor
     var fillColor: ThemeAttribute<CGColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.fillColor = value
-            }
+            base.fillColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UISearchBar {
 
     /// (set only) bind a stream to barStyle
     var barStyle: ThemeAttribute<UIBarStyle> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.barStyle = value
-            }
+            base.barStyle = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -29,11 +27,9 @@ public extension ThemeProxy where Base: UISearchBar {
 
     /// (set only) bind a stream to barTintColor
     var barTintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.barTintColor = value
-            }
+            base.barTintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -44,11 +40,9 @@ public extension ThemeProxy where Base: UISearchBar {
 
     /// (set only) bind a stream to keyboardAppearance
     var keyboardAppearance: ThemeAttribute<UIKeyboardAppearance> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.keyboardAppearance = value
-            }
+            base.keyboardAppearance = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

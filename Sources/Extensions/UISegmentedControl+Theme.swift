@@ -15,11 +15,9 @@ public extension ThemeProxy where Base: UISegmentedControl {
     /// (set only) bind a stream to style
     @available(iOS 13, tvOS 13, *)
     var selectedSegmentTintColor: ThemeAttribute<UIColor> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.selectedSegmentTintColor = value
-            }
+            base.selectedSegmentTintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

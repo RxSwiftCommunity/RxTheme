@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UIBarButtonItem {
 
     /// (set only) bind a stream to tintColor
     var tintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.tintColor = value
-            }
+            base.tintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

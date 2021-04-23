@@ -14,7 +14,7 @@ public extension ThemeProxy where Base: UITextView {
 
     /// (set only) bind a stream to font
     var font: ThemeAttribute<UIFont?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
             if let value = newValue.value {
                 base.font = value
@@ -29,7 +29,7 @@ public extension ThemeProxy where Base: UITextView {
 
     /// (set only) bind a stream to textColor
     var textColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
             if let value = newValue.value {
                 base.textColor = value
@@ -44,11 +44,9 @@ public extension ThemeProxy where Base: UITextView {
 
     /// (set only) bind a stream to keyboardAppearance
     var keyboardAppearance: ThemeAttribute<UIKeyboardAppearance> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.keyboardAppearance = value
-            }
+            base.keyboardAppearance = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

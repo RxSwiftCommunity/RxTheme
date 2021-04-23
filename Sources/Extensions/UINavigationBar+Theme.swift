@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UINavigationBar {
 
     /// (set only) bind a stream to barStyle
     var barStyle: ThemeAttribute<UIBarStyle> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.barStyle = value
-            }
+            base.barStyle = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -29,7 +27,7 @@ public extension ThemeProxy where Base: UINavigationBar {
 
     /// (set only) bind a stream to barTintColor
     var barTintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
             if let value = newValue.value {
                 base.barTintColor = value
@@ -44,11 +42,9 @@ public extension ThemeProxy where Base: UINavigationBar {
 
     /// (set only) bind a stream to titleTextAttributes
     var titleTextAttributes: ThemeAttribute<[NSAttributedString.Key: Any]?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.titleTextAttributes = value
-            }
+            base.titleTextAttributes = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -60,11 +56,9 @@ public extension ThemeProxy where Base: UINavigationBar {
     /// (set only) bind a stream to largeTitleTextAttributes
     @available(iOS 11.0, *)
     var largeTitleTextAttributes: ThemeAttribute<[NSAttributedString.Key: Any]?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.largeTitleTextAttributes = value
-            }
+            base.largeTitleTextAttributes = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

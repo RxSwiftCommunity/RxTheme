@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UILabel {
 
     /// (set only) bind a stream to font
     var font: ThemeAttribute<UIFont> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.font = value
-            }
+            base.font = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -29,11 +27,9 @@ public extension ThemeProxy where Base: UILabel {
 
     /// (set only) bind a stream to textColor
     var textColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.textColor = value
-            }
+            base.textColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -44,11 +40,9 @@ public extension ThemeProxy where Base: UILabel {
 
     /// (set only) bind a stream to highlightedTextColor
     var highlightedTextColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.highlightedTextColor = value
-            }
+            base.highlightedTextColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -59,11 +53,9 @@ public extension ThemeProxy where Base: UILabel {
 
     /// (set only) bind a stream to shadowColor
     var shadowColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.shadowColor = value
-            }
+            base.shadowColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

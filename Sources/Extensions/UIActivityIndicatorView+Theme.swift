@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UIActivityIndicatorView {
 
     /// (set only) bind a stream to style
     var style: ThemeAttribute<UIActivityIndicatorView.Style> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.style = value
-            }
+            base.style = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UITableView {
 
     /// (set only) bind a stream to separatorColor
     var separatorColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.separatorColor = value
-            }
+            base.separatorColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

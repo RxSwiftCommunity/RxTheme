@@ -15,11 +15,9 @@ public extension ThemeProxy where Base: CALayer {
 
     /// (set only) bind a stream to backgroundColor
     var backgroundColor: ThemeAttribute<CGColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.backgroundColor = value
-            }
+            base.backgroundColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -30,11 +28,9 @@ public extension ThemeProxy where Base: CALayer {
 
     /// (set only) bind a stream to borderWidth
     var borderWidth: ThemeAttribute<CGFloat> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.borderWidth = value
-            }
+            base.borderWidth = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -45,11 +41,9 @@ public extension ThemeProxy where Base: CALayer {
 
     /// (set only) bind a stream to borderColor
     var borderColor: ThemeAttribute<CGColor?> {
-        get { return ThemeAttribute() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.borderColor = value
-            }
+            base.borderColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -60,11 +54,9 @@ public extension ThemeProxy where Base: CALayer {
 
     /// (set only) bind a stream to shadowColor
     var shadowColor: ThemeAttribute<CGColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.shadowColor = value
-            }
+            base.shadowColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

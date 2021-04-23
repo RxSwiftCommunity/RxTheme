@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UIProgressView {
 
     /// (set only) bind a stream to progressTintColor
     var progressTintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.progressTintColor = value
-            }
+            base.progressTintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -29,11 +27,9 @@ public extension ThemeProxy where Base: UIProgressView {
 
     /// (set only) bind a stream to trackTintColor
     var trackTintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.trackTintColor = value
-            }
+            base.trackTintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)

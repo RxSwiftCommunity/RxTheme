@@ -14,11 +14,9 @@ public extension ThemeProxy where Base: UISwitch {
 
     /// (set only) bind a stream to onTintColor
     var onTintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.onTintColor = value
-            }
+            base.onTintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
@@ -29,11 +27,9 @@ public extension ThemeProxy where Base: UISwitch {
 
     /// (set only) bind a stream to thumbTintColor
     var thumbTintColor: ThemeAttribute<UIColor?> {
-        get { return .empty() }
+        get { fatalError("set only") }
         set {
-            if let value = newValue.value {
-                base.thumbTintColor = value
-            }
+            base.thumbTintColor = newValue.value
             let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
