@@ -5,7 +5,7 @@ PODS:
   - RxRelay (6.0.0):
     - RxSwift (= 6.0.0)
   - RxSwift (6.0.0)
-  - RxTheme (5.0.4):
+  - RxTheme (6.0.0):
     - RxCocoa (~> 6.0)
     - RxSwift (~> 6.0)
 
@@ -26,7 +26,7 @@ SPEC CHECKSUMS:
   RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
   RxRelay: 8d593be109c06ea850df027351beba614b012ffb
   RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
-  RxTheme: ff66d4e8f8947a5b0ffc776e04f0fef85526011b
+  RxTheme: be60cb14e0544b3cbd574cc37fed35ba9d61aa1f
 
 PODFILE CHECKSUM: 3549b3ef30393f1fa7f52c030ff2aa0e1452a120
 
