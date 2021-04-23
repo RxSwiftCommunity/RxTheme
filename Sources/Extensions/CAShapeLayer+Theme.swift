@@ -20,7 +20,7 @@ public extension ThemeProxy where Base: CAShapeLayer {
             if let value = newValue.value {
                 base.strokeColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.strokeColor)
@@ -35,7 +35,7 @@ public extension ThemeProxy where Base: CAShapeLayer {
             if let value = newValue.value {
                 base.fillColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.fillColor)

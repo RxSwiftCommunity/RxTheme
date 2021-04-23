@@ -19,7 +19,7 @@ public extension ThemeProxy where Base: UISearchBar {
             if let value = newValue.value {
                 base.barStyle = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.barStyle)
@@ -34,7 +34,7 @@ public extension ThemeProxy where Base: UISearchBar {
             if let value = newValue.value {
                 base.barTintColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.barTintColor)
@@ -49,7 +49,7 @@ public extension ThemeProxy where Base: UISearchBar {
             if let value = newValue.value {
                 base.keyboardAppearance = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.keyboardAppearance)

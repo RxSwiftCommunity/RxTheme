@@ -11,7 +11,7 @@ import RxSwift
 public class ThemeAttribute<U> {
     public var value: U?
    
-    public var steam: Observable<U> = .empty()
+    public var stream: Observable<U> = .empty()
     
     static func empty() -> ThemeAttribute {
         return ThemeAttribute()
@@ -21,7 +21,7 @@ public class ThemeAttribute<U> {
     
     init<Provider: ThemeProvider>(service: ThemeService<Provider>, mapper: @escaping ((Provider.T) -> U)) {
         value = mapper(service.attrs)
-        steam = service.attrStream(mapper)
+        stream = service.attrStream(mapper)
     }
 }
 

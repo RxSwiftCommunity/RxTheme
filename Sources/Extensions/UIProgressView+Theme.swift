@@ -19,7 +19,7 @@ public extension ThemeProxy where Base: UIProgressView {
             if let value = newValue.value {
                 base.progressTintColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.progressTintColor)
@@ -34,7 +34,7 @@ public extension ThemeProxy where Base: UIProgressView {
             if let value = newValue.value {
                 base.trackTintColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.trackTintColor)

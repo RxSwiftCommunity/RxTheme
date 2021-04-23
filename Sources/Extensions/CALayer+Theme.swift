@@ -20,7 +20,7 @@ public extension ThemeProxy where Base: CALayer {
             if let value = newValue.value {
                 base.backgroundColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.backgroundColor)
@@ -35,7 +35,7 @@ public extension ThemeProxy where Base: CALayer {
             if let value = newValue.value {
                 base.borderWidth = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.borderWidth)
@@ -50,7 +50,7 @@ public extension ThemeProxy where Base: CALayer {
             if let value = newValue.value {
                 base.borderColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.borderColor)
@@ -65,7 +65,7 @@ public extension ThemeProxy where Base: CALayer {
             if let value = newValue.value {
                 base.shadowColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.shadowColor)

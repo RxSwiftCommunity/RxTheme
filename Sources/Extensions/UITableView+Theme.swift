@@ -19,7 +19,7 @@ public extension ThemeProxy where Base: UITableView {
             if let value = newValue.value {
                 base.separatorColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.separatorColor)

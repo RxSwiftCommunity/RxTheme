@@ -19,7 +19,7 @@ public extension ThemeProxy where Base: UISwitch {
             if let value = newValue.value {
                 base.onTintColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.onTintColor)
@@ -34,7 +34,7 @@ public extension ThemeProxy where Base: UISwitch {
             if let value = newValue.value {
                 base.thumbTintColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.thumbTintColor)

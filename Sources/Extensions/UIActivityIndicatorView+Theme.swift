@@ -19,7 +19,7 @@ public extension ThemeProxy where Base: UIActivityIndicatorView {
             if let value = newValue.value {
                 base.style = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.style)

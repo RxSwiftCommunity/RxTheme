@@ -28,7 +28,7 @@ public extension ThemeProxy where Base: UIButton {
         if let value = newValue.value {
             base.setTitleColor(value, for: state)
         }
-        let disposable = newValue.steam
+        let disposable = newValue.stream
             .take(until: base.rx.deallocating)
             .observe(on: MainScheduler.instance)
             .bind(to: base.rx.titleColor(for: state))

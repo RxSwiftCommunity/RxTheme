@@ -19,7 +19,7 @@ public extension ThemeProxy where Base: UILabel {
             if let value = newValue.value {
                 base.font = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.font)
@@ -34,7 +34,7 @@ public extension ThemeProxy where Base: UILabel {
             if let value = newValue.value {
                 base.textColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.textColor)
@@ -49,7 +49,7 @@ public extension ThemeProxy where Base: UILabel {
             if let value = newValue.value {
                 base.highlightedTextColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.highlightedTextColor)
@@ -64,7 +64,7 @@ public extension ThemeProxy where Base: UILabel {
             if let value = newValue.value {
                 base.shadowColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.shadowColor)

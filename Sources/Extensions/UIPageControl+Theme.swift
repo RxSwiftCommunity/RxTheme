@@ -19,7 +19,7 @@ public extension ThemeProxy where Base: UIPageControl {
             if let value = newValue.value {
                 base.pageIndicatorTintColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.pageIndicatorTintColor)
@@ -34,7 +34,7 @@ public extension ThemeProxy where Base: UIPageControl {
             if let value = newValue.value {
                 base.currentPageIndicatorTintColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.currentPageIndicatorTintColor)

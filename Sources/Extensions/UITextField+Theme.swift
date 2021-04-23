@@ -19,7 +19,7 @@ public extension ThemeProxy where Base: UITextField {
             if let value = newValue.value {
                 base.font = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.font)
@@ -34,7 +34,7 @@ public extension ThemeProxy where Base: UITextField {
             if let value = newValue.value {
                 base.textColor = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.textColor)
@@ -49,7 +49,7 @@ public extension ThemeProxy where Base: UITextField {
             if let value = newValue.value {
                 base.keyboardAppearance = value
             }
-            let disposable = newValue.steam
+            let disposable = newValue.stream
                 .take(until: base.rx.deallocating)
                 .observe(on: MainScheduler.instance)
                 .bind(to: base.rx.keyboardAppearance)
